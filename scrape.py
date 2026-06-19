@@ -31,10 +31,11 @@ def fetch_url(url, custom_headers=None):
             payload = {
                 'api_key': SCRAPER_API_KEY,
                 'url': url,
-                'keep_headers': 'true'
+                'country_code': 'kr',
+                'device_type': 'mobile' # Force ScraperAPI to generate matching mobile headers and TLS fingerprinted browser signature!
             }
-            # ScraperAPI manages high-quality residential proxies for us
-            r = requests.get('http://api.scraperapi.com', params=payload, verify=False, timeout=40)
+            # ScraperAPI automatically manages perfectly matching user-agents and TLS fingerprints
+            r = requests.get('http://api.scraperapi.com', params=payload, verify=False, timeout=50)
             return r
         except Exception as e:
             print(f"[우회 실패] 프록시 연결 오류: {e}. 다이렉트 시도로 폴백합니다.")

@@ -716,7 +716,9 @@ input:checked + .switch-slider:before {
     flex-direction: column !important; /* Stack name and price vertically! */
     align-items: flex-start !important;
     justify-content: center !important;
-    width: 100%;
+    flex: 1 !important; /* Take remaining space */
+    min-width: 0 !important; /* Crucial for text-clipping in Edge/Safari */
+    width: auto !important; /* Override width: 100% from default */
     gap: 6px !important;
 }
 
