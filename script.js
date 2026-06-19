@@ -4,7 +4,11 @@ document.addEventListener("DOMContentLoaded", () => {
     let activeStoreFilter = "all";
     let showInStockOnly = false;
     let searchQuery = "";
-    let activeSort = "default";
+    let activeSortType = "store";
+    let sortDirections = {
+        store: "asc",
+        price: "asc"
+    };
 
     // DOM Elements
     const productsGrid = document.getElementById("products-grid");
@@ -120,23 +124,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Apply sorting
             const sortedProducts = [...filteredProducts];
-            if (activeSort === "store") {
+            const direction = sortDirections[activeSortType];
+            if (activeSortType === "store") {
                 sortedProducts.sort((a, b) => {
                     const storeA = a.store || "";
                     const storeB = b.store || "";
-                    return storeA.localeCompare(storeB, "ko");
+                    const cmp = storeA.localeCompare(storeB, "ko");
+                    return direction === "asc" ? cmp : -cmp;
                 });
-            } else if (activeSort === "price-asc") {
+            } else if (activeSortType === "price") {
                 sortedProducts.sort((a, b) => {
                     const priceA = a.price || 0;
                     const priceB = b.price || 0;
-                    return priceA - priceB;
-                });
-            } else if (activeSort === "price-desc") {
-                sortedProducts.sort((a, b) => {
-                    const priceA = a.price || 0;
-                    const priceB = b.price || 0;
-                    return priceB - priceA;
+                    return direction === "asc" ? priceA - priceB : priceB - priceA;
                 });
             }
 
@@ -306,17 +306,32 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    function updateSortUI() {
+        sortBtns.forEach((btn) => {
+            const type = btn.getAttribute("data-sort");
+            if (type === activeSortType) {
+                btn.classList.add("active");
+                const dir = sortDirections[type];
+                const arrow = dir === "asc" ? " ▲" : " ▼";
+                btn.textContent = (type === "store" ? "스토어순" : "가격순") + arrow;
+            } else {
+                btn.classList.remove("active");
+                btn.textContent = type === "store" ? "스토어순" : "가격순";
+            }
+        });
+    }
+
     sortBtns.forEach((btn) => {
         if (btn) {
             btn.addEventListener("click", () => {
-                sortBtns.forEach((b) => {
-                    if (b) {
-                        b.classList.remove("active");
-                    }
-                });
-                btn.classList.add("active");
-
-                activeSort = btn.getAttribute("data-sort");
+                const type = btn.getAttribute("data-sort");
+                if (activeSortType === type) {
+                    sortDirections[type] = sortDirections[type] === "asc" ? "desc" : "asc";
+                } else {
+                    activeSortType = type;
+                    sortDirections[type] = "asc";
+                }
+                updateSortUI();
                 renderProducts();
             });
         }
@@ -339,6 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const savedView = localStorage.getItem("coffee-view-mode") || "list";
     setViewMode(savedView);
 
-    // Initial load
+    // Initial sort UI and load
+    updateSortUI();
     fetchProducts();
 });
