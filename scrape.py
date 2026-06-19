@@ -4,10 +4,14 @@ import re
 import json
 import urllib3
 import datetime
+import os
 from concurrent.futures import ThreadPoolExecutor
 
 # Suppress SSL verification warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Read ScraperAPI key from GitHub Actions secrets environment
+SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
@@ -16,12 +20,34 @@ HEADERS = {
     "Connection": "keep-alive"
 }
 
+def fetch_url(url, custom_headers=None):
+    """Fetches HTML content, routing through ScraperAPI on GitHub Actions to bypass Naver blocking"""
+    headers_to_use = custom_headers if custom_headers else HEADERS
+    
+    # If API Key is present in environment, route through ScraperAPI to bypass cloud IP blocks
+    if SCRAPER_API_KEY and ("smartstore.naver.com" in url or "m.smartstore.naver.com" in url):
+        print(f"[우회] 깃허브 서버에서 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
+        try:
+            payload = {
+                'api_key': SCRAPER_API_KEY,
+                'url': url,
+                'keep_headers': 'true'
+            }
+            # ScraperAPI manages high-quality residential proxies for us
+            r = requests.get('http://api.scraperapi.com', params=payload, verify=False, timeout=40)
+            return r
+        except Exception as e:
+            print(f"[우회 실패] 프록시 연결 오류: {e}. 다이렉트 시도로 폴백합니다.")
+    
+    # Direct fetch (Default on local machine)
+    return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
+
 def scrape_502_coffee():
     """Scrapes products from 502 Coffee (Cafe24 site)"""
     url = "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
     products = []
     try:
-        r = requests.get(url, headers=HEADERS, verify=False, timeout=10)
+        r = fetch_url(url)
         if r.status_code != 200:
             return products
         
@@ -102,14 +128,16 @@ def scrape_naver_smartstore(url, store_name):
         custom_headers = HEADERS.copy()
         custom_headers["Referer"] = url
         
-        r = requests.get(url, headers=custom_headers, verify=False, timeout=10)
+        r = fetch_url(url, custom_headers)
         if r.status_code != 200:
+            print(f"Naver [{store_name}] fetch failed with HTTP status: {r.status_code}")
             return products
         
         soup = BeautifulSoup(r.text, "html.parser")
         script_tag = soup.find("script", string=re.compile(r"window\.__PRELOADED_STATE__\s*="))
         
         if not script_tag:
+            print(f"Could not find __PRELOADED_STATE__ script tag for {store_name}")
             return products
         
         content = script_tag.string.strip()
@@ -194,6 +222,11 @@ def scrape_naver_smartstore(url, store_name):
 
 def main():
     print("Starting automated coffee scraper...")
+    if SCRAPER_API_KEY:
+        print("[인증 성공] ScraperAPI 우회 키가 감지되었습니다. 깃허브 무인 자동화 모드로 실행합니다.")
+    else:
+        print("[로컬 직접 수집] 한국 가정용 다이렉트 수집 모드로 실행합니다.")
+        
     with ThreadPoolExecutor(max_workers=4) as executor:
         future_502 = executor.submit(scrape_502_coffee)
         future_johns = executor.submit(
