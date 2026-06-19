@@ -27,6 +27,9 @@ jobs:
           pip install requests beautifulsoup4
 
       - name: Run Coffee Scraper
+        env:
+          # Securely injects your ScraperAPI key from repository secrets into python's environment!
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
         run: python scrape.py
 
       - name: Commit and Push Updated products.json
