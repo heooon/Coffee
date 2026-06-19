@@ -292,7 +292,6 @@ body.theme-editorial {
     font-size: 0.8rem;
     letter-spacing: 0.8px;
     color: var(--primary-light);
-    text-transform: uppercase;
 }
 
 .filter-actions-right {

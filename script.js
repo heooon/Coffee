@@ -271,13 +271,13 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateLastUpdated(lastScrapedTime) {
         try {
             if (lastScrapedTime) {
-                lastUpdatedSpan.textContent = `최근 동기화: ${lastScrapedTime}`;
+                lastUpdatedSpan.textContent = `Updated:${lastScrapedTime}`;
             } else {
                 const now = new Date();
                 const hours = String(now.getHours()).padStart(2, '0');
                 const minutes = String(now.getMinutes()).padStart(2, '0');
                 const seconds = String(now.getSeconds()).padStart(2, '0');
-                lastUpdatedSpan.textContent = `동기화: 오늘 ${hours}:${minutes}:${seconds}`;
+                lastUpdatedSpan.textContent = `Updated: Today ${hours}:${minutes}:${seconds}`;
             }
         } catch (e) {
             console.error("Error updating timestamp:", e);
