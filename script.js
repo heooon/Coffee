@@ -130,10 +130,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     card.className = `product-card ${isSoldOut ? "is-soldout" : ""}`;
 
                     let storeClass = "store-502";
-                    if (storeName === "존스알커피") {
+                    if (storeName === "존스몰") {
                         storeClass = "store-johns";
-                    } else if (storeName === "딥다이브 로스터스") {
+                    } else if (storeName === "딥다이브") {
                         storeClass = "store-deepdive";
+                    }
+                    } else if (storeName === "신양") {
+                        storeClass = "store-shin";
                     }
 
                     const imageUrl = product.imageUrl || `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23ece0d1"/><text x="50" y="50" font-size="12" font-family="Noto Sans KR" font-weight="bold" fill="%237c5c43" dominant-baseline="middle" text-anchor="middle">No Image</text></svg>`;
