@@ -134,7 +134,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         storeClass = "store-johns";
                     } else if (storeName === "딥다이브") {
                         storeClass = "store-deepdive";
-                    }
                     } else if (storeName === "신양") {
                         storeClass = "store-shin";
                     }
