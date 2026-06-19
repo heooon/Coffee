@@ -205,7 +205,7 @@ def scrape_naver_smartstore(url, store_name):
                     if not name:
                         continue
                     
-                    price = p.get("salePrice") or p.get("discountedSalePrice") or 0
+                    price = p.get("discountedSalePrice") or p.get("salePrice") or 0
                     img_url = p.get("representativeImageUrl") or p.get("imageUrl") or ""
                     
                     product_id = p.get("id") or p.get("productNo")
