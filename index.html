@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피 원두 재고 현황판</title>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=1.0.4">
+</head>
+<body>
+    <main class="container">
+        <!-- Controls & Filters (Premium 2-Tier Structured Grid) -->
+        <section class="controls-panel">
+            <!-- Tier 1: Search and Live Status -->
+            <div class="controls-tier tier-primary">
+                <div class="search-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-input" placeholder="찾으시는 원두명을 입력하세요...">
+                </div>
+                <div class="refresh-panel">
+                    <span id="last-updated">업데이트 확인 중...</span>
+                    <button id="refresh-btn" class="refresh-btn">
+                        <span class="refresh-icon">🔄</span> 새로고침
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Tier 2: Filtering Controls -->
+            <div class="controls-tier tier-filters">
+                <div class="filter-group">
+                    <span class="filter-label">로스터리 필터</span>
+                    <div class="tabs">
+                        <button class="tab-btn active" data-store="all">전체보기</button>
+                        <button class="tab-btn" data-store="502 Coffee">502 커피</button>
+                        <button class="tab-btn" data-store="존스알커피">존스알커피</button>
+                        <button class="tab-btn" data-store="딥다이브 로스터스">딥다이브 로스터스</button>
+                    </div>
+                </div>
+
+                <div class="filter-actions-right">
+                    <div class="toggle-group">
+                        <span class="filter-label">재고 필터</span>
+                        <label class="switch-container">
+                            <input type="checkbox" id="instock-only-toggle">
+                            <span class="switch-slider"></span>
+                        </label>
+                        <span class="toggle-text">판매 중만 보기</span>
+                    </div>
+
+                    <div class="view-group">
+                        <span class="filter-label">보기 모드</span>
+                        <div class="view-tabs">
+                            <button class="view-btn active" data-view="grid">🖼️ 그리드</button>
+                            <button class="view-btn" data-view="list">📰 리스트</button>
+                            <button class="view-btn" data-view="text">📝 텍스트</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Overview (Sleek Space-saving Panel) -->
+        <section class="stats-panel">
+            <div class="stat-card total-items">
+                <div class="stat-num" id="stat-total">0</div>
+                <div class="stat-label">전체 상품 수</div>
+            </div>
+            <div class="stat-card sale-items">
+                <div class="stat-num" id="stat-sales">0</div>
+                <div class="stat-label">판매 중</div>
+            </div>
+            <div class="stat-card sold-out-items">
+                <div class="stat-num" id="stat-soldout">0</div>
+                <div class="stat-label">품절 상품</div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section class="products-section">
+            <div id="loading-spinner" class="loading-container">
+                <div class="spinner"></div>
+                <p>원두 정보를 가져오고 있습니다. 잠시만 기다려주세요...</p>
+            </div>
+            
+            <div id="error-message" class="error-container hidden">
+                <p class="error-text">❌ 상품 정보를 가져오지 못했습니다. 잠시 후 다시 시도해 주세요.</p>
+                <p id="error-details" class="error-subtext"></p>
+            </div>
+
+            <div id="products-grid" class="products-grid hidden">
+                <!-- Dynamically populated via script.js -->
+            </div>
+            
+            <div id="no-products" class="no-products hidden">
+                <p>🔍 조건에 부합하는 원두 상품이 없습니다.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Coffee Stock Board. Powered by GitHub Pages & GitHub Actions.</p>
+    </footer>
+
+    <script src="script.js?v=1.0.4"></script>
+</body>
+</html>

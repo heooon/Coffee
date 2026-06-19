@@ -1,0 +1,390 @@
+{
+    "success": true,
+    "count": 48,
+    "products": [
+        {
+            "store": "502 Coffee",
+            "name": "502 시그니처 블렌드 1kg",
+            "price": 39000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/f2f434417230b4e20c5793dfe69a2666.png",
+            "productUrl": "https://502coffee.com/product/502-시그니처-블렌드-1kg/93/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
+            "price": 19000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
+            "productUrl": "https://502coffee.com/product/디카페인-에티오피아-예가체프-할로-베리티-내추럴/178/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "CLASSIC 클래식",
+            "price": 14000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/35834ec60f8ecf47b51abd5396f291eb.png",
+            "productUrl": "https://502coffee.com/product/classic-클래식/9/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "WORKERS 워커스",
+            "price": 16000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/81c6c35a2db01da2ec6311f5cccf455b.png",
+            "productUrl": "https://502coffee.com/product/workers-워커스/10/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "GENTLE 젠틀",
+            "price": 16000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/fa894027add90add2b574d308619e187.png",
+            "productUrl": "https://502coffee.com/product/gentle-젠틀/11/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "BLUES 블루스",
+            "price": 16000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/f0328c0e19c9762d1791bbbf5e31e4ca.png",
+            "productUrl": "https://502coffee.com/product/blues-블루스/121/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "WELCOME 웰컴",
+            "price": 18000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/52005a702da1088fc8442525d3328477.png",
+            "productUrl": "https://502coffee.com/product/welcome-웰컴/12/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "[디카페인] PILLOW 필로우",
+            "price": 18000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/e3903301e406b3b9b39b56c331e2a42a.png",
+            "productUrl": "https://502coffee.com/product/디카페인-pillow-필로우/13/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502 Coffee",
+            "name": "[6월의 커피] 에콰도르 루그마파타 시드라 워시드",
+            "price": 27200,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260526/01015db95ce591bed93a12aad54e6e6d.png",
+            "productUrl": "https://502coffee.com/product/6월의-커피-에콰도르-루그마파타-시드라-워시드/182/category/24/display/1/",
+            "soldOut": true
+        },
+        {
+            "store": "502 Coffee",
+            "name": "페루 라 팔마 레드 카투라",
+            "price": 19000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260530/51f785c6b75f63a763467d60fed73273.png",
+            "productUrl": "https://502coffee.com/product/페루-라-팔마-레드-카투라/154/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "존스알커피",
+            "name": "200g 케냐 키아무구모 AA 워시드",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260619_163/1781858198085XWzV0_PNG/115991110200560792_1348860420.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13638094443",
+            "soldOut": false
+        },
+        {
+            "store": "존스알커피",
+            "name": "50g 파나마 알티에리 루시 게이샤 내추럴",
+            "price": 48000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260619_199/1781857428886utlzz_PNG/54677483032142835_1255420720.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13638087543",
+            "soldOut": false
+        },
+        {
+            "store": "존스알커피",
+            "name": "100g 페루 버그우 셀렉션 게이샤 워시드",
+            "price": 21000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260511_5/1778504252038Bq4J6_JPEG/112637154107697370_78862003.jpg",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13515120165",
+            "soldOut": true
+        },
+        {
+            "store": "존스알커피",
+            "name": "200g 에티오피아 첼베사 워시드",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260511_258/1778442569944rkiGa_JPEG/10144592793539085_980611081.jpg",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13512087463",
+            "soldOut": false
+        },
+        {
+            "store": "존스알커피",
+            "name": "200g 과테말라 SHB 디카페인",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251003_166/17594823540992TXdy_PNG/13657606911632894_1244814736.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12497752778",
+            "soldOut": false
+        },
+        {
+            "store": "존스알커피",
+            "name": "에스프레소 블랜드",
+            "price": 70000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
+            "soldOut": false
+        },
+        {
+            "store": "존스알커피",
+            "name": "베이스먼트 블랜드",
+            "price": 60000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
+            "soldOut": false
+        },
+        {
+            "store": "존스알커피",
+            "name": "시즈널 블랜드",
+            "price": 80000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11213802394",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "케냐 뚱구리 내추럴 헤비 100g",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260611_51/1781180522095Crper_PNG/21106914014644484_2088083138.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "에티오피아 게뎁 할로 베리티 비르하누 디도 아와초 슬로우드라이 내추럴 200g, 1개",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260606_34/1780712097920iKoXy_PNG/5679914481556520_275093139.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13624322367",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "콜롬비아 엘 디비소 핑크 버번 모스토 코퍼먼티드 워시드 100g",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260611_35/1781182129264glcXe_PNG/4938567942347689_723856227.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629854699",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "콜롬비아 후일라 엘 트리운포 오렌지 버번 모스토 내추럴 100g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260611_28/1781181414954eN5JG_PNG/115314326971548533_1132501361.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629846759",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "케냐 뚱구리 AA 풀리 워시드 100g",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260611_46/1781180866461FWw9f_PNG/28460510005607204_659858418.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629834889",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "에티오피아 시다마 아르베고나 문타샤 74158 콜드언더워터 내추럴 100g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260610_182/1781066399684NAimS_PNG/61266013486626718_537032882.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13628311886",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "에티오피아 게뎁 할로 베리티 비르하누 디도 아와초 슬로우드라이 내추럴 100g, 1개",
+            "price": 10000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260606_34/1780712097920iKoXy_PNG/5679914481556520_275093139.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13624322366",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "콜롬비아 엘 오브라헤 게이샤 워시드(로트 156) 100g",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260510_131/1778388127092jTmnc_PNG/80332140846682369_919935346.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509861613",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "에티오피아 예가체프 첼베사 워시드 200g, 1개",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778387661221dMXQG_PNG/10544004319350623_2126757700.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509846285",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "에티오피아 예가체프 첼베사 워시드 100g, 1개",
+            "price": 10000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778387661221dMXQG_PNG/10544004319350623_2126757700.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509846284",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "에티오피아 게샤빌리지 나르샤 게샤1931 내추럴 137, 100g",
+            "price": 44000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260606_178/1780706823008GA4hM_PNG/8742961701122126_1683261034.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13624270797",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "르완다 시아토 수사 레드버번 풀리 워시드 200g, 1개",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778388999859jHfj1_PNG/93404664438824511_840471329.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509904113",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "르완다 시아토 수사 레드버번 풀리 워시드 100g, 1개",
+            "price": 8000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778388999859jHfj1_PNG/93404664438824511_840471329.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509904112",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "에티오피아 예가체프 첼베사 워시드 500g, 1개",
+            "price": 40000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778387661221dMXQG_PNG/10544004319350623_2126757700.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509846286",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "과테말라 산 호세 오카냐 이그조틱 마라카투라 워시드 100g",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260422_246/1776854149084dGmiH_PNG/34337168842401085_1900494486.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13437942999",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "페루 카하마르카 엘 디아만테 게이샤 워시드 100g",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260323_221/1774249493730t1uyv_PNG/108382362862030110_512145664.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13292748499",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "페루 쿠스코 라스 쿰브레스 SL9 무산소 워시드 100g",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260227_98/1772167024270DcxTO_PNG/106299816264064141_1860481173.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13175960173",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 100g, 1개",
+            "price": 6000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204576",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 200g, 1개",
+            "price": 10000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204577",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "new 딸기퐁듀 블렌드 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 100g, 1개",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260603_85/17804605573245mRHe_PNG/8496696025701765_300553367.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517753",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 500g, 1개",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204578",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "new 딸기퐁듀 블렌드 200g, 1개",
+            "price": 26000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123166749",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 200g, 1개",
+            "price": 26000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260603_85/17804605573245mRHe_PNG/8496696025701765_300553367.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517754",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 1kg, 1개",
+            "price": 33000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/7619449435",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "new 딸기퐁듀 블렌드 500g, 1개",
+            "price": 60000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123184090",
+            "soldOut": true
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 500g, 1개",
+            "price": 50000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260603_85/17804605573245mRHe_PNG/8496696025701765_300553367.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517755",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 2kg, 1개",
+            "price": 64000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204580",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 5kg, 1개",
+            "price": 150000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13634217602",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브 로스터스",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 10kg, 1개",
+            "price": 300000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13634217603",
+            "soldOut": false
+        }
+    ]
+}
