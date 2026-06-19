@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 console.log(`Successfully fetched ${allProducts.length} products.`);
                 updateStats(allProducts);
                 renderProducts();
-                updateLastUpdated();
+                updateLastUpdated(data.last_scraped);
             } else {
                 throw new Error("데이터 형식이 올바르지 않습니다.");
             }
@@ -211,13 +211,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Update timestamp
-    function updateLastUpdated() {
+    function updateLastUpdated(lastScrapedTime) {
         try {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            lastUpdatedSpan.textContent = `동기화: 오늘 ${hours}:${minutes}:${seconds}`;
+            if (lastScrapedTime) {
+                lastUpdatedSpan.textContent = `최근 동기화: ${lastScrapedTime}`;
+            } else {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const seconds = String(now.getSeconds()).padStart(2, '0');
+                lastUpdatedSpan.textContent = `동기화: 오늘 ${hours}:${minutes}:${seconds}`;
+            }
         } catch (e) {
             console.error("Error updating timestamp:", e);
         }

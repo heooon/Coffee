@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import json
 import urllib3
+import datetime
 from concurrent.futures import ThreadPoolExecutor
 
 # Suppress SSL verification warnings
@@ -229,9 +230,14 @@ def main():
         elif not p_url:
             unique_products.append(p)
             
+    # Get current time in KST (UTC+9) for live execution timestamp
+    kst_now = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
+    last_scraped_str = kst_now.strftime("%Y-%m-%d %H:%M") # "2026-06-19 17:35"
+
     output_data = {
         "success": True,
         "count": len(unique_products),
+        "last_scraped": last_scraped_str,
         "products": unique_products
     }
     
