@@ -265,7 +265,7 @@ def main():
             "딥다이브"
         )
 
-        future_deepdive2 = executor.submit(
+        future_shin = executor.submit(
             scrape_naver_smartstore, 
             "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1", 
             "신양"
