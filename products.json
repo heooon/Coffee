@@ -1,10 +1,10 @@
 {
     "success": true,
     "count": 59,
-    "last_scraped": "2026-06-19 22:50",
+    "last_scraped": "2026-06-19 23:23",
     "products": [
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "502 시그니처 블렌드 1kg",
             "price": 39000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/f2f434417230b4e20c5793dfe69a2666.png",
@@ -12,7 +12,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
             "price": 19000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
@@ -20,7 +20,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "CLASSIC 클래식",
             "price": 14000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/35834ec60f8ecf47b51abd5396f291eb.png",
@@ -28,7 +28,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "WORKERS 워커스",
             "price": 16000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/81c6c35a2db01da2ec6311f5cccf455b.png",
@@ -36,7 +36,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "GENTLE 젠틀",
             "price": 16000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/fa894027add90add2b574d308619e187.png",
@@ -44,7 +44,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "BLUES 블루스",
             "price": 16000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/f0328c0e19c9762d1791bbbf5e31e4ca.png",
@@ -52,7 +52,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "WELCOME 웰컴",
             "price": 18000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/52005a702da1088fc8442525d3328477.png",
@@ -60,7 +60,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "[디카페인] PILLOW 필로우",
             "price": 18000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/e3903301e406b3b9b39b56c331e2a42a.png",
@@ -68,7 +68,7 @@
             "soldOut": false
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "[6월의 커피] 에콰도르 루그마파타 시드라 워시드",
             "price": 27200,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260526/01015db95ce591bed93a12aad54e6e6d.png",
@@ -76,7 +76,7 @@
             "soldOut": true
         },
         {
-            "store": "502 Coffee",
+            "store": "502",
             "name": "페루 라 팔마 레드 카투라",
             "price": 19000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260530/51f785c6b75f63a763467d60fed73273.png",
