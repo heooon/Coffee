@@ -45,6 +45,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Helper: get optimized thumbnail URL for Naver images to save user data
+    function getThumbnailUrl(url) {
+        if (!url) return "";
+        // Only append ?type=f300 for Naver shop images to avoid breaking other stores like 502
+        if (url.includes("pstatic.net")) {
+            return `${url}?type=f300`;
+        }
+        return url;
+    }
+
     // Fetch products from products.json
     async function fetchProducts() {
         showLoading();
@@ -178,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         storeClass = "store-identity";
                     }
 
-                    const imageUrl = product.imageUrl || `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23ece0d1"/><text x="50" y="50" font-size="12" font-family="Noto Sans KR" font-weight="bold" fill="%237c5c43" dominant-baseline="middle" text-anchor="middle">No Image</text></svg>`;
+                    const imageUrl = getThumbnailUrl(product.imageUrl) || `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%23ece0d1"/><text x="50" y="50" font-size="12" font-family="Noto Sans KR" font-weight="bold" fill="%237c5c43" dominant-baseline="middle" text-anchor="middle">No Image</text></svg>`;
 
                     let cardHTML = `
                         <div class="img-container">
