@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 68,
-    "last_scraped": "2026-06-20 00:24",
+    "count": 76,
+    "last_scraped": "2026-06-20 00:32",
     "products": [
         {
             "store": "502",
@@ -81,6 +81,70 @@
             "price": 19000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260530/51f785c6b75f63a763467d60fed73273.png",
             "productUrl": "https://502coffee.com/product/페루-라-팔마-레드-카투라/154/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "200g 케냐 키아무구모 AA 워시드",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260619_163/1781858198085XWzV0_PNG/115991110200560792_1348860420.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13638094443",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "50g 파나마 알티에리 루시 게이샤 내추럴",
+            "price": 48000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260619_199/1781857428886utlzz_PNG/54677483032142835_1255420720.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13638087543",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "100g 페루 버그우 셀렉션 게이샤 워시드",
+            "price": 21000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260511_5/1778504252038Bq4J6_JPEG/112637154107697370_78862003.jpg",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13515120165",
+            "soldOut": true
+        },
+        {
+            "store": "존스몰",
+            "name": "200g 에티오피아 첼베사 워시드",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260511_258/1778442569944rkiGa_JPEG/10144592793539085_980611081.jpg",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13512087463",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "200g 과테말라 SHB 디카페인",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251003_166/17594823540992TXdy_PNG/13657606911632894_1244814736.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12497752778",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "에스프레소 블랜드",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "베이스먼트 블랜드",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "시즈널 블랜드",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11213802394",
             "soldOut": false
         },
         {
