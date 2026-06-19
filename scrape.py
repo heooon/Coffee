@@ -29,13 +29,12 @@ def fetch_url(url, custom_headers=None):
     if SCRAPER_API_KEY and ("smartstore.naver.com" in url or "m.smartstore.naver.com" in url):
         print(f"[우회] 깃허브 서버에서 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
         try:
+            # Use only free-tier compatible parameters (api_key and url) to prevent HTTP 500 errors!
             payload = {
                 'api_key': SCRAPER_API_KEY,
-                'url': url,
-                'country_code': 'kr',
-                'device_type': 'mobile' # Force ScraperAPI to generate matching mobile headers and TLS fingerprinted browser signature!
+                'url': url
             }
-            # ScraperAPI automatically manages perfectly matching user-agents and TLS fingerprints
+            # ScraperAPI automatically rotates high-quality proxies and handles header fingerprints
             r = requests.get('http://api.scraperapi.com', params=payload, verify=False, timeout=50)
             return r
         except Exception as e:
@@ -46,7 +45,6 @@ def fetch_url(url, custom_headers=None):
 
 def scrape_502_coffee():
     """Scrapes products from 502 Coffee (Cafe24 site)"""
-    url = "https://502coffee.com/category/%EC%9원두/24/"
     products = []
     try:
         r = fetch_url("https://502coffee.com/category/%EC%9B%90%EB%91%90/24/")
