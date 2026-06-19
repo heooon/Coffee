@@ -109,7 +109,7 @@ def scrape_502_coffee():
                 soldout = True
             
             products.append({
-                "store": "502 Coffee",
+                "store": "502",
                 "name": name,
                 "price": price,
                 "imageUrl": img_url,
