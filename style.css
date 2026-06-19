@@ -565,6 +565,7 @@ input:checked + .switch-slider:before {
 .store-johns { background-color: #27402d; }       /* Earthy Forest Green */
 .store-deepdive { background-color: var(--primary); }/* Earthy Medium Brown */
 .store-shin { background-color: #ffffff; color: #000000 !important; }
+.store-identity { background-color: #1e3050; } /* Premium Deep Navy Blue */
 
 /* Soldout Organic/Glassmorphism overlay */
 .product-card.is-soldout {
@@ -942,10 +943,10 @@ input:checked + .switch-slider:before {
         gap: 6px;
     }
 
-    /* Roastery Tabs Grid: 4-column equal width fit */
+    /* Roastery Tabs Grid: 3-column equal width fit */
     .controls-panel .tabs {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(3, 1fr) !important;
         width: 100% !important;
         box-sizing: border-box;
         padding: 2px !important;
