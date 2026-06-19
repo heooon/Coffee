@@ -97,10 +97,12 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             productsGrid.innerHTML = "";
             
-            // Update stats based on active store filter
+            // Update stats based on active store filter (excluding drip bags)
             const storeProducts = allProducts.filter((product) => {
                 if (!product) return false;
                 const storeName = product.store || "";
+                const productName = product.name || "";
+                if (productName.includes("드립백")) return false;
                 return (activeStoreFilter === "all" || storeName === activeStoreFilter);
             });
             updateStats(storeProducts);
@@ -112,6 +114,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 const storeName = product.store || "";
                 const productName = product.name || "";
                 const isSoldOut = !!product.soldOut;
+
+                // Exclude drip bags
+                if (productName.includes("드립백")) {
+                    return false;
+                }
 
                 const matchesStore = (activeStoreFilter === "all" || storeName === activeStoreFilter);
                 const matchesStock = (!showInStockOnly || !isSoldOut);

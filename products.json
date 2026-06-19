@@ -1,6 +1,6 @@
 {
     "success": true,
-    "count": 59,
+    "count": 57,
     "last_scraped": "2026-06-19 23:23",
     "products": [
         {
@@ -385,22 +385,6 @@
             "price": 280000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13634217603",
-            "soldOut": false
-        },
-        {
-            "store": "신양",
-            "name": "드립백 1박스 - 10개 선택 / 색동, 과테말라 우니온 칸티닐 , 에티오피아 디카페인, 에티오피아  아르베고나",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200213_69/158156419521976nof_JPEG/18924933850892855_2076307543.jpg",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/12766662707",
-            "soldOut": false
-        },
-        {
-            "store": "신양",
-            "name": "스페셜 드립백 1박스 - 5개 선택 /엘 파라이소_ 리치 피치, 엘 베르헬_ 워터멜론, 콜롬비아_ 레세르바 럼배럴, 페루- 엘 노갈",
-            "price": 12500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200213_69/158156419521976nof_JPEG/18924933850892855_2076307543.jpg",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13028341578",
             "soldOut": false
         },
         {

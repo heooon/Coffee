@@ -69,6 +69,10 @@ def scrape_502_coffee():
             if not name:
                 continue
             
+            # Exclude drip bags
+            if "드립백" in name:
+                continue
+            
             price = 0
             desc_div = li.select_one(".description")
             if desc_div and desc_div.has_attr("ec-data-price"):
@@ -203,6 +207,10 @@ def scrape_naver_smartstore(url, store_name):
                 for p in products_list:
                     name = p.get("name") or p.get("productName")
                     if not name:
+                        continue
+                    
+                    # Exclude drip bags
+                    if "드립백" in name:
                         continue
                     
                     benefits = p.get("benefitsView") or {}
