@@ -17,15 +17,22 @@
             <!-- Tier 1: Live Status, Refresh, and In-Stock Toggle -->
             <div class="controls-tier tier-primary">
                 <div class="refresh-panel">
+                    <span class="live-dot"></span>
                     <span id="last-updated">Checking for updates...</span>
                 </div>
                 
-                <div class="toggle-group">
-                    <label class="switch-container">
-                        <input type="checkbox" id="instock-only-toggle">
-                        <span class="switch-slider"></span>
-                    </label>
-                    <span class="toggle-text">판매 중만 보기</span>
+                <div class="controls-actions">
+                    <div class="toggle-group">
+                        <label class="switch-container">
+                            <input type="checkbox" id="instock-only-toggle">
+                            <span class="switch-slider"></span>
+                        </label>
+                        <span class="toggle-text">판매 중만 보기</span>
+                    </div>
+                    
+                    <button id="theme-toggle-btn" class="theme-toggle-btn" title="테마 변경">
+                        <span class="theme-icon">🌙</span>
+                    </button>
                 </div>
             </div>
             

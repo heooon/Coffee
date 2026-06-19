@@ -23,6 +23,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const instockToggle = document.getElementById("instock-only-toggle");
     const refreshBtn = document.getElementById("refresh-btn");
     const lastUpdatedSpan = document.getElementById("last-updated");
+    const themeToggleBtn = document.getElementById("theme-toggle-btn");
+
+    // Theme initialization
+    const savedTheme = localStorage.getItem("coffee-theme") || "dark";
+    if (savedTheme === "light") {
+        document.body.classList.add("light-theme");
+        if (themeToggleBtn) {
+            themeToggleBtn.querySelector(".theme-icon").textContent = "☀️";
+        }
+    } else {
+        document.body.classList.remove("light-theme");
+        if (themeToggleBtn) {
+            themeToggleBtn.querySelector(".theme-icon").textContent = "🌙";
+        }
+    }
 
     // Stats Elements
     const statTotal = document.getElementById("stat-total");
@@ -363,6 +378,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (refreshBtn) {
         refreshBtn.addEventListener("click", () => {
             fetchProducts();
+        });
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener("click", () => {
+            const isLight = document.body.classList.toggle("light-theme");
+            const nextTheme = isLight ? "light" : "dark";
+            localStorage.setItem("coffee-theme", nextTheme);
+            themeToggleBtn.querySelector(".theme-icon").textContent = isLight ? "☀️" : "🌙";
         });
     }
 
