@@ -941,22 +941,27 @@ input:checked + .switch-slider:before {
 
     .products-grid.view-list .product-info {
         padding: 0 0 0 16px;
-        flex-direction: row !important;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
+        flex-direction: column !important; /* Stack name and price vertically on mobile! */
+        align-items: flex-start !important;
+        justify-content: center !important;
+        flex: 1 !important;
+        min-width: 0 !important;
+        width: auto !important;
+        gap: 4px !important;
     }
 
     .products-grid.view-list .product-footer {
         flex-direction: row !important;
-        align-items: center;
+        align-items: center !important;
+        justify-content: space-between !important;
         border-top: none;
         padding-top: 0;
-        gap: 16px;
+        width: 100% !important;
+        margin-top: 0 !important;
     }
 
     .products-grid.view-list .price-wrapper {
-        align-items: flex-end;
+        align-items: flex-start !important;
     }
 }
 
@@ -991,25 +996,53 @@ input:checked + .switch-slider:before {
     }
     
     .products-grid.view-text .product-info {
-        flex-direction: row !important;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column !important; /* Keep vertical stacked name and price on mobile! */
+        align-items: flex-start !important;
+        width: 100% !important;
+        gap: 4px !important;
     }
 
     .products-grid.view-text .product-name::after {
-        display: none; /* Hide dots on mobile to fit columns */
+        display: none !important; /* Hide dots completely */
     }
     
     .products-grid.view-text .product-footer {
         flex-direction: row !important;
-        align-items: center;
+        align-items: center !important;
+        justify-content: space-between !important;
         border-top: none;
         padding-top: 0;
-        gap: 15px;
+        width: 100% !important;
+        margin-top: 0 !important;
     }
     
+    /* Horizontal price layout "판매 가격: 18,000원" on one line for List & Text views */
+    .products-grid.view-list .price-wrapper,
     .products-grid.view-text .price-wrapper {
-        align-items: flex-end;
+        flex-direction: row !important;
+        align-items: center !important;
+        gap: 6px !important;
+        white-space: nowrap !important;
+    }
+
+    .products-grid.view-list .price-label,
+    .products-grid.view-text .price-label {
+        margin-bottom: 0 !important;
+        font-size: 0.72rem !important;
+        font-weight: 700 !important;
+        color: var(--text-muted) !important;
+    }
+
+    .products-grid.view-list .price-label::after,
+    .products-grid.view-text .price-label::after {
+        content: ':'; /* Add a neat colon separator */
+    }
+
+    .products-grid.view-list .price-value,
+    .products-grid.view-text .price-value {
+        font-size: 0.98rem !important;
+        color: var(--primary-light) !important;
+        line-height: 1 !important;
     }
 }
 
@@ -1041,11 +1074,19 @@ input:checked + .switch-slider:before {
         padding: 12px;
     }
 
-    .product-name {
-        font-size: 0.85rem;
-        margin-bottom: 8px;
+    /* Explicitly prevent premature truncation on mobile for Grid and List views */
+    .products-grid.view-list .name-text,
+    .products-grid .name-text {
+        white-space: normal !important;
+        word-break: break-all !important;
+        display: inline !important;
+    }
+
+    .products-grid .product-name {
+        font-size: 0.9rem !important; /* Make product name prominent on mobile! */
+        line-height: 1.4 !important;
+        margin-bottom: 6px !important;
         height: 2.8em; /* Adjusted height for smaller text */
-        line-height: 1.4;
     }
 
     .product-footer {
