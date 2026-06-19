@@ -12,24 +12,28 @@
 </head>
 <body>
     <main class="container">
-        <!-- Controls & Filters (Premium 2-Tier Structured Grid) -->
+        <!-- Controls & Filters (Highly Optimized Mobile Grid Layout) -->
         <section class="controls-panel">
-            <!-- Tier 1: Search and Live Status -->
+            <!-- Tier 1: Live Status, Refresh, and In-Stock Toggle -->
             <div class="controls-tier tier-primary">
-                <div class="search-box">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" id="search-input" placeholder="찾으시는 원두명을 입력하세요...">
-                </div>
                 <div class="refresh-panel">
                     <span id="last-updated">업데이트 확인 중...</span>
                     <button id="refresh-btn" class="refresh-btn">
                         <span class="refresh-icon">🔄</span> 새로고침
                     </button>
                 </div>
+                
+                <div class="toggle-group">
+                    <label class="switch-container">
+                        <input type="checkbox" id="instock-only-toggle">
+                        <span class="switch-slider"></span>
+                    </label>
+                    <span class="toggle-text">판매 중만 보기</span>
+                </div>
             </div>
             
-            <!-- Tier 2: Filtering Controls -->
-            <div class="controls-tier tier-filters">
+            <!-- Tier 2: Roastery Filters -->
+            <div class="controls-tier tier-roastery">
                 <div class="filter-group">
                     <span class="filter-label">로스터리 필터</span>
                     <div class="tabs">
@@ -39,24 +43,16 @@
                         <button class="tab-btn" data-store="딥다이브 로스터스">딥다이브 로스터스</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="filter-actions-right">
-                    <div class="toggle-group">
-                        <span class="filter-label">재고 필터</span>
-                        <label class="switch-container">
-                            <input type="checkbox" id="instock-only-toggle">
-                            <span class="switch-slider"></span>
-                        </label>
-                        <span class="toggle-text">판매 중만 보기</span>
-                    </div>
-
-                    <div class="view-group">
-                        <span class="filter-label">보기 모드</span>
-                        <div class="view-tabs">
-                            <button class="view-btn active" data-view="grid">🖼️ 그리드</button>
-                            <button class="view-btn" data-view="list">📰 리스트</button>
-                            <button class="view-btn" data-view="text">📝 텍스트</button>
-                        </div>
+            <!-- Tier 3: View Modes (Line Break / Dedicated New Row) -->
+            <div class="controls-tier tier-views">
+                <div class="view-group">
+                    <span class="filter-label">보기 모드</span>
+                    <div class="view-tabs">
+                        <button class="view-btn active" data-view="grid">🖼️ 그리드</button>
+                        <button class="view-btn" data-view="list">📰 리스트</button>
+                        <button class="view-btn" data-view="text">📝 텍스트</button>
                     </div>
                 </div>
             </div>

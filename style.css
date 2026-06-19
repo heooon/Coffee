@@ -101,11 +101,9 @@ body {
     opacity: 0.8;
 }
 
-/* Controls & Filters Panel (Sticky Glassmorphic Mobile Header) */
+/* Controls & Filters Panel (Non-Sticky Solid Layout) */
 .controls-panel {
-    background-color: rgba(28, 25, 23, 0.94); /* Warm dark translucent background */
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background-color: var(--card-bg);
     border: 1px solid var(--border-color);
     border-radius: 20px;
     padding: 16px 24px;
@@ -116,9 +114,8 @@ body {
     flex-direction: column;
     gap: 16px;
     align-items: stretch;
-    position: sticky; /* Floats sticky as you scroll! */
-    top: 10px;
-    z-index: 100;
+    position: relative; /* Static relative position so it scrolls away naturally */
+    z-index: 10;
 }
 
 /* Controls Tiers */
@@ -837,43 +834,83 @@ input:checked + .switch-slider:before {
 /* Responsive adjustment (Highly Optimized Mobile UX/UI) */
 @media(max-width: 900px) {
     .controls-panel {
-        gap: 12px;
+        gap: 15px;
         padding: 14px 16px;
-        top: 6px;
         border-radius: 16px;
     }
     
-    .controls-tier {
-        flex-direction: column;
-        align-items: stretch;
+    /* Row layout inside primary tier on mobile */
+    .controls-tier.tier-primary {
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
         gap: 10px;
     }
     
-    .search-box {
-        flex: 1 1 auto;
-    }
-    
     .refresh-panel {
-        justify-content: space-between;
-        width: 100%;
+        width: auto !important;
+        flex-grow: 1;
     }
     
-    .filter-actions-right {
-        justify-content: space-between;
-        width: 100%;
-        gap: 12px;
+    /* Prevent toggle text wrap */
+    .toggle-group {
+        white-space: nowrap !important;
+        flex-shrink: 0;
+        gap: 6px;
     }
 
-    /* Horizontal Touch-Swipe Swiping for Tabs on Mobile */
-    .tabs, .view-tabs {
-        overflow-x: auto;
-        flex-wrap: nowrap !important;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none; /* Firefox */
-        gap: 4px;
+    .toggle-text {
+        white-space: nowrap !important;
     }
-    .tabs::-webkit-scrollbar, .view-tabs::-webkit-scrollbar {
-        display: none; /* Chrome/Safari/Edge */
+
+    /* Stack filter groups vertically */
+    .controls-tier.tier-roastery, .controls-tier.tier-views {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100%;
+    }
+
+    .controls-tier.tier-roastery .filter-group, .controls-tier.tier-views .view-group {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        gap: 6px;
+    }
+
+    /* Roastery Tabs Grid: 4-column equal width fit */
+    .controls-panel .tabs {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 3px !important;
+    }
+    
+    .controls-panel .tab-btn {
+        padding: 8px 2px !important;
+        font-size: 0.75rem !important;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    /* View Tabs Grid: 3-column equal width fit */
+    .controls-panel .view-tabs {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 3px !important;
+    }
+
+    .controls-panel .view-btn {
+        padding: 8px 2px !important;
+        font-size: 0.75rem !important;
+        text-shadow: none;
+        text-align: center;
+        display: block;
+        width: 100%;
     }
 
     /* Keep List View as a high-readability row layout on mobile instead of stacked columns */
@@ -904,11 +941,6 @@ input:checked + .switch-slider:before {
 }
 
 @media(max-width: 768px) {
-    /* Hide decorative spacer bar on small screens */
-    .header::after {
-        display: none;
-    }
-
     /* Slick Mobile stats layout */
     .stats-panel {
         grid-template-columns: repeat(3, 1fr); /* 3 cards side-by-side on mobile! */
@@ -967,9 +999,18 @@ input:checked + .switch-slider:before {
         padding: 0 12px; /* Narrow padding for mobile */
     }
 
+    /* Grid View: 2 columns | List View: STRICTLY 1 column ! */
     .products-grid {
-        grid-template-columns: repeat(2, 1fr) !important; /* Elegant 2-column store grid! */
+        grid-template-columns: repeat(2, 1fr) !important;
         gap: 10px !important;
+    }
+
+    .products-grid.view-list {
+        grid-template-columns: 1fr !important; /* Force list view to be a single clean column */
+    }
+
+    .products-grid.view-text {
+        grid-template-columns: 1fr !important;
     }
 
     .product-card {
