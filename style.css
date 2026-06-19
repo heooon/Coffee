@@ -561,10 +561,10 @@ input:checked + .switch-slider:before {
 }
 
 /* Distinct color markers per store */
-.store-502 { background-color: #4b453d; }         /* Dark Warm Charcoal Steel */
+.store-502 { background-color: #c57cb9; }         /* Dark Warm Charcoal Steel */
 .store-johns { background-color: #27402d; }       /* Earthy Forest Green */
 .store-deepdive { background-color: var(--primary); }/* Earthy Medium Brown */
-.store-shin { background-color: #8b651d; }
+.store-shin { background-color: #ffffff; color: #000000 !important; }
 
 /* Soldout Organic/Glassmorphism overlay */
 .product-card.is-soldout {
