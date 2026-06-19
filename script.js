@@ -23,6 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const instockToggle = document.getElementById("instock-only-toggle");
     const refreshBtn = document.getElementById("refresh-btn");
     const lastUpdatedSpan = document.getElementById("last-updated");
+    
+    // Theme Selector Elements
+    const themeMenuBtn = document.getElementById("theme-menu-btn");
+    const themePopup = document.getElementById("theme-popup");
+    const themeSelectBtns = document.querySelectorAll(".theme-select-btn");
 
     // Stats Elements
     const statTotal = document.getElementById("stat-total");
@@ -375,6 +380,56 @@ document.addEventListener("DOMContentLoaded", () => {
             fetchProducts();
         });
     }
+
+    // Design Theme Manager (Warm, Editorial, Swiss, Cyber)
+    const savedTheme = localStorage.getItem("coffee-dashboard-theme") || "warm";
+    setTheme(savedTheme);
+
+    function setTheme(themeName) {
+        // Reset all theme classes on body
+        document.body.classList.remove("theme-warm", "theme-editorial", "theme-swiss", "theme-cyber");
+        // Add selected theme class
+        document.body.classList.add(`theme-${themeName}`);
+        
+        // Update active class on buttons inside popup
+        themeSelectBtns.forEach((btn) => {
+            if (btn.getAttribute("data-theme") === themeName) {
+                btn.classList.add("active");
+            } else {
+                btn.classList.remove("active");
+            }
+        });
+        
+        localStorage.setItem("coffee-dashboard-theme", themeName);
+    }
+
+    // Toggle popup dropdown menu on button click
+    if (themeMenuBtn && themePopup) {
+        themeMenuBtn.addEventListener("click", (e) => {
+            e.stopPropagation(); // Prevent immediate closing
+            themePopup.classList.toggle("hidden");
+        });
+    }
+
+    // Close popup if clicked anywhere outside the container
+    document.addEventListener("click", (e) => {
+        if (themePopup && !themePopup.classList.contains("hidden")) {
+            if (!themePopup.contains(e.target) && e.target !== themeMenuBtn) {
+                themePopup.classList.add("hidden");
+            }
+        }
+    });
+
+    // Handle theme selection click events
+    themeSelectBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const selectedTheme = btn.getAttribute("data-theme");
+            setTheme(selectedTheme);
+            if (themePopup) {
+                themePopup.classList.add("hidden"); // Close dropdown after selection
+            }
+        });
+    });
 
     // Initial View Mode Load
     const savedView = localStorage.getItem("coffee-view-mode") || "list";

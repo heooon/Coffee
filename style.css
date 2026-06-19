@@ -12,7 +12,113 @@
     --soldout-color: #c45b53;  /* Warm Matte Terracotta Clay Red */
     --success-color: #5f8768;  /* Muted Organic Sage Green */
     --border-color: #2a2521;   /* Delicate Roasted Wood Border */
-    --transition: all 0.38s cubic-bezier(0.16, 1, 0.3, 1); /* Cozy premium organic transition */
+    
+    /* Layout Constants (Themeable) */
+    --card-radius: 16px;
+    --panel-radius: 20px;
+    --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    --card-hover-shadow: 0 15px 35px rgba(184, 141, 108, 0.25);
+    --panel-bg: rgba(28, 25, 23, 0.65);
+    --panel-blur: blur(12px);
+    --panel-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    --font-main: 'Noto Sans KR', sans-serif;
+    --transition: all 0.38s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* THEME 1: Warm Dark Espresso (Explicit mapping) */
+body.theme-warm {
+    --primary: #a07a5d;
+    --primary-light: #b88d6c;
+    --secondary: #d4c0b0;
+    --secondary-light: #25211e;
+    --bg-light: #141210;
+    --bg-dark: #0d0b0a;
+    --card-bg: #1c1917;
+    --text-color: #f5f2eb;
+    --text-muted: #9a918a;
+    --soldout-color: #c45b53;
+    --success-color: #5f8768;
+    --border-color: #2a2521;
+    --card-radius: 16px;
+    --panel-radius: 20px;
+    --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    --card-hover-shadow: 0 15px 35px rgba(184, 141, 108, 0.25);
+    --panel-bg: rgba(28, 25, 23, 0.65);
+    --panel-blur: blur(12px);
+    --panel-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+    --font-main: 'Noto Sans KR', sans-serif;
+}
+
+/* THEME 2: Editorial Paper & Ink (Kinfolk Inspired) */
+body.theme-editorial {
+    --primary: #7d6653;        /* Muted Warm Coffee Roast Brown */
+    --primary-light: #a38e7d;  /* Soft Oat Foam Sand */
+    --secondary: #2b2724;      /* Charcoal Paper Ink Black */
+    --secondary-light: #f7f4ee;/* Warm Creamy Alabaster Paper */
+    --bg-light: #faf9f5;       /* Warm Cozy Fine Paper Background */
+    --bg-dark: #f3efe6;        /* Slightly darker warm oatmeal base */
+    --card-bg: #ffffff;        /* Pure Book Page White */
+    --text-color: #2b2724;     /* Deep Charcoal Paper Ink Black */
+    --text-muted: #7c746e;     /* Soft Muted Espresso Taupe */
+    --soldout-color: #ab574e;  /* Warm Muted Rose Terracotta */
+    --success-color: #516d56;  /* Calm Organic Olive Sage Green */
+    --border-color: #e6dfd5;   /* Delicate Soft Sand Line */
+    --card-radius: 8px;
+    --panel-radius: 12px;
+    --card-shadow: 0 6px 18px rgba(125, 102, 83, 0.04);
+    --card-hover-shadow: 0 12px 28px rgba(125, 102, 83, 0.08);
+    --panel-bg: var(--card-bg);
+    --panel-blur: none;
+    --panel-shadow: 0 10px 30px rgba(125, 102, 83, 0.04);
+    --font-main: 'Noto Serif KR', serif;
+}
+
+/* THEME 3: Swiss Typography (Bauhaus Style) */
+body.theme-swiss {
+    --primary: #e32636;        /* Swiss Red Accent */
+    --primary-light: #ff453a;  /* System Crimson */
+    --secondary: #f5f5f7;      /* Clean Concrete Grey */
+    --secondary-light: #1c1c1e;/* Dark Concrete Grey */
+    --bg-light: #121212;       /* Pure Grey Dark Base */
+    --bg-dark: #000000;        /* Absolute Pitch Black */
+    --card-bg: #1c1c1e;        /* Flat Solid Card Background */
+    --text-color: #ffffff;     /* Solid White Text */
+    --text-muted: #8e8e93;     /* Muted System Grey */
+    --soldout-color: #ff453a;  /* Red Status */
+    --success-color: #30d158;  /* Green Status */
+    --border-color: #3a3a3c;   /* Hard Grid Line */
+    --card-radius: 0px;        /* Pure functional sharp edge */
+    --panel-radius: 0px;
+    --card-shadow: none;
+    --card-hover-shadow: none;
+    --panel-bg: var(--bg-light);
+    --panel-blur: none;
+    --panel-shadow: none;
+    --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* THEME 4: Cyberpunk Espresso (Cyber Neon) */
+body.theme-cyber {
+    --primary: #8a2be2;        /* Electric Neon Violet */
+    --primary-light: #da70d6;  /* Glowing Orchid */
+    --secondary: #00ffff;      /* Cyber Cyan */
+    --secondary-light: #120a2a;/* Deep Void Space Violet */
+    --bg-light: #05030a;       /* Cyberspace Charcoal Grid Base */
+    --bg-dark: #020104;        /* Deep Space Void */
+    --card-bg: #0d071b;        /* Neon Elevated Violet Card */
+    --text-color: #e0dbec;     /* Electric Soft Lilac */
+    --text-muted: #685f8c;     /* Dull Nebula Purple */
+    --soldout-color: #ff007f;  /* Neon Magenta */
+    --success-color: #39ff14;  /* Glowing Acid Lime */
+    --border-color: #241846;   /* Cyber Matrix Border */
+    --card-radius: 10px;
+    --panel-radius: 10px;
+    --card-shadow: 0 0 10px rgba(138, 43, 226, 0.15);
+    --card-hover-shadow: 0 0 20px rgba(0, 255, 255, 0.35);
+    --panel-bg: rgba(13, 7, 27, 0.85);
+    --panel-blur: blur(8px);
+    --panel-shadow: 0 0 15px rgba(138, 43, 226, 0.25);
+    --font-main: 'Courier New', Courier, monospace;
 }
 
 * {
@@ -22,12 +128,21 @@
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--font-main);
     background-color: var(--bg-light);
     color: var(--text-color);
-    line-height: 1.6;
+    line-height: 1.65;
     padding-bottom: 80px;
     -webkit-font-smoothing: antialiased;
+    transition: background-color 0.4s ease, color 0.4s ease, font-family 0.4s ease;
+}
+
+/* Subtle Kinfolk paper grid background for Editorial Theme only */
+body.theme-editorial {
+    background-image: radial-gradient(rgba(125, 102, 83, 0.015) 1px, transparent 0),
+                      radial-gradient(rgba(125, 102, 83, 0.015) 1px, transparent 0);
+    background-size: 24px 24px;
+    background-position: 0 0, 12px 12px;
 }
 
 .container {
@@ -1201,5 +1316,125 @@ input:checked + .switch-slider:before {
     .soldout-badge {
         font-size: 0.72rem;
         padding: 4px 12px;
+        border-radius: 4px;
     }
+}
+
+/* ==========================================
+   Theme Popup & Switcher Styling
+   ========================================== */
+.controls-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.theme-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.theme-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: var(--secondary-light);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.theme-menu-btn:hover {
+    transform: rotate(15deg) scale(1.08);
+    border-color: var(--primary-light);
+    box-shadow: 0 4px 12px rgba(184, 141, 108, 0.2);
+}
+
+.theme-popup {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    width: 180px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--card-radius);
+    padding: 12px;
+    box-shadow: var(--panel-shadow);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transform-origin: top right;
+    transition: opacity 0.28s cubic-bezier(0.16, 1, 0.3, 1), transform 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.theme-popup.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.92) translateY(-8px);
+}
+
+.theme-popup:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0);
+}
+
+.theme-popup-header {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(125, 102, 83, 0.08);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+body.theme-editorial .theme-popup-header {
+    font-family: var(--font-main);
+}
+
+.theme-select-btn {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 6px;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theme-select-btn:hover {
+    background-color: var(--secondary-light);
+    color: var(--primary-light);
+}
+
+.theme-select-btn.active {
+    background-color: var(--primary);
+    color: #ffffff !important;
+}
+
+/* Redefine card dynamic properties to consume theme variables */
+.product-card {
+    border-radius: var(--card-radius) !important;
+    box-shadow: var(--card-shadow) !important;
+}
+
+.product-card:hover {
+    border-color: var(--card-hover-border, var(--primary-light)) !important;
+    box-shadow: var(--card-hover-shadow) !important;
 }

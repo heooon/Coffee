@@ -17,15 +17,31 @@
             <!-- Tier 1: Live Status, Refresh, and In-Stock Toggle -->
             <div class="controls-tier tier-primary">
                 <div class="refresh-panel">
+                    <span class="live-dot"></span>
                     <span id="last-updated">Checking for updates...</span>
                 </div>
                 
-                <div class="toggle-group">
-                    <label class="switch-container">
-                        <input type="checkbox" id="instock-only-toggle">
-                        <span class="switch-slider"></span>
-                    </label>
-                    <span class="toggle-text">판매 중만 보기</span>
+                <div class="controls-actions">
+                    <div class="toggle-group">
+                        <label class="switch-container">
+                            <input type="checkbox" id="instock-only-toggle">
+                            <span class="switch-slider"></span>
+                        </label>
+                        <span class="toggle-text">판매 중만 보기</span>
+                    </div>
+                    
+                    <div class="theme-menu-container">
+                        <button id="theme-menu-btn" class="theme-menu-btn" title="디자인 테마 변경">
+                            <i class="fa-solid fa-palette"></i>
+                        </button>
+                        <div id="theme-popup" class="theme-popup hidden">
+                            <div class="theme-popup-header">디자인 스타일</div>
+                            <button class="theme-select-btn active" data-theme="warm">☕ 에스프레소 다크</button>
+                            <button class="theme-select-btn" data-theme="editorial">📖 에디토리얼 페이퍼</button>
+                            <button class="theme-select-btn" data-theme="swiss">🇨🇭 스위스 미니멀</button>
+                            <button class="theme-select-btn" data-theme="cyber">⚡ 사이버 네온</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -104,7 +120,7 @@
     </main>
 
     <footer class="footer">
-        <p>&copy; 2026 Coffee Stock Board. Powered by GitHub Pages & GitHub Actions.</p>
+        <p>&copy; 2026 Coffee Stock Board.</p>
     </footer>
 
     <script src="script.js?v=1.2.1"></script>
