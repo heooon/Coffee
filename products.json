@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 59,
-    "last_scraped": "2026-06-19 22:44",
+    "last_scraped": "2026-06-19 22:50",
     "products": [
         {
             "store": "502 Coffee",
@@ -126,7 +126,7 @@
         {
             "store": "존스몰",
             "name": "에스프레소 블랜드",
-            "price": 70000,
+            "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
             "soldOut": false
@@ -134,7 +134,7 @@
         {
             "store": "존스몰",
             "name": "베이스먼트 블랜드",
-            "price": 60000,
+            "price": 14000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
             "soldOut": false
@@ -142,7 +142,7 @@
         {
             "store": "존스몰",
             "name": "시즈널 블랜드",
-            "price": 80000,
+            "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11213802394",
             "soldOut": false
@@ -150,7 +150,7 @@
         {
             "store": "딥다이브",
             "name": "케냐 뚱구리 내추럴 헤비 100g",
-            "price": 12000,
+            "price": 10000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260611_51/1781180522095Crper_PNG/21106914014644484_2088083138.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
             "soldOut": false
@@ -158,7 +158,7 @@
         {
             "store": "딥다이브",
             "name": "에티오피아 게뎁 할로 베리티 비르하누 디도 아와초 슬로우드라이 내추럴 200g, 1개",
-            "price": 18000,
+            "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260606_34/1780712097920iKoXy_PNG/5679914481556520_275093139.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13624322367",
             "soldOut": true
@@ -166,7 +166,7 @@
         {
             "store": "딥다이브",
             "name": "콜롬비아 엘 디비소 핑크 버번 모스토 코퍼먼티드 워시드 100g",
-            "price": 18000,
+            "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260611_35/1781182129264glcXe_PNG/4938567942347689_723856227.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629854699",
             "soldOut": false
@@ -182,7 +182,7 @@
         {
             "store": "딥다이브",
             "name": "케냐 뚱구리 AA 풀리 워시드 100g",
-            "price": 12000,
+            "price": 10000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260611_46/1781180866461FWw9f_PNG/28460510005607204_659858418.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629834889",
             "soldOut": false
@@ -198,7 +198,7 @@
         {
             "store": "딥다이브",
             "name": "에티오피아 게뎁 할로 베리티 비르하누 디도 아와초 슬로우드라이 내추럴 100g, 1개",
-            "price": 10000,
+            "price": 9000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260606_34/1780712097920iKoXy_PNG/5679914481556520_275093139.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13624322366",
             "soldOut": true
@@ -214,7 +214,7 @@
         {
             "store": "딥다이브",
             "name": "에티오피아 예가체프 첼베사 워시드 200g, 1개",
-            "price": 18000,
+            "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778387661221dMXQG_PNG/10544004319350623_2126757700.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509846285",
             "soldOut": false
@@ -222,7 +222,7 @@
         {
             "store": "딥다이브",
             "name": "에티오피아 예가체프 첼베사 워시드 100g, 1개",
-            "price": 10000,
+            "price": 9000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778387661221dMXQG_PNG/10544004319350623_2126757700.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509846284",
             "soldOut": false
@@ -230,7 +230,7 @@
         {
             "store": "딥다이브",
             "name": "에티오피아 게샤빌리지 나르샤 게샤1931 내추럴 137, 100g",
-            "price": 44000,
+            "price": 40000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260606_178/1780706823008GA4hM_PNG/8742961701122126_1683261034.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13624270797",
             "soldOut": true
@@ -254,7 +254,7 @@
         {
             "store": "딥다이브",
             "name": "에티오피아 예가체프 첼베사 워시드 500g, 1개",
-            "price": 40000,
+            "price": 37000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260510_111/1778387661221dMXQG_PNG/10544004319350623_2126757700.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509846286",
             "soldOut": false
@@ -302,7 +302,7 @@
         {
             "store": "딥다이브",
             "name": "new 딸기퐁듀 블렌드 100g, 1개",
-            "price": 13000,
+            "price": 12000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
             "soldOut": true
@@ -310,7 +310,7 @@
         {
             "store": "딥다이브",
             "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 100g, 1개",
-            "price": 14000,
+            "price": 13000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260603_85/17804605573245mRHe_PNG/8496696025701765_300553367.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517753",
             "soldOut": false
@@ -326,7 +326,7 @@
         {
             "store": "딥다이브",
             "name": "new 딸기퐁듀 블렌드 200g, 1개",
-            "price": 26000,
+            "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123166749",
             "soldOut": true
@@ -334,7 +334,7 @@
         {
             "store": "딥다이브",
             "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 200g, 1개",
-            "price": 26000,
+            "price": 24000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260603_85/17804605573245mRHe_PNG/8496696025701765_300553367.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517754",
             "soldOut": false
@@ -342,7 +342,7 @@
         {
             "store": "딥다이브",
             "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 1kg, 1개",
-            "price": 33000,
+            "price": 31000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/7619449435",
             "soldOut": false
@@ -350,7 +350,7 @@
         {
             "store": "딥다이브",
             "name": "new 딸기퐁듀 블렌드 500g, 1개",
-            "price": 60000,
+            "price": 45000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123184090",
             "soldOut": true
@@ -358,7 +358,7 @@
         {
             "store": "딥다이브",
             "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 500g, 1개",
-            "price": 50000,
+            "price": 48000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260603_85/17804605573245mRHe_PNG/8496696025701765_300553367.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517755",
             "soldOut": false
@@ -366,7 +366,7 @@
         {
             "store": "딥다이브",
             "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 2kg, 1개",
-            "price": 64000,
+            "price": 60000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204580",
             "soldOut": false
@@ -374,7 +374,7 @@
         {
             "store": "딥다이브",
             "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 5kg, 1개",
-            "price": 150000,
+            "price": 145000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13634217602",
             "soldOut": false
@@ -382,7 +382,7 @@
         {
             "store": "딥다이브",
             "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 10kg, 1개",
-            "price": 300000,
+            "price": 280000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_55/1760794877197AKXUz_PNG/36567714188247643_1032897392.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13634217603",
             "soldOut": false
