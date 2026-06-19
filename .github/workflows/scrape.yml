@@ -1,0 +1,38 @@
+name: Scheduled Coffee Scraper
+
+on:
+  schedule:
+    # Runs every 4 hours (At minute 0 of every 4th hour)
+    # This corresponds to KST (Korean Standard Time): 01:00, 05:00, 09:00, 13:00, 17:00, 21:00
+    - cron: '0 */4 * * *'
+  workflow_dispatch: # Allows you to manually trigger the scraping in the GitHub interface anytime!
+
+permissions:
+  contents: write # Grants GitHub Actions write permissions to commit updated products.json back to the repo
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests beautifulsoup4
+
+      - name: Run Coffee Scraper
+        run: python scrape.py
+
+      - name: Commit and Push Updated products.json
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add products.json
+          git diff-index --quiet HEAD || git commit -m "chore: Auto-update products.json [skip ci]"
+          git push
