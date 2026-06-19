@@ -1,6 +1,11 @@
 name: Scheduled Coffee Scraper
 
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'products.json'
   schedule:
     # Runs every 4 hours (At minute 0 of every 4th hour)
     # This corresponds to KST (Korean Standard Time): 01:00, 05:00, 09:00, 13:00, 17:00, 21:00
