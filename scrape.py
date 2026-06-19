@@ -232,7 +232,7 @@ def main():
         future_johns = executor.submit(
             scrape_naver_smartstore, 
             "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1", 
-            "존스알커피"
+            "존스몰"
         )
         future_deepdive1 = executor.submit(
             scrape_naver_smartstore, 

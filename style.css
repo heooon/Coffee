@@ -713,40 +713,47 @@ input:checked + .switch-slider:before {
 
 .products-grid.view-list .product-info {
     padding: 0 0 0 20px; /* Snug up to the image */
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column !important; /* Stack name and price vertically! */
+    align-items: flex-start !important;
+    justify-content: center !important;
     width: 100%;
-    gap: 30px;
+    gap: 6px !important;
 }
 
 .products-grid.view-list .product-name {
     font-size: 1rem;
     margin-bottom: 0;
-    height: auto;
+    width: 100%;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    height: auto !important;
+    max-height: 2.8em; /* Restrict name to maximum 2 lines */
     flex-grow: 1;
 }
 
 .products-grid.view-list .product-footer {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-top: 0;
     padding-top: 0;
     border-top: none;
-    gap: 30px;
     flex-shrink: 0;
 }
 
 .products-grid.view-list .price-wrapper {
-    align-items: flex-end;
+    align-items: flex-start !important; /* Align price details nicely */
+}
+
+.products-grid.view-list .buy-link {
+    display: none !important; /* Hide the arrow button entirely! */
 }
 
 /* ==========================================
-   Text-Only View Overrides (Cozy Chalk Menu Dotted Leaders)
+   Text-Only View Overrides (Cozy Chalk Menu Row Layout)
    ========================================== */
 .products-grid.view-text {
     grid-template-columns: 1fr;
@@ -765,11 +772,10 @@ input:checked + .switch-slider:before {
 
 .products-grid.view-text .product-info {
     padding: 0;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column !important; /* Name on top, price below */
+    align-items: flex-start !important;
     width: 100%;
-    gap: 15px;
+    gap: 4px !important;
 }
 
 .products-grid.view-text .store-text-label {
@@ -783,42 +789,38 @@ input:checked + .switch-slider:before {
     display: flex;
     align-items: center;
     overflow: hidden;
-    flex-grow: 1;
+    width: 100%;
 }
 
 .products-grid.view-text .name-text {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex-shrink: 1; /* Allow name to shrink if screen is narrow */
+    flex-shrink: 1;
 }
 
-/* Dotted leader effect bridging Name and Price */
+/* Remove dotted leader since price is now on a new row */
 .products-grid.view-text .product-name::after {
-    content: '................................................................................................................................................................................................................................................................................';
-    color: #3d352e; /* Warm dark gray dotted spacer */
-    margin: 0 15px;
-    overflow: hidden;
-    white-space: nowrap;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 0; /* Base size of 0px prevents dots from squeezing the name text! */
-    font-weight: 300;
-    letter-spacing: 4px;
+    display: none !important;
 }
 
 .products-grid.view-text .product-footer {
-    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
     margin-top: 0;
     padding-top: 0;
     border-top: none;
-    gap: 20px;
     flex-shrink: 0;
 }
 
 .products-grid.view-text .price-wrapper {
-    align-items: flex-end;
+    align-items: flex-start !important;
+}
+
+.products-grid.view-text .buy-link {
+    display: none !important; /* Hide arrow button entirely */
 }
 
 /* Footer Styling */
