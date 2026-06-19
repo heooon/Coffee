@@ -665,6 +665,11 @@ input:checked + .switch-slider:before {
     vertical-align: middle;
 }
 
+/* Tab text mobile (hidden by default on desktop) */
+.tab-text-mobile {
+    display: none;
+}
+
 /* ==========================================
    List View Overrides (Sleek Clean Editorial Row)
    ========================================== */
@@ -839,6 +844,14 @@ input:checked + .switch-slider:before {
         border-radius: 16px;
     }
     
+    /* Responsive Tab Text Swapping */
+    .tab-text-full {
+        display: none !important;
+    }
+    .tab-text-mobile {
+        display: inline !important;
+    }
+    
     /* Row layout inside primary tier on mobile */
     .controls-tier.tier-primary {
         flex-direction: row !important;
@@ -884,12 +897,14 @@ input:checked + .switch-slider:before {
         grid-template-columns: repeat(4, 1fr) !important;
         width: 100% !important;
         box-sizing: border-box;
-        padding: 3px !important;
+        padding: 2px !important;
+        gap: 2px !important;
     }
     
     .controls-panel .tab-btn {
-        padding: 8px 2px !important;
-        font-size: 0.75rem !important;
+        padding: 6px 1px !important;
+        font-size: 0.68rem !important; /* Tiny, fits perfectly */
+        letter-spacing: -0.8px !important; /* Tight letter spacing */
         text-align: center;
         display: block;
         width: 100%;
@@ -901,12 +916,13 @@ input:checked + .switch-slider:before {
         grid-template-columns: repeat(3, 1fr) !important;
         width: 100% !important;
         box-sizing: border-box;
-        padding: 3px !important;
+        padding: 2px !important;
+        gap: 2px !important;
     }
 
     .controls-panel .view-btn {
-        padding: 8px 2px !important;
-        font-size: 0.75rem !important;
+        padding: 6px 1px !important;
+        font-size: 0.68rem !important;
         text-shadow: none;
         text-align: center;
         display: block;

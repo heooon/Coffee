@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Initial View Mode Load
-    const savedView = localStorage.getItem("coffee-view-mode") || "grid";
+    const savedView = localStorage.getItem("coffee-view-mode") || "list";
     setViewMode(savedView);
 
     // Initial load
