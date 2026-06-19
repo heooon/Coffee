@@ -201,8 +201,10 @@ def scrape_naver_smartstore(url, store_name):
                 channel_name = "johnsrcoffee"
                 if "deepdiveroasters" in url:
                     channel_name = "deepdiveroasters"
-                if "shinyangroaster" in url:
+                elif "shinyangroaster" in url:
                     channel_name = "shinyangroaster"
+                elif "identity_coffeelab" in url:
+                    channel_name = "identity_coffeelab"
                 
                 for p in products_list:
                     name = p.get("name") or p.get("productName")
