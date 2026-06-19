@@ -59,7 +59,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data.success) {
                 allProducts = data.products || [];
                 console.log(`Successfully fetched ${allProducts.length} products.`);
-                updateStats(allProducts);
                 renderProducts();
                 updateLastUpdated(data.last_scraped);
             } else {
@@ -97,6 +96,14 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderProducts() {
         try {
             productsGrid.innerHTML = "";
+            
+            // Update stats based on active store filter
+            const storeProducts = allProducts.filter((product) => {
+                if (!product) return false;
+                const storeName = product.store || "";
+                return (activeStoreFilter === "all" || storeName === activeStoreFilter);
+            });
+            updateStats(storeProducts);
             
             const filteredProducts = allProducts.filter((product) => {
                 if (!product) {
