@@ -980,10 +980,10 @@ input:checked + .switch-slider:before {
         width: 100%;
     }
 
-    /* Sort Tabs Grid: 4-column equal width fit */
+    /* Sort Tabs Grid: 2-column equal width fit */
     .controls-panel .sort-tabs {
         display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr) !important;
         width: 100% !important;
         box-sizing: border-box;
         padding: 2px !important;
