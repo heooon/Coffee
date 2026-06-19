@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let activeStoreFilter = "all";
     let showInStockOnly = false;
     let searchQuery = "";
+    let activeSort = "default";
 
     // DOM Elements
     const productsGrid = document.getElementById("products-grid");
@@ -14,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search-input");
     const storeTabs = document.querySelectorAll(".tab-btn");
     const viewBtns = document.querySelectorAll(".view-btn");
+    const sortBtns = document.querySelectorAll(".sort-btn");
     const instockToggle = document.getElementById("instock-only-toggle");
     const refreshBtn = document.getElementById("refresh-btn");
     const lastUpdatedSpan = document.getElementById("last-updated");
@@ -116,7 +118,29 @@ document.addEventListener("DOMContentLoaded", () => {
             noProducts.classList.add("hidden");
             productsGrid.classList.remove("hidden");
 
-            filteredProducts.forEach((product, index) => {
+            // Apply sorting
+            const sortedProducts = [...filteredProducts];
+            if (activeSort === "store") {
+                sortedProducts.sort((a, b) => {
+                    const storeA = a.store || "";
+                    const storeB = b.store || "";
+                    return storeA.localeCompare(storeB, "ko");
+                });
+            } else if (activeSort === "price-asc") {
+                sortedProducts.sort((a, b) => {
+                    const priceA = a.price || 0;
+                    const priceB = b.price || 0;
+                    return priceA - priceB;
+                });
+            } else if (activeSort === "price-desc") {
+                sortedProducts.sort((a, b) => {
+                    const priceA = a.price || 0;
+                    const priceB = b.price || 0;
+                    return priceB - priceA;
+                });
+            }
+
+            sortedProducts.forEach((product, index) => {
                 try {
                     const storeName = product.store || "알 수 없음";
                     const productName = product.name || "이름 없는 원두";
@@ -278,6 +302,22 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.addEventListener("click", () => {
                 const view = btn.getAttribute("data-view");
                 setViewMode(view);
+            });
+        }
+    });
+
+    sortBtns.forEach((btn) => {
+        if (btn) {
+            btn.addEventListener("click", () => {
+                sortBtns.forEach((b) => {
+                    if (b) {
+                        b.classList.remove("active");
+                    }
+                });
+                btn.classList.add("active");
+
+                activeSort = btn.getAttribute("data-sort");
+                renderProducts();
             });
         }
     });

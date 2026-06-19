@@ -319,6 +319,45 @@ input:checked + .switch-slider:before {
     box-shadow: 0 4px 10px rgba(184, 141, 108, 0.25);
 }
 
+/* Sort Switch Tabs (Default, Store, Price Asc, Price Desc) */
+.sort-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-tabs {
+    background-color: var(--bg-dark);
+    border-radius: 30px;
+    padding: 4px;
+    display: flex;
+    gap: 2px;
+    border: 1px solid var(--border-color);
+}
+
+.sort-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 26px;
+    background-color: transparent;
+    color: var(--text-muted);
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: var(--transition);
+    white-space: nowrap;
+}
+
+.sort-btn:hover {
+    color: #ffffff;
+}
+
+.sort-btn.active {
+    background-color: var(--primary-light);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(184, 141, 108, 0.25);
+}
+
 /* Refresh Panel */
 .refresh-panel {
     display: flex;
@@ -889,7 +928,7 @@ input:checked + .switch-slider:before {
         width: 100%;
     }
 
-    .controls-tier.tier-roastery .filter-group, .controls-tier.tier-views .view-group {
+    .controls-tier.tier-roastery .filter-group, .controls-tier.tier-views .view-group, .controls-tier.tier-views .sort-group {
         flex-direction: column;
         align-items: stretch;
         width: 100%;
@@ -926,6 +965,25 @@ input:checked + .switch-slider:before {
     }
 
     .controls-panel .view-btn {
+        padding: 6px 1px !important;
+        font-size: 0.68rem !important;
+        text-shadow: none;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    /* Sort Tabs Grid: 4-column equal width fit */
+    .controls-panel .sort-tabs {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        padding: 2px !important;
+        gap: 2px !important;
+    }
+
+    .controls-panel .sort-btn {
         padding: 6px 1px !important;
         font-size: 0.68rem !important;
         text-shadow: none;
