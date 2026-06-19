@@ -344,10 +344,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.classList.add("active");
                 const dir = sortDirections[type];
                 const arrow = dir === "asc" ? " ▲" : " ▼";
-                btn.textContent = (type === "store" ? "스토어순" : "가격순") + arrow;
+                btn.textContent = (type === "store" ? "Store" : "Price") + arrow;
             } else {
                 btn.classList.remove("active");
-                btn.textContent = type === "store" ? "스토어순" : "가격순";
+                btn.textContent = type === "store" ? "Store" : "Price";
             }
         });
     }

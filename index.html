@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts for modern typography -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=1.2.1">
+    <link rel="stylesheet" href="style.css?v=1.2.2">
 </head>
 <body>
     <main class="container">
@@ -27,7 +27,7 @@
                             <input type="checkbox" id="instock-only-toggle">
                             <span class="switch-slider"></span>
                         </label>
-                        <span class="toggle-text">판매 중만 보기</span>
+                        <span class="toggle-text">품절 제외</span>
                     </div>
                     
                     <div class="theme-menu-container">
@@ -35,7 +35,7 @@
                             <i class="fa-solid fa-palette"></i>
                         </button>
                         <div id="theme-popup" class="theme-popup hidden">
-                            <div class="theme-popup-header">디자인 스타일</div>
+                            <div class="theme-popup-header">Theme</div>
                             <button class="theme-select-btn active" data-theme="warm">☕ 에스프레소 다크</button>
                             <button class="theme-select-btn" data-theme="editorial">📖 에디토리얼 페이퍼</button>
                             <button class="theme-select-btn" data-theme="swiss">🇨🇭 스위스 미니멀</button>
@@ -48,9 +48,9 @@
             <!-- Tier 2: Roastery Filters -->
             <div class="controls-tier tier-roastery">
                 <div class="filter-group">
-                    <span class="filter-label">로스터리</span>
+                    <span class="filter-label">Roastery</span>
                     <div class="tabs">
-                        <button class="tab-btn active" data-store="all">전체보기</button>
+                        <button class="tab-btn active" data-store="all">All</button>
                         <button class="tab-btn" data-store="502">502</button>
                         <button class="tab-btn" data-store="존스몰">존스몰</button>
                         <button class="tab-btn" data-store="딥다이브">딥다이브</button>
@@ -63,19 +63,19 @@
             <!-- Tier 3: View Modes & Sorting (Line Break / Dedicated New Row) -->
             <div class="controls-tier tier-views">
                 <div class="view-group">
-                    <span class="filter-label">보기 모드</span>
+                    <span class="filter-label">Layout</span>
                     <div class="view-tabs">
-                        <button class="view-btn active" data-view="list">📰 리스트</button>
-                        <button class="view-btn" data-view="grid">🖼️ 그리드</button>
-                        <button class="view-btn" data-view="text">📝 텍스트</button>
+                        <button class="view-btn active" data-view="list">📰 List</button>
+                        <button class="view-btn" data-view="grid">🖼️ Card</button>
+                        <button class="view-btn" data-view="text">📝 Text</button>
                     </div>
                 </div>
 
                 <div class="sort-group">
-                    <span class="filter-label">정렬 기준</span>
+                    <span class="filter-label">Sort By</span>
                     <div class="sort-tabs">
-                        <button class="sort-btn active" data-sort="store">스토어순 ▲</button>
-                        <button class="sort-btn" data-sort="price">가격순</button>
+                        <button class="sort-btn active" data-sort="store">Store ▲</button>
+                        <button class="sort-btn" data-sort="price">Price</button>
                     </div>
                 </div>
             </div>
@@ -123,6 +123,6 @@
         <p>&copy; 2026 Coffee Stock Board.</p>
     </footer>
 
-    <script src="script.js?v=1.2.1"></script>
+    <script src="script.js?v=1.2.2"></script>
 </body>
 </html>
