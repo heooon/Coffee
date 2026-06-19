@@ -833,15 +833,18 @@ input:checked + .switch-slider:before {
     margin-bottom: 0;
     height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Align store label to the top line of text */
     overflow: hidden;
     width: 100%;
 }
 
 .products-grid.view-text .name-text {
-    white-space: nowrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: normal;
     flex-shrink: 1;
 }
 
@@ -1070,10 +1073,12 @@ input:checked + .switch-slider:before {
     }
 
     .products-grid.view-text .name-text {
-        white-space: nowrap !important;
+        display: -webkit-box !important;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical !important;
         overflow: hidden !important;
         text-overflow: ellipsis !important;
-        display: block !important;
+        white-space: normal !important;
         flex-shrink: 1 !important;
     }
 
