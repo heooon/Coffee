@@ -255,20 +255,27 @@ def main():
         future_deepdive1 = executor.submit(
             scrape_naver_smartstore, 
             "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1", 
-            "딥다이브 로스터스"
+            "딥다이브"
         )
         future_deepdive2 = executor.submit(
             scrape_naver_smartstore, 
             "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1", 
-            "딥다이브 로스터스"
+            "딥다이브"
+        )
+
+        future_deepdive2 = executor.submit(
+            scrape_naver_smartstore, 
+            "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1", 
+            "신양"
         )
         
         products_502 = future_502.result()
         products_johns = future_johns.result()
         products_deepdive1 = future_deepdive1.result()
         products_deepdive2 = future_deepdive2.result()
+        products_shin = future_shin.result()
         
-    all_products = products_502 + products_johns + products_deepdive1 + products_deepdive2
+    all_products = products_502 + products_johns + products_deepdive1 + products_deepdive2 + products_shin
     
     # Deduplicate
     seen_urls = set()
