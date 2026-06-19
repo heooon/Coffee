@@ -45,6 +45,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    // Helper: get mobile deep link for Naver App
+    function getOptimalLink(url) {
+        if (!url || url === "#") {
+            return "#";
+        }
+        // Detect mobile devices (iOS / Android)
+        const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        if (isMobile) {
+            return `naversearchapp://inappbrowser?url=${encodeURIComponent(url)}`;
+        }
+        return url;
+    }
+
     // Fetch products from products.json
     async function fetchProducts() {
         showLoading();
@@ -163,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const isSoldOut = !!product.soldOut;
 
                     const card = document.createElement("a");
-                    card.href = productUrl;
+                    card.href = getOptimalLink(productUrl);
                     card.target = "_blank";
                     card.className = `product-card ${isSoldOut ? "is-soldout" : ""}`;
 
