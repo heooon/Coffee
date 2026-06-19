@@ -15,21 +15,6 @@
     --transition: all 0.38s cubic-bezier(0.16, 1, 0.3, 1); /* Cozy premium organic transition */
 }
 
-body.light-theme {
-    --primary: #8c654f;        /* Slightly darker espresso brown for contrast */
-    --primary-light: #a67c52;  /* Latte Sand Gold */
-    --secondary: #4e3629;      /* Dark Espresso Brown Text */
-    --secondary-light: #eae5db;/* Soft warm cream latte gray */
-    --bg-light: #f7f5f0;       /* Cozy Latte Cream Light Background */
-    --bg-dark: #eeeae0;        /* Warm Oat Milk Sand Base */
-    --card-bg: #ffffff;        /* Pure White Card */
-    --text-color: #2d2621;     /* Rich Roasted Coffee Black */
-    --text-muted: #7c7267;     /* Soft Coffee Foam Gray */
-    --soldout-color: #b84e46;  /* Deep Matte Terracotta Clay Red */
-    --success-color: #4a6f52;  /* Deep Organic Sage Green */
-    --border-color: #e2dcce;   /* Soft Milk Cream Border */
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -134,41 +119,6 @@ body {
     position: relative; 
     z-index: 10;
     transition: var(--transition);
-}
-
-body.light-theme .controls-panel {
-    background: rgba(255, 255, 255, 0.75);
-    border-color: rgba(140, 101, 79, 0.15);
-    box-shadow: 0 15px 35px rgba(140, 101, 79, 0.08);
-}
-
-/* Controls Actions wrap (Toggle + Theme Switch) */
-.controls-actions {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-/* Theme Toggle Button */
-.theme-toggle-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border: 1px solid var(--border-color);
-    background-color: var(--bg-dark);
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.1rem;
-    transition: var(--transition);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.theme-toggle-btn:hover {
-    transform: rotate(15deg) scale(1.08);
-    border-color: var(--primary-light);
-    box-shadow: 0 4px 12px rgba(184, 141, 108, 0.25);
 }
 
 /* Live Indicator Dot */
@@ -589,20 +539,10 @@ input:checked + .switch-slider:before {
     text-decoration: none; /* Strip link underlines */
 }
 
-body.light-theme .product-card {
-    background: rgba(255, 255, 255, 0.8);
-    border-color: rgba(140, 101, 79, 0.12);
-    box-shadow: 0 10px 25px rgba(140, 101, 79, 0.05);
-}
-
 .product-card:hover {
     transform: translateY(-8px);
     border-color: var(--primary-light); 
     box-shadow: 0 15px 35px rgba(184, 141, 108, 0.25);
-}
-
-body.light-theme .product-card:hover {
-    box-shadow: 0 15px 35px rgba(140, 101, 79, 0.12);
 }
 
 .img-container {

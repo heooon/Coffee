@@ -126,9 +126,9 @@ def scrape_502_coffee():
     return products
 
 def scrape_naver_smartstore(url, store_name):
-    """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 5 retries)"""
-    # Try up to 5 times to fetch and successfully parse the JSON payload
-    for attempt in range(5):
+    """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 8 retries)"""
+    # Try up to 8 times to fetch and successfully parse the JSON payload
+    for attempt in range(8):
         products = []
         try:
             custom_headers = HEADERS.copy()
@@ -136,7 +136,7 @@ def scrape_naver_smartstore(url, store_name):
             
             r = fetch_url(url, custom_headers)
             if r.status_code != 200:
-                print(f"[시도 {attempt+1}/5] Naver [{store_name}] HTTP 오류: {r.status_code}. 재시도합니다...")
+                print(f"[시도 {attempt+1}/8] Naver [{store_name}] HTTP 오류: {r.status_code}. 재시도합니다...")
                 time.sleep(2.5)
                 continue
             
@@ -144,7 +144,7 @@ def scrape_naver_smartstore(url, store_name):
             script_tag = soup.find("script", string=re.compile(r"window\.__PRELOADED_STATE__\s*="))
             
             if not script_tag:
-                print(f"[시도 {attempt+1}/5] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
+                print(f"[시도 {attempt+1}/8] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
                 time.sleep(3.5)
                 continue
             
@@ -154,7 +154,7 @@ def scrape_naver_smartstore(url, store_name):
                 match = re.search(r"window\.__PRELOADED_STATE__\s*=\s*({.+})", content)
             
             if not match:
-                print(f"[시도 {attempt+1}/5] Naver [{store_name}] 정규표현식 매칭 실패. 재시도...")
+                print(f"[시도 {attempt+1}/8] Naver [{store_name}] 정규표현식 매칭 실패. 재시도...")
                 time.sleep(2.5)
                 continue
                 
@@ -239,11 +239,11 @@ def scrape_naver_smartstore(url, store_name):
                     print(f"[성공] Naver [{store_name}] 수집 성공! (수집 개수: {len(products)})")
                     return products
             else:
-                print(f"[시도 {attempt+1}/5] Naver [{store_name}] 빈 리스트 응답. 재시도...")
+                print(f"[시도 {attempt+1}/8] Naver [{store_name}] 빈 리스트 응답. 재시도...")
                 time.sleep(3.5)
                 
         except Exception as e:
-            print(f"Error scraping {store_name} (Attempt {attempt+1}/5): {e}")
+            print(f"Error scraping {store_name} (Attempt {attempt+1}/8): {e}")
             time.sleep(3.5)
             
     print(f"[최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다.")
