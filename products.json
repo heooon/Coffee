@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 76,
-    "last_scraped": "2026-06-20 06:10",
+    "last_scraped": "2026-06-20 11:16",
     "products": [
         {
             "store": "502",
@@ -473,7 +473,7 @@
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260618_158/17817637880552X6Hg_PNG/27906811040907450_1101129646.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13637087739",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "아이덴티티",
