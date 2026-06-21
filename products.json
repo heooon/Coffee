@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 78,
-    "last_scraped": "2026-06-21 17:38",
+    "count": 79,
+    "last_scraped": "2026-06-21 23:06",
     "products": [
         {
             "store": "502",
@@ -476,6 +476,14 @@
             "soldOut": false
         },
         {
+            "store": "신양",
+            "name": "케냐,  무티투AA  200g (Kenya, Mutitu AA 200g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13636506623",
+            "soldOut": false
+        },
+        {
             "store": "아이덴티티",
             "name": "(스플릿 시리즈) 에티오피아 시다마 부라 몰케 허니 (100g x 2)",
             "price": 23000,
@@ -513,7 +521,7 @@
             "price": 11000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260403_292/17751804187826ewRL_PNG/24759574642692736_427511943.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346307683",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "아이덴티티",
