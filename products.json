@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 79,
-    "last_scraped": "2026-06-22 06:14",
+    "last_scraped": "2026-06-22 13:00",
     "products": [
         {
             "store": "502",
@@ -489,7 +489,7 @@
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260618_158/17817637880552X6Hg_PNG/27906811040907450_1101129646.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13637087739",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -521,7 +521,7 @@
             "price": 14500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260611_168/1781155955202c35ll_PNG/13127576891589515_734641770.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13629347417",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -529,7 +529,7 @@
             "price": 11000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260403_292/17751804187826ewRL_PNG/24759574642692736_427511943.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346307683",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -585,7 +585,7 @@
             "price": 36000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260611_168/1781155955202c35ll_PNG/13127576891589515_734641770.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13629351190",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
