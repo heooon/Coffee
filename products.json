@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 80,
-    "last_scraped": "2026-06-23 07:01",
+    "count": 79,
+    "last_scraped": "2026-06-23 11:58",
     "products": [
         {
             "store": "502",
@@ -429,14 +429,6 @@
         },
         {
             "store": "신양",
-            "name": "에티오피아, 시다마 보체사  200g (Ethiopia, Rumudamo)",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13361832511",
-            "soldOut": false
-        },
-        {
-            "store": "신양",
             "name": "콜롬비아, 엘 베르헬 _워터멜론 200g (Colombia, El Vergel _Watermelon 200g)",
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
@@ -497,7 +489,7 @@
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260618_158/17817637880552X6Hg_PNG/27906811040907450_1101129646.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13637087739",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "아이덴티티",
