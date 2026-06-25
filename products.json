@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 73,
-    "last_scraped": "2026-06-25 06:21",
+    "count": 72,
+    "last_scraped": "2026-06-25 11:59",
     "products": [
         {
             "store": "502",
@@ -412,12 +412,20 @@
             "soldOut": false
         },
         {
+            "store": "신양",
+            "name": "에티오피아, 게뎁, 라레사 200g (Ethiopia, Gedeb, Lalesa)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13641426846",
+            "soldOut": false
+        },
+        {
             "store": "아이덴티티",
             "name": "(스플릿 시리즈) 에티오피아 시다마 부라 몰케 허니 (100g x 2)",
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260618_158/17817637880552X6Hg_PNG/27906811040907450_1101129646.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13637087739",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -485,14 +493,6 @@
         },
         {
             "store": "아이덴티티",
-            "name": "시즌 큐레이션(200g)",
-            "price": 14500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260611_168/1781155955202c35ll_PNG/13127576891589515_734641770.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13629347417",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
             "name": "키치 블렌드(1kg) (분쇄요청불가)",
             "price": 37000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
@@ -522,14 +522,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
             "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "시즌 큐레이션(500g)",
-            "price": 36000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260611_168/1781155955202c35ll_PNG/13127576891589515_734641770.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13629351190",
-            "soldOut": true
         },
         {
             "store": "아이덴티티",
