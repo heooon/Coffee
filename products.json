@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 72,
-    "last_scraped": "2026-06-26 06:42",
+    "count": 71,
+    "last_scraped": "2026-06-26 12:29",
     "products": [
         {
             "store": "502",
@@ -261,7 +261,7 @@
         },
         {
             "store": "딥다이브",
-            "name": "[딥다이브]new 딸기퐁듀 블렌드(6월 26일 재출시 예정) 100g, 1개",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 100g, 1개",
             "price": 13000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
@@ -285,7 +285,7 @@
         },
         {
             "store": "딥다이브",
-            "name": "[딥다이브]new 딸기퐁듀 블렌드(6월 26일 재출시 예정) 200g, 1개",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 200g, 1개",
             "price": 24000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123166749",
@@ -309,7 +309,7 @@
         },
         {
             "store": "딥다이브",
-            "name": "[딥다이브]new 딸기퐁듀 블렌드(6월 26일 재출시 예정) 500g, 1개",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 500g, 1개",
             "price": 50000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123184090",
@@ -425,7 +425,7 @@
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260618_158/17817637880552X6Hg_PNG/27906811040907450_1101129646.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13637087739",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -441,7 +441,7 @@
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260622_3/1782111331297chfBF_PNG/14082952948357944_689010551.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13640177811",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -553,14 +553,6 @@
             "price": 11000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260403_292/17751804187826ewRL_PNG/24759574642692736_427511943.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346307683",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "케냐 은가라투아 AA 워시드(150g)",
-            "price": 17000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260513_166/1778644800186A0Acv_PNG/112777663263060483_1055135022.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13522285447",
             "soldOut": false
         },
         {
