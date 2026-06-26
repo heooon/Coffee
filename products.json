@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 71,
-    "last_scraped": "2026-06-26 12:29",
+    "last_scraped": "2026-06-26 16:51",
     "products": [
         {
             "store": "502",
@@ -253,19 +253,19 @@
         },
         {
             "store": "딥다이브",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 100g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
             "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 100g, 1개",
             "price": 13000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517753",
             "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 100g, 1개",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
-            "soldOut": true
         },
         {
             "store": "딥다이브",
@@ -277,19 +277,19 @@
         },
         {
             "store": "딥다이브",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 200g, 1개",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123166749",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
             "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 200g, 1개",
             "price": 24000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517754",
             "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 200g, 1개",
-            "price": 24000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123166749",
-            "soldOut": true
         },
         {
             "store": "딥다이브",
@@ -313,7 +313,7 @@
             "price": 50000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123184090",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "딥다이브",
