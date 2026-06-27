@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 71,
-    "last_scraped": "2026-06-28 02:07",
+    "last_scraped": "2026-06-28 06:01",
     "products": [
         {
             "store": "502",
@@ -85,14 +85,6 @@
         },
         {
             "store": "존스몰",
-            "name": "에스프레소 블랜드",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
-            "soldOut": false
-        },
-        {
-            "store": "존스몰",
             "name": "200g 케냐 키아무구모 AA 워시드",
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260619_163/1781858198085XWzV0_PNG/115991110200560792_1348860420.png",
@@ -105,6 +97,14 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260511_258/1778442569944rkiGa_JPEG/10144592793539085_980611081.jpg",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13512087463",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "에스프레소 블랜드",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
             "soldOut": false
         },
         {
@@ -405,18 +405,18 @@
         },
         {
             "store": "신양",
-            "name": "에티오피아, 게뎁, 라레사 200g (Ethiopia, Gedeb, Lalesa)",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13641426846",
-            "soldOut": false
-        },
-        {
-            "store": "신양",
             "name": "케냐,  무티투AA  200g (Kenya, Mutitu AA 200g)",
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13636506623",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "에티오피아, 게뎁, 라레사 200g (Ethiopia, Gedeb, Lalesa)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13641426846",
             "soldOut": false
         },
         {
@@ -453,14 +453,6 @@
         },
         {
             "store": "아이덴티티",
-            "name": "에티오피아 워르카 첼베사 & 쿠비 모디파이드 워시드(150g)",
-            "price": 19000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260513_121/1778643556925TSe21_PNG/30851350774672859_665401234.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13522263431",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
             "name": "미드센추리 블렌드(200g)",
             "price": 14000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
@@ -469,26 +461,10 @@
         },
         {
             "store": "아이덴티티",
-            "name": "칠린 블렌드(1kg) (분쇄요청불가)",
-            "price": 39000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4705726740",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "칠린 블렌드(200g)",
-            "price": 11000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4701816481",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "페루 훌리오 차베스 게이샤 워시드(100g)",
-            "price": 18000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260403_204/1775180751058Wff8b_PNG/24509560143064609_1806159385.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346321060",
+            "name": "에티오피아 워르카 첼베사 & 쿠비 모디파이드 워시드(150g)",
+            "price": 19000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260513_121/1778643556925TSe21_PNG/30851350774672859_665401234.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13522263431",
             "soldOut": false
         },
         {
@@ -501,10 +477,18 @@
         },
         {
             "store": "아이덴티티",
-            "name": "페루 엘 미라도르 게이샤 워시드 랏3(100g)",
-            "price": 26500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260611_34/1781154119815pI2Au_PNG/35707648571857219_465031398.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13629338264",
+            "name": "키치 블렌드(500g)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "페루 훌리오 차베스 게이샤 워시드(100g)",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260403_204/1775180751058Wff8b_PNG/24509560143064609_1806159385.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346321060",
             "soldOut": false
         },
         {
@@ -517,10 +501,18 @@
         },
         {
             "store": "아이덴티티",
-            "name": "미드센추리 블렌드(1kg) (분쇄요청불가)",
-            "price": 48000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6684189550",
+            "name": "칠린 블렌드(200g)",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4701816481",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "페루 엘 미라도르 게이샤 워시드 랏3(100g)",
+            "price": 26500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260611_34/1781154119815pI2Au_PNG/35707648571857219_465031398.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13629338264",
             "soldOut": false
         },
         {
@@ -533,10 +525,18 @@
         },
         {
             "store": "아이덴티티",
-            "name": "키치 블렌드(500g)",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
+            "name": "칠린 블렌드(1kg) (분쇄요청불가)",
+            "price": 39000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4705726740",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "미드센추리 블렌드(1kg) (분쇄요청불가)",
+            "price": 48000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6684189550",
             "soldOut": false
         },
         {
