@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 73,
-    "last_scraped": "2026-06-29 17:58",
+    "last_scraped": "2026-06-30 00:44",
     "products": [
         {
             "store": "502",
@@ -89,7 +89,7 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260511_258/1778442569944rkiGa_JPEG/10144592793539085_980611081.jpg",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13512087463",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "존스몰",
