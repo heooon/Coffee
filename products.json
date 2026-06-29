@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 73,
-    "last_scraped": "2026-06-30 00:44",
+    "last_scraped": "2026-06-30 03:08",
     "products": [
         {
             "store": "502",
@@ -117,14 +117,6 @@
         },
         {
             "store": "존스몰",
-            "name": "시즈널 블랜드",
-            "price": 17000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11213802394",
-            "soldOut": false
-        },
-        {
-            "store": "존스몰",
             "name": "50g 파나마 알티에리 루시 게이샤 내추럴",
             "price": 48000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260619_199/1781857428886utlzz_PNG/54677483032142835_1255420720.png",
@@ -145,6 +137,14 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251003_166/17594823540992TXdy_PNG/13657606911632894_1244814736.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12497752778",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
+            "name": "시즈널 블랜드",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11213802394",
             "soldOut": false
         },
         {
