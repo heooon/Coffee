@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 71,
-    "last_scraped": "2026-06-29 12:40",
+    "count": 73,
+    "last_scraped": "2026-06-29 17:58",
     "products": [
         {
             "store": "502",
@@ -255,7 +255,7 @@
             "store": "딥다이브",
             "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 100g, 1개",
             "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
             "soldOut": false
         },
@@ -279,7 +279,7 @@
             "store": "딥다이브",
             "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 200g, 1개",
             "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123166749",
             "soldOut": false
         },
@@ -311,7 +311,7 @@
             "store": "딥다이브",
             "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 500g, 1개",
             "price": 50000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251018_153/1760795024413mcyi4_PNG/8664518132508906_579398940.png",
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123184090",
             "soldOut": false
         },
@@ -553,6 +553,22 @@
             "price": 10500,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562808520",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "시즌 큐레이션(500g)",
+            "price": 49500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646135265",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "시즌 큐레이션(200g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646056229",
             "soldOut": false
         },
         {
