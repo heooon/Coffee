@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 73,
-    "last_scraped": "2026-06-30 03:08",
+    "last_scraped": "2026-06-30 06:26",
     "products": [
         {
             "store": "502",
@@ -109,14 +109,6 @@
         },
         {
             "store": "존스몰",
-            "name": "에스프레소 블랜드",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
-            "soldOut": false
-        },
-        {
-            "store": "존스몰",
             "name": "50g 파나마 알티에리 루시 게이샤 내추럴",
             "price": 48000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260619_199/1781857428886utlzz_PNG/54677483032142835_1255420720.png",
@@ -141,6 +133,14 @@
         },
         {
             "store": "존스몰",
+            "name": "에스프레소 블랜드",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
+            "soldOut": false
+        },
+        {
+            "store": "존스몰",
             "name": "시즈널 블랜드",
             "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
@@ -153,38 +153,6 @@
             "price": 25500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_288/1782291216260tahg9_PNG/14262837800869755_1755532578.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642177286",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 구지 바데이 투레 와지 74110, 74112 허니 100g, 1개",
-            "price": 13500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_288/1782291216260tahg9_PNG/14262837800869755_1755532578.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642177285",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 타미루 74158 무산소 내추럴 200g, 1개",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781551",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 게샤빌리지 오마 게샤1931 내추럴 127 100g",
-            "price": 37000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_195/17822942176526LsCa_PNG/67816989387722237_1128911111.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642208416",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 엠부 오네스카 AA SL28 & SL34 워시드100g",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_32/1782293281149XJ8tF_PNG/56690203475594635_1356437786.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642198312",
             "soldOut": false
         },
         {
@@ -205,10 +173,18 @@
         },
         {
             "store": "딥다이브",
-            "name": "케냐 뚱구리 AA 풀리 워시드 100g",
-            "price": 10000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_178/1782292608788oWz63_PNG/116425403621772042_388178345.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629834889",
+            "name": "케냐 엠부 오네스카 AA SL28 & SL34 워시드100g",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_32/1782293281149XJ8tF_PNG/56690203475594635_1356437786.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642198312",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 구지 바데이 투레 와지 74110, 74112 허니 100g, 1개",
+            "price": 13500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_288/1782291216260tahg9_PNG/14262837800869755_1755532578.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642177285",
             "soldOut": false
         },
         {
@@ -217,6 +193,30 @@
             "price": 10000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_6/1782292355545RU7Vl_PNG/116425267559792325_315220724.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 게샤빌리지 오마 게샤1931 내추럴 127 100g",
+            "price": 37000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_195/17822942176526LsCa_PNG/67816989387722237_1128911111.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642208416",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 시다마 벤사 타미루 74158 무산소 내추럴 200g, 1개",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781551",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "케냐 뚱구리 AA 풀리 워시드 100g",
+            "price": 10000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_178/1782292608788oWz63_PNG/116425403621772042_388178345.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629834889",
             "soldOut": false
         },
         {
@@ -389,18 +389,18 @@
         },
         {
             "store": "신양",
-            "name": "콜롬비아, 엘파라이소 리치-피치 200g (Colombia, El Paraiso Lychee- Peach )",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20210526_39/1621994018843Yfx6f_GIF/23129861304974510_1836917556.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13625718119",
-            "soldOut": false
-        },
-        {
-            "store": "신양",
             "name": "에티오피아,   아르베고나 200g (Ethiopia,  Arbegonna 200g)",
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13625668122",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "콜롬비아, 엘파라이소 리치-피치 200g (Colombia, El Paraiso Lychee- Peach )",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210526_39/1621994018843Yfx6f_GIF/23129861304974510_1836917556.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13625718119",
             "soldOut": false
         },
         {
@@ -429,6 +429,14 @@
         },
         {
             "store": "아이덴티티",
+            "name": "칠린 블렌드(500g)",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5044314971",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
             "name": "키치 블렌드(500g)",
             "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
@@ -437,18 +445,10 @@
         },
         {
             "store": "아이덴티티",
-            "name": "미드센추리 블렌드(200g)",
-            "price": 14000,
+            "name": "미드센추리 블렌드(1kg) (분쇄요청불가)",
+            "price": 48000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5147486471",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "칠린 블렌드(500g)",
-            "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5044314971",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6684189550",
             "soldOut": false
         },
         {
@@ -469,26 +469,10 @@
         },
         {
             "store": "아이덴티티",
-            "name": "브라질 다테하 썸머 솔스티스 피베리 내추럴(150g)",
-            "price": 11000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260403_292/17751804187826ewRL_PNG/24759574642692736_427511943.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346307683",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "케냐 챕상고 힐스 NA 내추럴(100g)",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_29/1782285704072LA7ae_PNG/55105758212157760_1020911385.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642098752",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "케냐 이차마마 AA 워시드(150g)",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_117/1782285462553NDpli_PNG/2927867342576877_968451928.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642096098",
+            "name": "미드센추리 블렌드(200g)",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5147486471",
             "soldOut": false
         },
         {
@@ -501,18 +485,26 @@
         },
         {
             "store": "아이덴티티",
-            "name": "페루 훌리오 차베스 게이샤 워시드(100g)",
-            "price": 18000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260403_204/1775180751058Wff8b_PNG/24509560143064609_1806159385.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346321060",
+            "name": "키치 블렌드(1kg) (분쇄요청불가)",
+            "price": 37000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562826807",
             "soldOut": false
         },
         {
             "store": "아이덴티티",
-            "name": "미드센추리 블렌드(1kg) (분쇄요청불가)",
-            "price": 48000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6684189550",
+            "name": "케냐 이차마마 AA 워시드(150g)",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_117/1782285462553NDpli_PNG/2927867342576877_968451928.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642096098",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "브라질 다테하 썸머 솔스티스 피베리 내추럴(150g)",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260403_292/17751804187826ewRL_PNG/24759574642692736_427511943.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346307683",
             "soldOut": false
         },
         {
@@ -525,6 +517,22 @@
         },
         {
             "store": "아이덴티티",
+            "name": "케냐 챕상고 힐스 NA 내추럴(100g)",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_29/1782285704072LA7ae_PNG/55105758212157760_1020911385.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642098752",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "페루 훌리오 차베스 게이샤 워시드(100g)",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260403_204/1775180751058Wff8b_PNG/24509560143064609_1806159385.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346321060",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
             "name": "칠린 블렌드(200g)",
             "price": 11000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
@@ -533,18 +541,18 @@
         },
         {
             "store": "아이덴티티",
-            "name": "키치 블렌드(1kg) (분쇄요청불가)",
-            "price": 37000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562826807",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
             "name": "페루 엘 미라도르 게이샤 워시드 랏3(100g)",
             "price": 26500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260611_34/1781154119815pI2Au_PNG/35707648571857219_465031398.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13629338264",
+            "soldOut": false
+        },
+        {
+            "store": "아이덴티티",
+            "name": "시즌 큐레이션(200g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646056229",
             "soldOut": false
         },
         {
@@ -561,14 +569,6 @@
             "price": 49500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646135265",
-            "soldOut": false
-        },
-        {
-            "store": "아이덴티티",
-            "name": "시즌 큐레이션(200g)",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646056229",
             "soldOut": false
         },
         {
