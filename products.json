@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 73,
-    "last_scraped": "2026-06-30 16:53",
+    "count": 76,
+    "last_scraped": "2026-06-30 19:56",
     "products": [
         {
             "store": "502",
@@ -193,6 +193,30 @@
             "price": 10000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_6/1782292355545RU7Vl_PNG/116425267559792325_315220724.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 500g, 1개",
+            "price": 45000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647257442",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 200g, 1개",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256897",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 100g, 1개",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256896",
             "soldOut": false
         },
         {
@@ -577,7 +601,7 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20240708_67/1720426987407fkOst_PNG/19135977227120175_548667200.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759930938",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -585,7 +609,7 @@
             "price": 9000,
             "imageUrl": "https://shop-phinf.pstatic.net/20240708_50/1720427021060oesOx_PNG/19136010963217531_2065778925.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759927109",
-            "soldOut": true
+            "soldOut": false
         }
     ]
 }
