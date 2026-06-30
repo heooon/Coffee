@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 73,
-    "last_scraped": "2026-06-30 06:26",
+    "last_scraped": "2026-06-30 12:27",
     "products": [
         {
             "store": "502",
@@ -169,7 +169,7 @@
             "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_118/1782292503435iD6xV_PNG/53061745385958530_920224118.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629854699",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "딥다이브",
@@ -481,7 +481,7 @@
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260622_3/1782111331297chfBF_PNG/14082952948357944_689010551.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13640177811",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "아이덴티티",
@@ -529,7 +529,7 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260403_204/1775180751058Wff8b_PNG/24509560143064609_1806159385.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346321060",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "아이덴티티",
