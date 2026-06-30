@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 73,
-    "last_scraped": "2026-06-30 12:27",
+    "last_scraped": "2026-06-30 16:53",
     "products": [
         {
             "store": "502",
@@ -481,7 +481,7 @@
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260622_3/1782111331297chfBF_PNG/14082952948357944_689010551.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13640177811",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
@@ -573,7 +573,7 @@
         },
         {
             "store": "아이덴티티",
-            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(500g)",
+            "name": "콜롬비아 엑셀소 슈가케인 디카페인(500g)",
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20240708_67/1720426987407fkOst_PNG/19135977227120175_548667200.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759930938",
@@ -581,7 +581,7 @@
         },
         {
             "store": "아이덴티티",
-            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(200g)",
+            "name": "콜롬비아 엑셀소 슈가케인 디카페인(200g)",
             "price": 9000,
             "imageUrl": "https://shop-phinf.pstatic.net/20240708_50/1720427021060oesOx_PNG/19136010963217531_2065778925.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759927109",
