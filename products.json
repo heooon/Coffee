@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 76,
-    "last_scraped": "2026-07-01 06:28",
+    "last_scraped": "2026-07-01 12:36",
     "products": [
         {
             "store": "502",
@@ -397,14 +397,6 @@
         },
         {
             "store": "신양",
-            "name": "과테말라, 우니온 칸티닐 200g (Guatemala, Union Cantinil)",
-            "price": 14000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20211211_134/1639150458503ayT5E_JPEG/40286354229268286_403218742.jpeg",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13361867485",
-            "soldOut": false
-        },
-        {
-            "store": "신양",
             "name": "페루, 엘 노갈 _ 게이샤 200g (Peru, El Nogal_ Geisha)",
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20210412_22/1618155293945SEuD9_GIF/19291136449994103_2061849475.gif",
@@ -441,6 +433,14 @@
             "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13641426846",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "과테말라, 와이칸 200g (Guatemala, Waykan)",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210822_221/1629640757979hcHYb_GIF/30776646389825362_1844377397.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13647754683",
             "soldOut": false
         },
         {
@@ -497,7 +497,7 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646056229",
-            "soldOut": true
+            "soldOut": false
         },
         {
             "store": "아이덴티티",
