@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 76,
-    "last_scraped": "2026-07-01 17:11",
+    "last_scraped": "2026-07-01 23:31",
     "products": [
         {
             "store": "502",
@@ -185,7 +185,7 @@
             "price": 10000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_6/1782292355545RU7Vl_PNG/116425267559792325_315220724.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "딥다이브",
