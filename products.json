@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 76,
-    "last_scraped": "2026-07-02 19:36",
+    "last_scraped": "2026-07-02 22:59",
     "products": [
         {
             "store": "502",
@@ -397,14 +397,6 @@
         },
         {
             "store": "신양",
-            "name": "페루, 엘 노갈 _ 게이샤 200g (Peru, El Nogal_ Geisha)",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20210412_22/1618155293945SEuD9_GIF/19291136449994103_2061849475.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13464244852",
-            "soldOut": false
-        },
-        {
-            "store": "신양",
             "name": "에티오피아,   아르베고나 200g (Ethiopia,  Arbegonna 200g)",
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
@@ -433,6 +425,14 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13636506623",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "페루, 라 팔마 _ 게이샤 200g (Peru, La Palma_ Geisha)",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210412_22/1618155293945SEuD9_GIF/19291136449994103_2061849475.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13649557309",
             "soldOut": false
         },
         {
@@ -505,7 +505,7 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646056229",
-            "soldOut": false
+            "soldOut": true
         },
         {
             "store": "아이덴티티",
