@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 63,
-    "last_scraped": "2026-07-04 06:05",
+    "count": 76,
+    "last_scraped": "2026-07-04 11:41",
     "products": [
         {
             "store": "502",
@@ -257,6 +257,110 @@
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_19/17822928924109pm9G_PNG/116425757371163624_1050400687.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509861613",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 100g, 1개",
+            "price": 6000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204576",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 200g, 1개",
+            "price": 10000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204577",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 100g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517753",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 500g, 1개",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204578",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 200g, 1개",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123166749",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 200g, 1개",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517754",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 1kg, 1개",
+            "price": 31000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/7619449435",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 500g, 1개",
+            "price": 48000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517755",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 500g, 1개",
+            "price": 50000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13123184090",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 2kg, 1개",
+            "price": 60000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204580",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 5kg, 1개",
+            "price": 145000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13634217602",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 10kg, 1개",
+            "price": 280000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13634217603",
             "soldOut": false
         },
         {
