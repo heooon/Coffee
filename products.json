@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 9,
-    "last_scraped": "2026-07-05 19:10",
+    "count": 10,
+    "last_scraped": "2026-07-05 22:25",
     "products": [
         {
             "store": "502",
@@ -13,10 +13,10 @@
         },
         {
             "store": "502",
-            "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
-            "price": 19000,
-            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
-            "productUrl": "https://502coffee.com/product/디카페인-에티오피아-예가체프-할로-베리티-내추럴/178/category/24/display/1/",
+            "name": "[7월의 커피] 콜롬비아 카우카 파라이소92 게이샤 100g",
+            "price": 17800,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260705/117994f256a1f844e3fe463045f379ac.png",
+            "productUrl": "https://502coffee.com/product/7월의-커피-콜롬비아-카우카-파라이소92-게이샤-100g/182/category/24/display/1/",
             "soldOut": false
         },
         {
@@ -65,6 +65,14 @@
             "price": 18000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/e3903301e406b3b9b39b56c331e2a42a.png",
             "productUrl": "https://502coffee.com/product/디카페인-pillow-필로우/13/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "502",
+            "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
+            "price": 19000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
+            "productUrl": "https://502coffee.com/product/디카페인-에티오피아-예가체프-할로-베리티-내추럴/178/category/24/display/1/",
             "soldOut": false
         },
         {
