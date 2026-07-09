@@ -198,6 +198,12 @@ def scrape_naver_smartstore(url, store_name):
             
             if not script_tag:
                 print(f"[시도 {attempt+1}/8] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
+                try:
+                    title_tag = soup.find("title")
+                    title_text = title_tag.text.strip() if title_tag else "제목 없음"
+                    print(f"  -> [실패 페이지 분석] HTML 제목: {title_text} | 본문 초입: {r.text[:300].strip().replace('\r', '').replace('\n', ' ')}")
+                except Exception:
+                    pass
                 time.sleep(3.5)
                 continue
             
