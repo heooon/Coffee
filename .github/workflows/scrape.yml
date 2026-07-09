@@ -35,10 +35,11 @@ jobs:
 
       - name: Run Coffee Scraper
         env:
-          # Securely injects your ScraperAPI key and alternative Scrape.do token from repository secrets
+          # Securely injects your scraper API keys from repository secrets
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPER_API_PREMIUM: ${{ secrets.SCRAPER_API_PREMIUM }}
           SCRAPE_DO_TOKEN: ${{ secrets.SCRAPE_DO_TOKEN }}
+          SCRAPINGANT_API_KEY: ${{ secrets.SCRAPINGANT_API_KEY }}
         run: python scrape.py
 
       - name: Commit and Push Updated products.json
