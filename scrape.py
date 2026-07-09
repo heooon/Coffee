@@ -14,6 +14,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 # Read ScraperAPI key from GitHub Actions secrets environment
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY")
 SCRAPER_API_PREMIUM = os.environ.get("SCRAPER_API_PREMIUM", "false").lower() == "true"
+SCRAPE_DO_TOKEN = os.environ.get("SCRAPE_DO_TOKEN")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
@@ -23,37 +24,58 @@ HEADERS = {
 }
 
 def fetch_url(url, custom_headers=None):
-    """Fetches HTML content, routing through ScraperAPI on GitHub Actions to bypass Naver blocking"""
+    """Fetches HTML content, routing through ScraperAPI or Scrape.do on GitHub Actions to bypass Naver blocking"""
     headers_to_use = custom_headers if custom_headers else HEADERS
     
-    # If API Key is present in environment, route through ScraperAPI to bypass cloud IP blocks
-    if SCRAPER_API_KEY and ("smartstore.naver.com" in url or "m.smartstore.naver.com" in url):
-        print(f"[우회] 깃허브 서버에서 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
+    is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url
+    
+    # 1. Try ScraperAPI if key is present
+    if SCRAPER_API_KEY and is_naver:
+        print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
         try:
-            # Use only free-tier compatible parameters (api_key and url) to prevent HTTP 500 errors!
             payload = {
                 'api_key': SCRAPER_API_KEY,
                 'url': url
             }
-            # Enable premium residential proxies if specified to bypass tough blocks
             if SCRAPER_API_PREMIUM:
                 payload['premium'] = 'true'
-                print("[우회 옵션] 프리미엄 주거용 프록시(premium=true)를 활성화합니다.")
+                print("[우회 옵션] ScraperAPI 프리미엄 주거용 프록시(premium=true)를 활성화합니다.")
                 
-            # ScraperAPI automatically rotates high-quality proxies and handles header fingerprints
             r = requests.get('https://api.scraperapi.com', params=payload, verify=False, timeout=50)
             
             if r.status_code != 200:
-                print(f"[우회 실패] ScraperAPI 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                print(f"[우회 실패 - ScraperAPI] 응답 오류 - HTTP 상태 코드: {r.status_code}")
                 try:
                     print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                 except Exception:
                     pass
-            return r
+            else:
+                return r
         except Exception as e:
-            print(f"[우회 실패] 프록시 연결 오류: {e}. 다이렉트 시도로 폴백합니다.")
+            print(f"[우회 오류 - ScraperAPI] 연결 오류: {e}")
+            
+    # 2. Try Scrape.do if token is present (either as primary or fallback)
+    if SCRAPE_DO_TOKEN and is_naver:
+        print(f"[우회 - Scrape.do] 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
+        try:
+            payload = {
+                'token': SCRAPE_DO_TOKEN,
+                'url': url,
+                'geoCode': 'kr'  # South Korea IP targeting for ultra-stable Naver connection
+            }
+            r = requests.get('https://api.scrape.do', params=payload, verify=False, timeout=50)
+            if r.status_code != 200:
+                print(f"[우회 실패 - Scrape.do] 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                try:
+                    print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
+                except Exception:
+                    pass
+            else:
+                return r
+        except Exception as e:
+            print(f"[우회 오류 - Scrape.do] 연결 오류: {e}")
     
-    # Direct fetch (Default on local machine)
+    # Direct fetch (Default on local machine, or fallback on GitHub Actions)
     return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
 
 def scrape_502_coffee():
