@@ -38,7 +38,7 @@ jobs:
           # Securely injects your scraper API keys from repository secrets
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPER_API_PREMIUM: ${{ secrets.SCRAPER_API_PREMIUM }}
-          SCRAPINGANT_API_KEY: ${{ secrets.SCRAPINGANT_API_KEY }}
+          SCRAPER_API_KEY_SECONDARY: ${{ secrets.SCRAPER_API_KEY_SECONDARY }}
         run: python scrape.py
 
       - name: Commit and Push Updated products.json
