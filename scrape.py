@@ -106,7 +106,15 @@ def fetch_url(url, custom_headers=None):
                         current_key_index += 1
                 continue
     
-    # Direct fetch (Default on local machine, or fallback on GitHub Actions when all keys are exhausted)
+    # Strictly prohibit local direct fetch for Naver Smartstore to protect IP from being blocked
+    if is_naver:
+        print("[우회 실패 - 경고] 네이버 스마트스토어는 로컬 직접 수집이 차단되어 있습니다. (API 우회 필수)")
+        # Return a mock 503 Service Unavailable response instead of dropping back to local connection
+        mock_resp = requests.Response()
+        mock_resp.status_code = 503
+        return mock_resp
+        
+    # Direct fetch (Default on local machine for non-Naver sites like 502 Coffee)
     return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
 
 def scrape_502_coffee():
