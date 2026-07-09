@@ -6,19 +6,25 @@ import urllib3
 import datetime
 import os
 import time
-import threading
 from concurrent.futures import ThreadPoolExecutor
 
 # Suppress SSL verification warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Threading Lock for ScrapingAnt free tier concurrency limit of 1
-scrapingant_lock = threading.Lock()
-
-# Read ScraperAPI key from GitHub Actions secrets environment
+# Read ScraperAPI keys from GitHub Actions secrets environment
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY")
+SCRAPER_API_KEY_SECONDARY = os.environ.get("SCRAPER_API_KEY_SECONDARY")
 SCRAPER_API_PREMIUM = os.environ.get("SCRAPER_API_PREMIUM", "false").lower() == "true"
-SCRAPINGANT_API_KEY = os.environ.get("SCRAPINGANT_API_KEY")
+
+# Register available keys into a list for dynamic rotation
+SCRAPER_API_KEYS = []
+if SCRAPER_API_KEY:
+    SCRAPER_API_KEYS.append(SCRAPER_API_KEY)
+if SCRAPER_API_KEY_SECONDARY:
+    SCRAPER_API_KEYS.append(SCRAPER_API_KEY_SECONDARY)
+
+# Track the index of the currently active ScraperAPI key
+current_key_index = 0
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
@@ -28,72 +34,62 @@ HEADERS = {
 }
 
 def fetch_url(url, custom_headers=None):
-    """Fetches HTML content, routing through ScraperAPI or ScrapingAnt on GitHub Actions to bypass Naver blocking"""
-    global SCRAPER_API_KEY, SCRAPINGANT_API_KEY
+    """Fetches HTML content, routing through a rotating keyring of ScraperAPI keys on GitHub Actions"""
+    global SCRAPER_API_KEYS, current_key_index
     headers_to_use = custom_headers if custom_headers else HEADERS
     
     is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url
     
-    # 1. Try ScraperAPI if key is present
-    if SCRAPER_API_KEY and is_naver:
-        print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
-        try:
-            payload = {
-                'api_key': SCRAPER_API_KEY,
-                'url': url
-            }
-            if SCRAPER_API_PREMIUM:
-                payload['premium'] = 'true'
-                print("[우회 옵션] ScraperAPI 프리미엄 주거용 프록시(premium=true)를 활성화합니다.")
+    # Try ScraperAPI keyring rotation on GitHub Actions for Naver targets
+    if is_naver and SCRAPER_API_KEYS:
+        attempts_with_keys = len(SCRAPER_API_KEYS)
+        for _ in range(attempts_with_keys):
+            if current_key_index >= len(SCRAPER_API_KEYS):
+                break
                 
-            r = requests.get('https://api.scraperapi.com', params=payload, verify=False, timeout=50)
+            active_key = SCRAPER_API_KEYS[current_key_index]
+            print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 (키 인덱스: {current_key_index+1}/{len(SCRAPER_API_KEYS)}) -> {url[:50]}...")
             
-            if r.status_code != 200:
-                print(f"[우회 실패 - ScraperAPI] 응답 오류 - HTTP 상태 코드: {r.status_code}")
-                try:
-                    print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
-                except Exception:
-                    pass
-                if r.status_code == 403:
-                    print("[우회 비활성화 - ScraperAPI] 크레딧 소진 또는 권한 오류(403)로 인해 이번 실행 중 ScraperAPI 사용을 중단합니다.")
-                    SCRAPER_API_KEY = None
-            else:
-                return r
-        except Exception as e:
-            print(f"[우회 오류 - ScraperAPI] 연결 오류: {e}")
-            
-    # 2. Try ScrapingAnt if token is present (either as primary or fallback)
-    if SCRAPINGANT_API_KEY and is_naver:
-        with scrapingant_lock:
-            print(f"[우회 - ScrapingAnt] 네이버 수집 우회 터널을 작동합니다 (동시 요청 잠금 활성화) -> {url[:50]}...")
             try:
                 payload = {
-                    'x-api-key': SCRAPINGANT_API_KEY,
-                    'url': url,
-                    'browser': 'true',          # Enable JS/Browser rendering to bypass Naver anti-bot checks (423 error bypass)
-                    'proxy_type': 'residential', # South Korea residential proxy to bypass Naver's block
-                    'country': 'kr'
+                    'api_key': active_key,
+                    'url': url
                 }
-                r = requests.get('https://api.scrapingant.com/v2/general', params=payload, verify=False, timeout=50)
+                if SCRAPER_API_PREMIUM:
+                    payload['premium'] = 'true'
+                    print("[우회 옵션] ScraperAPI 프리미엄 주거용 프록시(premium=true)를 활성화합니다.")
+                    
+                r = requests.get('https://api.scraperapi.com', params=payload, verify=False, timeout=50)
                 
-                # To guarantee no 409 concurrency error, we wait 1 second between requests
-                time.sleep(1.0)
-                
-                if r.status_code != 200:
-                    print(f"[우회 실패 - ScrapingAnt] 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                # HTTP 403 means current key is exhausted or blocked
+                if r.status_code == 403:
+                    print(f"[우회 실패 - ScraperAPI] 현재 키(인덱스: {current_key_index+1})가 만료되거나 소진되었습니다 (HTTP 403).")
                     try:
                         print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                     except Exception:
                         pass
-                    if r.status_code == 403 or r.status_code == 401:
-                        print("[우회 비활성화 - ScrapingAnt] 크레딧 소진 또는 권한 오류(403/401)로 인해 이번 실행 중 ScrapingAnt 사용을 중단합니다.")
-                        SCRAPINGANT_API_KEY = None
+                    
+                    # Rotate index to the next key
+                    print("[우회 로테이션] 다음 ScraperAPI 예비 키로 즉시 실시간 전환합니다.")
+                    current_key_index += 1
+                    continue
+                    
+                elif r.status_code != 200:
+                    print(f"[우회 실패 - ScraperAPI] 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                    try:
+                        print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
+                    except Exception:
+                        pass
+                    return r
                 else:
                     return r
+                    
             except Exception as e:
-                print(f"[우회 오류 - ScrapingAnt] 연결 오류: {e}")
+                print(f"[우회 오류 - ScraperAPI] 연결 오류: {e}")
+                current_key_index += 1
+                continue
     
-    # Direct fetch (Default on local machine, or fallback on GitHub Actions)
+    # Direct fetch (Default on local machine, or fallback on GitHub Actions when all keys are exhausted)
     return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
 
 def scrape_502_coffee():
@@ -179,9 +175,9 @@ def scrape_502_coffee():
     return products
 
 def scrape_naver_smartstore(url, store_name):
-    """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 8 retries)"""
-    # Try up to 8 times to fetch and successfully parse the JSON payload
-    for attempt in range(8):
+    """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 3 retries)"""
+    # Try up to 3 times to fetch and successfully parse the JSON payload
+    for attempt in range(3):
         products = []
         try:
             custom_headers = HEADERS.copy()
@@ -189,15 +185,15 @@ def scrape_naver_smartstore(url, store_name):
             
             r = fetch_url(url, custom_headers)
             if r.status_code != 200:
-                print(f"[시도 {attempt+1}/8] Naver [{store_name}] HTTP 오류: {r.status_code}. 재시도합니다...")
-                time.sleep(2.5)
+                print(f"[시도 {attempt+1}/3] Naver [{store_name}] HTTP 오류: {r.status_code}. 재시도합니다...")
+                time.sleep(1.5)
                 continue
             
             soup = BeautifulSoup(r.text, "html.parser")
             script_tag = soup.find("script", string=re.compile(r"window\.__PRELOADED_STATE__\s*="))
             
             if not script_tag:
-                print(f"[시도 {attempt+1}/8] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
+                print(f"[시도 {attempt+1}/3] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
                 try:
                     title_tag = soup.find("title")
                     title_text = title_tag.text.strip() if title_tag else "제목 없음"
@@ -205,7 +201,7 @@ def scrape_naver_smartstore(url, store_name):
                     print(f"  -> [실패 페이지 분석] HTML 제목: {title_text} | 본문 초입: {snippet}")
                 except Exception:
                     pass
-                time.sleep(3.5)
+                time.sleep(1.5)
                 continue
             
             content = script_tag.string.strip()
@@ -214,8 +210,8 @@ def scrape_naver_smartstore(url, store_name):
                 match = re.search(r"window\.__PRELOADED_STATE__\s*=\s*({.+})", content)
             
             if not match:
-                print(f"[시도 {attempt+1}/8] Naver [{store_name}] 정규표현식 매칭 실패. 재시도...")
-                time.sleep(2.5)
+                print(f"[시도 {attempt+1}/3] Naver [{store_name}] 정규표현식 매칭 실패. 재시도...")
+                time.sleep(1.5)
                 continue
                 
             json_str = match.group(1)
@@ -301,22 +297,22 @@ def scrape_naver_smartstore(url, store_name):
                     print(f"[성공] Naver [{store_name}] 수집 성공! (수집 개수: {len(products)})")
                     return products
             else:
-                print(f"[시도 {attempt+1}/8] Naver [{store_name}] 빈 리스트 응답. 재시도...")
-                time.sleep(3.5)
+                print(f"[시도 {attempt+1}/3] Naver [{store_name}] 빈 리스트 응답. 재시도...")
+                time.sleep(2.0)
                 
         except Exception as e:
-            print(f"Error scraping {store_name} (Attempt {attempt+1}/8): {e}")
-            time.sleep(3.5)
+            print(f"Error scraping {store_name} (Attempt {attempt+1}/3): {e}")
+            time.sleep(2.0)
             
     print(f"[최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다.")
     return []
 
 def main():
     print("Starting automated coffee scraper...")
-    print(f"[진단] 환경변수 검사 -> ScraperAPI 키 감지: {'O' if SCRAPER_API_KEY else 'X'} | ScrapingAnt 키 감지: {'O' if SCRAPINGANT_API_KEY else 'X'}")
+    print(f"[진단] 환경변수 검사 -> ScraperAPI 활성 키 개수: {len(SCRAPER_API_KEYS)}개 감지됨")
     
-    if SCRAPER_API_KEY or SCRAPINGANT_API_KEY:
-        print("[인증 성공] 우회 장치가 감지되었습니다. 깃허브 무인 자동화 모드로 실행합니다.")
+    if SCRAPER_API_KEYS:
+        print("[인증 성공] 우회 장치(ScraperAPI 로테이터)가 감지되었습니다. 깃허브 무인 자동화 모드로 실행합니다.")
     else:
         print("[로컬 직접 수집] 한국 가정용 다이렉트 수집 모드로 실행합니다.")
         
