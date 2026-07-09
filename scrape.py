@@ -201,7 +201,8 @@ def scrape_naver_smartstore(url, store_name):
                 try:
                     title_tag = soup.find("title")
                     title_text = title_tag.text.strip() if title_tag else "제목 없음"
-                    print(f"  -> [실패 페이지 분석] HTML 제목: {title_text} | 본문 초입: {r.text[:300].strip().replace('\r', '').replace('\n', ' ')}")
+                    snippet = r.text[:300].strip().replace('\r', '').replace('\n', ' ')
+                    print(f"  -> [실패 페이지 분석] HTML 제목: {title_text} | 본문 초입: {snippet}")
                 except Exception:
                     pass
                 time.sleep(3.5)
