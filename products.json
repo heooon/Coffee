@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 10,
-    "last_scraped": "2026-07-09 20:02",
+    "count": 14,
+    "last_scraped": "2026-07-09 20:37",
     "products": [
         {
             "store": "502",
@@ -81,6 +81,38 @@
             "price": 19000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260530/51f785c6b75f63a763467d60fed73273.png",
             "productUrl": "https://502coffee.com/product/페루-라-팔마-레드-카투라/154/category/24/display/1/",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 100g, 1개",
+            "price": 6000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204576",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]여름이면 생각나는 시원달달한 수박화채 블렌드 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260709_115/1783570213576eCDwc_PNG/68755179260752683_111509718.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13657224585",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517753",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
             "soldOut": false
         }
     ]
