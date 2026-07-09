@@ -39,7 +39,7 @@ jobs:
           SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
           SCRAPER_API_PREMIUM: ${{ secrets.SCRAPER_API_PREMIUM }}
           SCRAPER_API_KEY_SECONDARY: ${{ secrets.SCRAPER_API_KEY_SECONDARY }}
-        run: python scrape.py
+        run: python -u scrape.py
 
       - name: Commit and Push Updated products.json
         run: |

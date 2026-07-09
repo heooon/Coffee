@@ -7,7 +7,12 @@ import datetime
 import os
 import time
 import threading
+import sys
 from concurrent.futures import ThreadPoolExecutor
+
+# Force stdout to be line-buffered to output print logs in real-time without buffer delay
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
 
 # Suppress SSL verification warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
