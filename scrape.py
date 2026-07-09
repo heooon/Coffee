@@ -25,6 +25,7 @@ HEADERS = {
 
 def fetch_url(url, custom_headers=None):
     """Fetches HTML content, routing through ScraperAPI or Scrape.do on GitHub Actions to bypass Naver blocking"""
+    global SCRAPER_API_KEY, SCRAPE_DO_TOKEN
     headers_to_use = custom_headers if custom_headers else HEADERS
     
     is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url
@@ -49,6 +50,9 @@ def fetch_url(url, custom_headers=None):
                     print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                 except Exception:
                     pass
+                if r.status_code == 403:
+                    print("[우회 비활성화 - ScraperAPI] 크레딧 소진 또는 권한 오류(403)로 인해 이번 실행 중 ScraperAPI 사용을 중단합니다.")
+                    SCRAPER_API_KEY = None
             else:
                 return r
         except Exception as e:
@@ -70,6 +74,9 @@ def fetch_url(url, custom_headers=None):
                     print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                 except Exception:
                     pass
+                if r.status_code == 403 or r.status_code == 401:
+                    print("[우회 비활성화 - Scrape.do] 크레딧 소진 또는 권한 오류(403/401)로 인해 이번 실행 중 Scrape.do 사용을 중단합니다.")
+                    SCRAPE_DO_TOKEN = None
             else:
                 return r
         except Exception as e:
