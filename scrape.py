@@ -6,10 +6,14 @@ import urllib3
 import datetime
 import os
 import time
+import threading
 from concurrent.futures import ThreadPoolExecutor
 
 # Suppress SSL verification warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Threading Lock for ScrapingAnt free tier concurrency limit of 1
+scrapingant_lock = threading.Lock()
 
 # Read ScraperAPI key from GitHub Actions secrets environment
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY")
@@ -85,29 +89,34 @@ def fetch_url(url, custom_headers=None):
             
     # 3. Try ScrapingAnt if token is present (either as primary or fallback)
     if SCRAPINGANT_API_KEY and is_naver:
-        print(f"[우회 - ScrapingAnt] 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
-        try:
-            payload = {
-                'x-api-key': SCRAPINGANT_API_KEY,
-                'url': url,
-                'browser': 'false',         # Disable JS rendering to save credits (highly recommended)
-                'proxy_type': 'residential', # South Korea residential proxy to bypass Naver's block
-                'country': 'kr'
-            }
-            r = requests.get('https://api.scrapingant.com/v2/general', params=payload, verify=False, timeout=50)
-            if r.status_code != 200:
-                print(f"[우회 실패 - ScrapingAnt] 응답 오류 - HTTP 상태 코드: {r.status_code}")
-                try:
-                    print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
-                except Exception:
-                    pass
-                if r.status_code == 403 or r.status_code == 401:
-                    print("[우회 비활성화 - ScrapingAnt] 크레딧 소진 또는 권한 오류(403/401)로 인해 이번 실행 중 ScrapingAnt 사용을 중단합니다.")
-                    SCRAPINGANT_API_KEY = None
-            else:
-                return r
-        except Exception as e:
-            print(f"[우회 오류 - ScrapingAnt] 연결 오류: {e}")
+        with scrapingant_lock:
+            print(f"[우회 - ScrapingAnt] 네이버 수집 우회 터널을 작동합니다 (동시 요청 잠금 활성화) -> {url[:50]}...")
+            try:
+                payload = {
+                    'x-api-key': SCRAPINGANT_API_KEY,
+                    'url': url,
+                    'browser': 'false',         # Disable JS rendering to save credits (highly recommended)
+                    'proxy_type': 'residential', # South Korea residential proxy to bypass Naver's block
+                    'country': 'kr'
+                }
+                r = requests.get('https://api.scrapingant.com/v2/general', params=payload, verify=False, timeout=50)
+                
+                # To guarantee no 409 concurrency error, we wait 1 second between requests
+                time.sleep(1.0)
+                
+                if r.status_code != 200:
+                    print(f"[우회 실패 - ScrapingAnt] 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                    try:
+                        print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
+                    except Exception:
+                        pass
+                    if r.status_code == 403 or r.status_code == 401:
+                        print("[우회 비활성화 - ScrapingAnt] 크레딧 소진 또는 권한 오류(403/401)로 인해 이번 실행 중 ScrapingAnt 사용을 중단합니다.")
+                        SCRAPINGANT_API_KEY = None
+                else:
+                    return r
+            except Exception as e:
+                print(f"[우회 오류 - ScrapingAnt] 연결 오류: {e}")
     
     # Direct fetch (Default on local machine, or fallback on GitHub Actions)
     return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
