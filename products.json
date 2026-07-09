@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 33,
-    "last_scraped": "2026-07-10 00:24",
+    "count": 18,
+    "last_scraped": "2026-07-10 00:29",
     "products": [
         {
             "store": "502",
@@ -145,126 +145,6 @@
             "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 타미루 74158 무산소 내추럴 100g, 1개",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781550",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 200g, 1개",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256897",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 엠부 오네스카 AA SL28 & SL34 워시드100g",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_32/1782293281149XJ8tF_PNG/56690203475594635_1356437786.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642198312",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 구지 바데이 투레 와지 74110, 74112 허니 200g, 1개",
-            "price": 25500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_288/1782291216260tahg9_PNG/14262837800869755_1755532578.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642177286",
-            "soldOut": true
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 아르베고나 문타샤 74158 콜드언더워터 내추럴 100g",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_236/17822920736695JoJp_PNG/21387892502132618_971360795.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13628311886",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "콜롬비아 엘 나랑호 알버트 칼돈 게이샤 워시드 100g",
-            "price": 17000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260709_166/1783571875583BpSmn_PNG/104889212484835332_1372752765.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13657251132",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 500g, 1개",
-            "price": 45000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647257442",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 100g, 1개",
-            "price": 11000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256896",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 게샤빌리지 오마 게샤1931 내추럴 127 100g",
-            "price": 37000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_195/17822942176526LsCa_PNG/67816989387722237_1128911111.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642208416",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 구지 바데이 투레 와지 74110, 74112 허니 100g, 1개",
-            "price": 13500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_288/1782291216260tahg9_PNG/14262837800869755_1755532578.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642177285",
-            "soldOut": true
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 타미루 74158 무산소 내추럴 200g, 1개",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781551",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "콜롬비아 엘 디비소 핑크 버번 모스토 코퍼먼티드 워시드 100g",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_118/1782292503435iD6xV_PNG/53061745385958530_920224118.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629854699",
-            "soldOut": true
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 뚱구리 AA 풀리 워시드 100g",
-            "price": 10000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_178/1782292608788oWz63_PNG/116425403621772042_388178345.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629834889",
-            "soldOut": false
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 뚱구리 내추럴 헤비 100g",
-            "price": 10000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_6/1782292355545RU7Vl_PNG/116425267559792325_315220724.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
-            "soldOut": true
-        },
-        {
-            "store": "딥다이브",
-            "name": "콜롬비아 엘 오브라헤 게이샤 워시드(로트 156) 100g",
-            "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_19/17822928924109pm9G_PNG/116425757371163624_1050400687.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509861613",
             "soldOut": false
         }
     ]
