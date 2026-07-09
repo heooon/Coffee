@@ -680,6 +680,7 @@ input:checked + .switch-slider:before {
 .store-deepdive { background-color: var(--primary); }/* Earthy Medium Brown */
 .store-shin { background-color: #ffffff; color: #000000 !important; }
 .store-identity { background-color: #1e3050; } /* Premium Deep Navy Blue */
+.store-month { background-color: #d46e45; }    /* Modern Muted Coral/Orange */
 
 /* Soldout Organic/Glassmorphism overlay */
 .product-card.is-soldout {

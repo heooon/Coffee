@@ -47,7 +47,7 @@ def fetch_url(url, custom_headers=None):
     global SCRAPER_API_KEYS, current_key_index
     headers_to_use = custom_headers if custom_headers else HEADERS
     
-    is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url
+    is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url or "brand.naver.com" in url
     
     # Try ScraperAPI keyring rotation on GitHub Actions for Naver targets
     if is_naver and SCRAPER_API_KEYS:
@@ -106,15 +106,19 @@ def fetch_url(url, custom_headers=None):
                         current_key_index += 1
                 continue
     
-    # Strictly prohibit local direct fetch for Naver Smartstore to protect IP from being blocked
+    # Strictly prohibit local direct fetch ONLY on GitHub Actions runner environment to protect runner IP from being blocked
     if is_naver:
-        print("[우회 실패 - 경고] 네이버 스마트스토어는 로컬 직접 수집이 차단되어 있습니다. (API 우회 필수)")
-        # Return a mock 503 Service Unavailable response instead of dropping back to local connection
-        mock_resp = requests.Response()
-        mock_resp.status_code = 503
-        return mock_resp
+        is_github_actions = os.environ.get("GITHUB_ACTIONS", "false").lower() == "true"
+        if is_github_actions:
+            print("[우회 실패 - 경고] 깃허브 액션 환경에서는 네이버 직접 수집이 금지되어 있습니다. (API 우회 필수)")
+            # Return a mock 503 Service Unavailable response instead of dropping back to local connection
+            mock_resp = requests.Response()
+            mock_resp.status_code = 503
+            return mock_resp
+        else:
+            print("[로컬 직접 수집 - 경고] 로컬 개발 환경이므로 ScraperAPI 없이 직접 수집을 시도합니다. (주의: 차단 가능성 있음)")
         
-    # Direct fetch (Default on local machine for non-Naver sites like 502 Coffee)
+    # Direct fetch (Default on local machine for non-Naver sites like 502 Coffee, or Naver local testing)
     return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
 
 def scrape_502_coffee():
@@ -293,6 +297,8 @@ def scrape_naver_smartstore(url, store_name):
                     channel_name = "shinyangroaster"
                 elif "identity_coffeelab" in url:
                     channel_name = "identity_coffeelab"
+                elif "monthcoffee" in url:
+                    channel_name = "monthcoffee"
                 
                 # Deduplicate inside this store fetch using a local set
                 seen_store_names = set()
@@ -408,14 +414,19 @@ def main():
     )
     
     print(f"대기 중: 스토어간 요청 간격을 위해 {delay}초 동안 쉬어갑니다...")
-    time.sleep(delay)
-    
+    time.sleep(2.5)
     products_identity = scrape_naver_smartstore(
         "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1", 
         "아이덴티티"
     )
+    
+    time.sleep(2.5)
+    products_month = scrape_naver_smartstore(
+        "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1", 
+        "먼스커피"
+    )
         
-    all_products = products_502 + products_johns + products_deepdive1 + products_deepdive2 + products_shin + products_identity
+    all_products = products_502 + products_johns + products_deepdive1 + products_deepdive2 + products_shin + products_identity + products_month
     
     # Highly robust deduplication
     seen_keys = set()
