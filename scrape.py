@@ -187,9 +187,9 @@ def scrape_502_coffee():
     return products
 
 def scrape_naver_smartstore(url, store_name):
-    """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 6 retries)"""
-    # Try up to 6 times to fetch and successfully parse the JSON payload
-    for attempt in range(6):
+    """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 4 retries)"""
+    # Optimize retries to 4 to balance success rate and API credits
+    for attempt in range(4):
         products = []
         try:
             custom_headers = HEADERS.copy()
@@ -197,15 +197,15 @@ def scrape_naver_smartstore(url, store_name):
             
             r = fetch_url(url, custom_headers)
             if r.status_code != 200:
-                print(f"[시도 {attempt+1}/6] Naver [{store_name}] HTTP 오류: {r.status_code}. 재시도합니다...")
-                time.sleep(1.5)
+                print(f"[시도 {attempt+1}/4] Naver [{store_name}] HTTP 오류: {r.status_code}. 재시도합니다...")
+                time.sleep(2.5 + attempt * 2.0) # Apply solid backoff
                 continue
             
             soup = BeautifulSoup(r.text, "html.parser")
             script_tag = soup.find("script", string=re.compile(r"window\.__PRELOADED_STATE__\s*="))
             
             if not script_tag:
-                print(f"[시도 {attempt+1}/6] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
+                print(f"[시도 {attempt+1}/4] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
                 try:
                     title_tag = soup.find("title")
                     title_text = title_tag.text.strip() if title_tag else "제목 없음"
@@ -213,7 +213,7 @@ def scrape_naver_smartstore(url, store_name):
                     print(f"  -> [실패 페이지 분석] HTML 제목: {title_text} | 본문 초입: {snippet}")
                 except Exception:
                     pass
-                time.sleep(1.5)
+                time.sleep(2.5 + attempt * 2.0)
                 continue
             
             content = script_tag.string.strip()
@@ -222,8 +222,8 @@ def scrape_naver_smartstore(url, store_name):
                 match = re.search(r"window\.__PRELOADED_STATE__\s*=\s*({.+})", content)
             
             if not match:
-                print(f"[시도 {attempt+1}/6] Naver [{store_name}] 정규표현식 매칭 실패. 재시도...")
-                time.sleep(1.5)
+                print(f"[시도 {attempt+1}/4] Naver [{store_name}] 정규표현식 매칭 실패. 재시도...")
+                time.sleep(2.0)
                 continue
                 
             json_str = match.group(1)
@@ -274,20 +274,32 @@ def scrape_naver_smartstore(url, store_name):
                 elif "identity_coffeelab" in url:
                     channel_name = "identity_coffeelab"
                 
+                # Deduplicate inside this store fetch using a local set
+                seen_store_names = set()
                 for p in products_list:
                     name = p.get("name") or p.get("productName")
                     if not name:
                         continue
                     
+                    name = name.strip()
                     # Exclude drip bags
                     if "드립백" in name:
                         continue
                     
+                    # Prevent local duplicates in the same store list response
+                    if name in seen_store_names:
+                        continue
+                    seen_store_names.add(name)
+                    
                     benefits = p.get("benefitsView") or {}
                     price = benefits.get("dispDiscountedSalePrice") or benefits.get("discountedSalePrice") or p.get("discountedSalePrice") or p.get("salePrice") or 0
                     img_url = p.get("representativeImageUrl") or p.get("imageUrl") or ""
+                    if isinstance(img_url, str):
+                        img_url = img_url.strip()
                     
                     product_id = p.get("id") or p.get("productNo")
+                    if product_id:
+                        product_id = str(product_id).strip()
                     product_url = f"https://smartstore.naver.com/{channel_name}/products/{product_id}" if product_id else ""
                     
                     status = p.get("productStatusType", "")
@@ -309,11 +321,11 @@ def scrape_naver_smartstore(url, store_name):
                     print(f"[성공] Naver [{store_name}] 수집 성공! (수집 개수: {len(products)})")
                     return products
             else:
-                print(f"[시도 {attempt+1}/6] Naver [{store_name}] 빈 리스트 응답. 재시도...")
+                print(f"[시도 {attempt+1}/4] Naver [{store_name}] 빈 리스트 응답. 재시도...")
                 time.sleep(2.0)
                 
         except Exception as e:
-            print(f"Error scraping {store_name} (Attempt {attempt+1}/6): {e}")
+            print(f"Error scraping {store_name} (Attempt {attempt+1}/4): {e}")
             time.sleep(2.0)
             
     print(f"[최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다.")
@@ -370,15 +382,22 @@ def main():
         
     all_products = products_502 + products_johns + products_deepdive1 + products_deepdive2 + products_shin + products_identity
     
-    # Deduplicate
-    seen_urls = set()
+    # Highly robust deduplication
+    seen_keys = set()
     unique_products = []
     for p in all_products:
-        p_url = p.get("productUrl")
-        if p_url and p_url not in seen_urls:
-            seen_urls.add(p_url)
-            unique_products.append(p)
-        elif not p_url:
+        p_name = p.get("name", "").strip()
+        p_store = p.get("store", "").strip()
+        p_url = p.get("productUrl", "").strip()
+        
+        # Primary check: using (store, name) key to ensure complete logical uniqueness
+        dedup_key = (p_store, p_name)
+        
+        if dedup_key not in seen_keys:
+            # Also double check by URL if URL exists
+            if p_url and p_url in [x.get("productUrl", "").strip() for x in unique_products if x.get("productUrl")]:
+                continue
+            seen_keys.add(dedup_key)
             unique_products.append(p)
             
     # Get current time in KST (UTC+9) for live execution timestamp
