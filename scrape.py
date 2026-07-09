@@ -188,32 +188,39 @@ def scrape_502_coffee():
 
 def scrape_naver_smartstore(url, store_name):
     """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 4 retries)"""
+    print(f"\n=> [{store_name}] 네이버 스마트스토어 수집 시작 (대상 URL: {url})")
     # Optimize retries to 4 to balance success rate and API credits
     for attempt in range(4):
         products = []
         try:
             custom_headers = HEADERS.copy()
-            custom_headers["Referer"] = url
+            # Impersonate normal search portal referrer entry using ASCII-safe query to avoid encoding error
+            custom_headers["Referer"] = "https://search.naver.com/search.naver?query=coffee"
             
+            print(f"   [{store_name}] 시도 {attempt+1}/4: HTTP 요청을 보냅니다...")
             r = fetch_url(url, custom_headers)
+            
             if r.status_code != 200:
-                print(f"[시도 {attempt+1}/4] Naver [{store_name}] HTTP 오류: {r.status_code}. 재시도합니다...")
-                time.sleep(2.5 + attempt * 2.0) # Apply solid backoff
+                backoff_time = 3.0 + attempt * 2.5
+                print(f"   [{store_name}] 시도 {attempt+1}/4 HTTP 오류 발생 (상태 코드: {r.status_code})")
+                print(f"   -> [대기 조치] 과부하 및 추가 차단 방지를 위해 {backoff_time}초 동안 대기합니다...")
+                time.sleep(backoff_time)
                 continue
             
             soup = BeautifulSoup(r.text, "html.parser")
             script_tag = soup.find("script", string=re.compile(r"window\.__PRELOADED_STATE__\s*="))
             
             if not script_tag:
-                print(f"[시도 {attempt+1}/4] Naver [{store_name}] 방화벽 감지로 수집 실패 (스크립트 없음). IP 변경 및 재시도...")
+                backoff_time = 3.0 + attempt * 2.5
+                print(f"   [{store_name}] 시도 {attempt+1}/4 방화벽 감지로 수집 실패 (로그인 챌린지 또는 보안 캡차 발생)")
                 try:
                     title_tag = soup.find("title")
                     title_text = title_tag.text.strip() if title_tag else "제목 없음"
-                    snippet = r.text[:300].strip().replace('\r', '').replace('\n', ' ')
-                    print(f"  -> [실패 페이지 분석] HTML 제목: {title_text} | 본문 초입: {snippet}")
+                    print(f"   -> [실패 페이지 분석] HTML 제목: {title_text}")
                 except Exception:
                     pass
-                time.sleep(2.5 + attempt * 2.0)
+                print(f"   -> [대기 조치] 차단 우회를 위해 IP 변경 대기시간 {backoff_time}초 적용...")
+                time.sleep(backoff_time)
                 continue
             
             content = script_tag.string.strip()
@@ -222,7 +229,7 @@ def scrape_naver_smartstore(url, store_name):
                 match = re.search(r"window\.__PRELOADED_STATE__\s*=\s*({.+})", content)
             
             if not match:
-                print(f"[시도 {attempt+1}/4] Naver [{store_name}] 정규표현식 매칭 실패. 재시도...")
+                print(f"   [{store_name}] 시도 {attempt+1}/4 정규표현식 파싱 매칭 실패. 2초 대기 후 재시도...")
                 time.sleep(2.0)
                 continue
                 
@@ -318,17 +325,17 @@ def scrape_naver_smartstore(url, store_name):
                 
                 # If we parsed products successfully, return them and break out of retries!
                 if products:
-                    print(f"[성공] Naver [{store_name}] 수집 성공! (수집 개수: {len(products)})")
+                    print(f"   [성공] Naver [{store_name}] 수집 성공! (수집 개수: {len(products)})")
                     return products
             else:
-                print(f"[시도 {attempt+1}/4] Naver [{store_name}] 빈 리스트 응답. 재시도...")
+                print(f"   [{store_name}] 시도 {attempt+1}/4 빈 상품 리스트 응답. 2초 대기 후 재시도...")
                 time.sleep(2.0)
                 
         except Exception as e:
-            print(f"Error scraping {store_name} (Attempt {attempt+1}/4): {e}")
+            print(f"   [{store_name}] 에러 발생 (시도 {attempt+1}/4): {e}")
             time.sleep(2.0)
             
-    print(f"[최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다.")
+    print(f"   [최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다.")
     return []
 
 def main():
@@ -342,43 +349,58 @@ def main():
     if SCRAPER_API_KEYS:
         print("[인증 성공] 우회 장치(ScraperAPI 로테이터)가 감지되었습니다. 깃허브 무인 자동화 모드로 실행합니다.")
     else:
-        print("[로컬 직접 수집] 한국 가정용 다이렉트 수집 모드로 실행합니다.")
+        print("[로컬 직접 수집] 한국 가정용 다이렉트 수집 모드로 실행합니다. (네이버 429 차단 시 대기시간이 길어질 수 있습니다)")
         
-    with ThreadPoolExecutor(max_workers=4) as executor:
-        future_502 = executor.submit(scrape_502_coffee)
-        future_johns = executor.submit(
-            scrape_naver_smartstore, 
-            "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1", 
-            "존스몰"
-        )
-        future_deepdive1 = executor.submit(
-            scrape_naver_smartstore, 
-            "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1", 
-            "딥다이브"
-        )
-        future_deepdive2 = executor.submit(
-            scrape_naver_smartstore, 
-            "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1", 
-            "딥다이브"
-        )
+    # Execute sequentially to avoid free tier concurrency limits (HTTP 499)
+    print("\n--------------------------------------------------")
+    print("Executing sequential scrapes to prevent ScraperAPI concurrency limit...")
+    print("--------------------------------------------------")
+    
+    print("\n=> [502 Coffee] 수집 시작...")
+    products_502 = scrape_502_coffee()
+    print(f"   [502 Coffee] 수집 완료! (수집 개수: {len(products_502)})")
+    
+    # Pause between scrapes to lower rate limits
+    delay = 2.5
+    print(f"대기 중: 스토어간 요청 간격을 위해 {delay}초 동안 쉬어갑니다...")
+    time.sleep(delay)
+    
+    products_johns = scrape_naver_smartstore(
+        "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1", 
+        "존스몰"
+    )
+    
+    print(f"대기 중: 스토어간 요청 간격을 위해 {delay}초 동안 쉬어갑니다...")
+    time.sleep(delay)
+    
+    products_deepdive1 = scrape_naver_smartstore(
+        "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1", 
+        "딥다이브"
+    )
+    
+    print(f"대기 중: 스토어간 요청 간격을 위해 {delay}초 동안 쉬어갑니다...")
+    time.sleep(delay)
+    
+    products_deepdive2 = scrape_naver_smartstore(
+        "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1", 
+        "딥다이브"
+    )
 
-        future_shin = executor.submit(
-            scrape_naver_smartstore, 
-            "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1", 
-            "신양"
-        )
-        future_identity = executor.submit(
-            scrape_naver_smartstore, 
-            "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1", 
-            "아이덴티티"
-        )
-        
-        products_502 = future_502.result()
-        products_johns = future_johns.result()
-        products_deepdive1 = future_deepdive1.result()
-        products_deepdive2 = future_deepdive2.result()
-        products_shin = future_shin.result()
-        products_identity = future_identity.result()
+    print(f"대기 중: 스토어간 요청 간격을 위해 {delay}초 동안 쉬어갑니다...")
+    time.sleep(delay)
+    
+    products_shin = scrape_naver_smartstore(
+        "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1", 
+        "신양"
+    )
+    
+    print(f"대기 중: 스토어간 요청 간격을 위해 {delay}초 동안 쉬어갑니다...")
+    time.sleep(delay)
+    
+    products_identity = scrape_naver_smartstore(
+        "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1", 
+        "아이덴티티"
+    )
         
     all_products = products_502 + products_johns + products_deepdive1 + products_deepdive2 + products_shin + products_identity
     
