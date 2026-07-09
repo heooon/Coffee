@@ -6,10 +6,14 @@ import urllib3
 import datetime
 import os
 import time
+import threading
 from concurrent.futures import ThreadPoolExecutor
 
 # Suppress SSL verification warnings
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
+# Threading Lock for thread-safe ScraperAPI key rotation
+keyring_lock = threading.Lock()
 
 # Read ScraperAPI keys from GitHub Actions secrets environment
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY")
@@ -44,11 +48,14 @@ def fetch_url(url, custom_headers=None):
     if is_naver and SCRAPER_API_KEYS:
         attempts_with_keys = len(SCRAPER_API_KEYS)
         for _ in range(attempts_with_keys):
-            if current_key_index >= len(SCRAPER_API_KEYS):
-                break
+            # Thread-safe read of the active key index and parameters
+            with keyring_lock:
+                if current_key_index >= len(SCRAPER_API_KEYS):
+                    break
+                active_key = SCRAPER_API_KEYS[current_key_index]
+                key_num = current_key_index + 1
                 
-            active_key = SCRAPER_API_KEYS[current_key_index]
-            print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 (키 인덱스: {current_key_index+1}/{len(SCRAPER_API_KEYS)}) -> {url[:50]}...")
+            print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 (키 인덱스: {key_num}/{len(SCRAPER_API_KEYS)}) -> {url[:50]}...")
             
             try:
                 payload = {
@@ -63,15 +70,18 @@ def fetch_url(url, custom_headers=None):
                 
                 # HTTP 403 means current key is exhausted or blocked
                 if r.status_code == 403:
-                    print(f"[우회 실패 - ScraperAPI] 현재 키(인덱스: {current_key_index+1})가 만료되거나 소진되었습니다 (HTTP 403).")
+                    print(f"[우회 실패 - ScraperAPI] 현재 키(인덱스: {key_num})가 만료되거나 소진되었습니다 (HTTP 403).")
                     try:
                         print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                     except Exception:
                         pass
                     
-                    # Rotate index to the next key
-                    print("[우회 로테이션] 다음 ScraperAPI 예비 키로 즉시 실시간 전환합니다.")
-                    current_key_index += 1
+                    # Thread-safe increment of index
+                    with keyring_lock:
+                        # Only increment if index hasn't been advanced by another parallel thread yet!
+                        if current_key_index == key_num - 1:
+                            print("[우회 로테이션] 다음 ScraperAPI 예비 키로 즉시 실시간 전환합니다.")
+                            current_key_index += 1
                     continue
                     
                 elif r.status_code != 200:
@@ -86,7 +96,9 @@ def fetch_url(url, custom_headers=None):
                     
             except Exception as e:
                 print(f"[우회 오류 - ScraperAPI] 연결 오류: {e}")
-                current_key_index += 1
+                with keyring_lock:
+                    if current_key_index == key_num - 1:
+                        current_key_index += 1
                 continue
     
     # Direct fetch (Default on local machine, or fallback on GitHub Actions when all keys are exhausted)
@@ -310,6 +322,10 @@ def scrape_naver_smartstore(url, store_name):
 def main():
     print("Starting automated coffee scraper...")
     print(f"[진단] 환경변수 검사 -> ScraperAPI 활성 키 개수: {len(SCRAPER_API_KEYS)}개 감지됨")
+    for i, key in enumerate(SCRAPER_API_KEYS):
+        if key:
+            masked = f"{key[:4]}...{key[-4:]}" if len(key) > 8 else "너무 짧음"
+            print(f"  -> [진단 키 {i+1}] 앞4자리...뒤4자리: {masked}")
     
     if SCRAPER_API_KEYS:
         print("[인증 성공] 우회 장치(ScraperAPI 로테이터)가 감지되었습니다. 깃허브 무인 자동화 모드로 실행합니다.")
