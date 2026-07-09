@@ -15,6 +15,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY")
 SCRAPER_API_PREMIUM = os.environ.get("SCRAPER_API_PREMIUM", "false").lower() == "true"
 SCRAPE_DO_TOKEN = os.environ.get("SCRAPE_DO_TOKEN")
+SCRAPINGANT_API_KEY = os.environ.get("SCRAPINGANT_API_KEY")
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
@@ -24,8 +25,8 @@ HEADERS = {
 }
 
 def fetch_url(url, custom_headers=None):
-    """Fetches HTML content, routing through ScraperAPI or Scrape.do on GitHub Actions to bypass Naver blocking"""
-    global SCRAPER_API_KEY, SCRAPE_DO_TOKEN
+    """Fetches HTML content, routing through ScraperAPI, Scrape.do, or ScrapingAnt on GitHub Actions to bypass Naver blocking"""
+    global SCRAPER_API_KEY, SCRAPE_DO_TOKEN, SCRAPINGANT_API_KEY
     headers_to_use = custom_headers if custom_headers else HEADERS
     
     is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url
@@ -81,6 +82,32 @@ def fetch_url(url, custom_headers=None):
                 return r
         except Exception as e:
             print(f"[우회 오류 - Scrape.do] 연결 오류: {e}")
+            
+    # 3. Try ScrapingAnt if token is present (either as primary or fallback)
+    if SCRAPINGANT_API_KEY and is_naver:
+        print(f"[우회 - ScrapingAnt] 네이버 수집 우회 터널을 작동합니다 -> {url[:50]}...")
+        try:
+            payload = {
+                'x-api-key': SCRAPINGANT_API_KEY,
+                'url': url,
+                'browser': 'false',         # Disable JS rendering to save credits (highly recommended)
+                'proxy_type': 'residential', # South Korea residential proxy to bypass Naver's block
+                'country': 'kr'
+            }
+            r = requests.get('https://api.scrapingant.com/v2/general', params=payload, verify=False, timeout=50)
+            if r.status_code != 200:
+                print(f"[우회 실패 - ScrapingAnt] 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                try:
+                    print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
+                except Exception:
+                    pass
+                if r.status_code == 403 or r.status_code == 401:
+                    print("[우회 비활성화 - ScrapingAnt] 크레딧 소진 또는 권한 오류(403/401)로 인해 이번 실행 중 ScrapingAnt 사용을 중단합니다.")
+                    SCRAPINGANT_API_KEY = None
+            else:
+                return r
+        except Exception as e:
+            print(f"[우회 오류 - ScrapingAnt] 연결 오류: {e}")
     
     # Direct fetch (Default on local machine, or fallback on GitHub Actions)
     return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
@@ -295,8 +322,10 @@ def scrape_naver_smartstore(url, store_name):
 
 def main():
     print("Starting automated coffee scraper...")
-    if SCRAPER_API_KEY:
-        print("[인증 성공] ScraperAPI 우회 키가 감지되었습니다. 깃허브 무인 자동화 모드로 실행합니다.")
+    print(f"[진단] 환경변수 검사 -> ScraperAPI 키 감지: {'O' if SCRAPER_API_KEY else 'X'} | Scrape.do 토큰 감지: {'O' if SCRAPE_DO_TOKEN else 'X'} | ScrapingAnt 키 감지: {'O' if SCRAPINGANT_API_KEY else 'X'}")
+    
+    if SCRAPER_API_KEY or SCRAPE_DO_TOKEN or SCRAPINGANT_API_KEY:
+        print("[인증 성공] 우회 장치가 감지되었습니다. 깃허브 무인 자동화 모드로 실행합니다.")
     else:
         print("[로컬 직접 수집] 한국 가정용 다이렉트 수집 모드로 실행합니다.")
         
