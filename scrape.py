@@ -13,6 +13,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # Read ScraperAPI key from GitHub Actions secrets environment
 SCRAPER_API_KEY = os.environ.get("SCRAPER_API_KEY")
+SCRAPER_API_PREMIUM = os.environ.get("SCRAPER_API_PREMIUM", "false").lower() == "true"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
@@ -34,8 +35,20 @@ def fetch_url(url, custom_headers=None):
                 'api_key': SCRAPER_API_KEY,
                 'url': url
             }
+            # Enable premium residential proxies if specified to bypass tough blocks
+            if SCRAPER_API_PREMIUM:
+                payload['premium'] = 'true'
+                print("[우회 옵션] 프리미엄 주거용 프록시(premium=true)를 활성화합니다.")
+                
             # ScraperAPI automatically rotates high-quality proxies and handles header fingerprints
-            r = requests.get('http://api.scraperapi.com', params=payload, verify=False, timeout=50)
+            r = requests.get('https://api.scraperapi.com', params=payload, verify=False, timeout=50)
+            
+            if r.status_code != 200:
+                print(f"[우회 실패] ScraperAPI 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                try:
+                    print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
+                except Exception:
+                    pass
             return r
         except Exception as e:
             print(f"[우회 실패] 프록시 연결 오류: {e}. 다이렉트 시도로 폴백합니다.")
