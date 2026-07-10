@@ -200,6 +200,7 @@ def scrape_502_coffee():
                 "price": price,
                 "imageUrl": img_url,
                 "productUrl": product_url,
+                "soldOut": soldout,
                 "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
             })
     except Exception as e:
