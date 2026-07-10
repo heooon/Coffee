@@ -40,6 +40,10 @@ if SCRAPER_API_KEY_SECONDARY:
 # Track globally exhausted keys to skip them instantly on subsequent fetches
 exhausted_keys = set()
 
+import random
+# Globally track ScraperAPI session number to maintain same IP on success
+current_session_id = random.randint(100000, 999999)
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -49,7 +53,7 @@ HEADERS = {
 
 def fetch_url(url, custom_headers=None):
     """Fetches HTML content, routing through ScraperAPI key list on GitHub Actions"""
-    global SCRAPER_API_KEYS, exhausted_keys
+    global SCRAPER_API_KEYS, exhausted_keys, current_session_id
     headers_to_use = custom_headers if custom_headers else HEADERS
     
     is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url or "brand.naver.com" in url
@@ -67,12 +71,13 @@ def fetch_url(url, custom_headers=None):
                 print(f"[우회 건너뛰기] ScraperAPI 키(인덱스: {key_idx+1})는 이미 소진된 상태이므로 즉시 건너뜁니다.")
                 continue
                 
-            print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 (키 인덱스: {key_idx+1}/{key_num}) -> {url[:50]}...")
+            print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 (키 인덱스: {key_idx+1}/{key_num}, 세션: {current_session_id}) -> {url[:50]}...")
             
             try:
                 payload = {
                     'api_key': active_key,
-                    'url': url
+                    'url': url,
+                    'session_number': str(current_session_id)
                 }
                 if SCRAPER_API_PREMIUM:
                     payload['premium'] = 'true'
@@ -84,6 +89,8 @@ def fetch_url(url, custom_headers=None):
                 if r.status_code == 403:
                     print(f"[우회 실패 - ScraperAPI] 현재 키(인덱스: {key_idx+1})가 만료되거나 소진되었습니다 (HTTP 403).")
                     exhausted_keys.add(active_key)
+                    # Refresh session ID to try a fresh new IP next time
+                    current_session_id = random.randint(100000, 999999)
                     try:
                         print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                     except Exception:
@@ -92,16 +99,21 @@ def fetch_url(url, custom_headers=None):
                     
                 elif r.status_code != 200:
                     print(f"[우회 실패 - ScraperAPI] 응답 오류 - HTTP 상태 코드: {r.status_code}")
+                    # Refresh session ID on non-200 response to shift to a new IP
+                    current_session_id = random.randint(100000, 999999)
                     try:
                         print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                     except Exception:
                         pass
                     return r
                 else:
+                    # Successful request! Keep current_session_id (reuses the same IP next time)
                     return r
                     
             except Exception as e:
                 print(f"[우회 오류 - ScraperAPI] 연결 오류: {e}")
+                # Refresh session ID on connection exception/timeout to get a new IP
+                current_session_id = random.randint(100000, 999999)
                 continue
     
     # Strictly prohibit local direct fetch ONLY on GitHub Actions runner environment to protect runner IP from being blocked
