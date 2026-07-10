@@ -227,6 +227,7 @@ def scrape_502_coffee():
 
 def scrape_naver_smartstore(url, store_name):
     """Scrapes products from Naver Smartstore using the mobile category endpoint (with up to 4 retries)"""
+    global current_session_id
     print(f"\n=> [{store_name}] 네이버 스마트스토어 수집 시작 (대상 URL: {url})")
     # Optimize retries to 4 to balance success rate and API credits
     for attempt in range(4):
@@ -252,6 +253,8 @@ def scrape_naver_smartstore(url, store_name):
             if not script_tag:
                 backoff_time = 3.0 + attempt * 2.5
                 print(f"   [{store_name}] 시도 {attempt+1}/4 방화벽 감지로 수집 실패 (로그인 챌린지 또는 보안 캡차 발생)")
+                # Refresh session ID to force ScraperAPI to rotate to a new IP on next attempt
+                current_session_id = random.randint(100000, 999999)
                 try:
                     title_tag = soup.find("title")
                     title_text = title_tag.text.strip() if title_tag else "제목 없음"
@@ -269,6 +272,8 @@ def scrape_naver_smartstore(url, store_name):
             
             if not match:
                 print(f"   [{store_name}] 시도 {attempt+1}/4 정규표현식 파싱 매칭 실패. 2초 대기 후 재시도...")
+                # Refresh session ID to force ScraperAPI to rotate to a new IP on next attempt
+                current_session_id = random.randint(100000, 999999)
                 time.sleep(2.0)
                 continue
                 
@@ -373,10 +378,12 @@ def scrape_naver_smartstore(url, store_name):
                     return products
             else:
                 print(f"   [{store_name}] 시도 {attempt+1}/4 빈 상품 리스트 응답. 2초 대기 후 재시도...")
+                current_session_id = random.randint(100000, 999999)
                 time.sleep(2.0)
                 
         except Exception as e:
             print(f"   [{store_name}] 에러 발생 (시도 {attempt+1}/4): {e}")
+            current_session_id = random.randint(100000, 999999)
             time.sleep(2.0)
             
     print(f"   [최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다. (이전 데이터를 보존하기 위해 None을 반환합니다)")
