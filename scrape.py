@@ -37,6 +37,9 @@ if SCRAPER_API_KEY:
 if SCRAPER_API_KEY_SECONDARY:
     SCRAPER_API_KEYS.append(SCRAPER_API_KEY_SECONDARY)
 
+# Track globally exhausted keys to skip them instantly on subsequent fetches
+exhausted_keys = set()
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
@@ -46,7 +49,7 @@ HEADERS = {
 
 def fetch_url(url, custom_headers=None):
     """Fetches HTML content, routing through ScraperAPI key list on GitHub Actions"""
-    global SCRAPER_API_KEYS
+    global SCRAPER_API_KEYS, exhausted_keys
     headers_to_use = custom_headers if custom_headers else HEADERS
     
     is_naver = "smartstore.naver.com" in url or "m.smartstore.naver.com" in url or "brand.naver.com" in url
@@ -57,6 +60,11 @@ def fetch_url(url, custom_headers=None):
         for key_idx in range(key_num):
             active_key = SCRAPER_API_KEYS[key_idx]
             if not active_key:
+                continue
+                
+            # Skip keys that have been confirmed exhausted in this run
+            if active_key in exhausted_keys:
+                print(f"[우회 건너뛰기] ScraperAPI 키(인덱스: {key_idx+1})는 이미 소진된 상태이므로 즉시 건너뜁니다.")
                 continue
                 
             print(f"[우회 - ScraperAPI] 네이버 수집 우회 터널을 작동합니다 (키 인덱스: {key_idx+1}/{key_num}) -> {url[:50]}...")
@@ -75,6 +83,7 @@ def fetch_url(url, custom_headers=None):
                 # HTTP 403 means current key is exhausted or blocked
                 if r.status_code == 403:
                     print(f"[우회 실패 - ScraperAPI] 현재 키(인덱스: {key_idx+1})가 만료되거나 소진되었습니다 (HTTP 403).")
+                    exhausted_keys.add(active_key)
                     try:
                         print(f"[우회 실패 상세] 응답 내용: {r.text.strip()}")
                     except Exception:
@@ -191,13 +200,16 @@ def scrape_502_coffee():
                 "price": price,
                 "imageUrl": img_url,
                 "productUrl": product_url,
-                "soldOut": soldout,
                 "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
             })
     except Exception as e:
         print(f"Error scraping 502 Coffee: {e}")
         return None
     
+    print("\n==================================================")
+    print(f"[성공] 502 Coffee 수집이 완료되었습니다!")
+    print(f">> 수집된 신선한 원두 개수: {len(products)}개")
+    print("==================================================\n")
     return products
 
 def scrape_naver_smartstore(url, store_name):
@@ -340,9 +352,11 @@ def scrape_naver_smartstore(url, store_name):
                         "categoryUrl": url
                     })
                 
-                # If we parsed products successfully, return them and break out of retries!
                 if products:
-                    print(f"   [성공] Naver [{store_name}] 수집 성공! (수집 개수: {len(products)})")
+                    print("\n**************************************************")
+                    print(f"[성공] Naver [{store_name}] 수집 완료!")
+                    print(f">> 수집된 원두 개수: {len(products)}개")
+                    print("**************************************************\n")
                     return products
             else:
                 print(f"   [{store_name}] 시도 {attempt+1}/4 빈 상품 리스트 응답. 2초 대기 후 재시도...")
@@ -539,8 +553,14 @@ def main():
     # Write directly to products.json
     with open("products.json", "w", encoding="utf-8") as f:
         json.dump(output_data, f, ensure_ascii=False, indent=4)
-        
-    print(f"Scraped and saved {len(unique_products)} products to products.json successfully!")
+
+    print("\n################################################################")
+    print("##                                                            ##")
+    print("##    [성공] 모든 스토어의 커피 수집 및 중복 제거가 완료되었습니다!    ##")
+    print(f"##    >> 최종 저장된 원두 목록: 총 {len(unique_products)}개                          ##")
+    print("##    >> 결과 파일: products.json 저장 완료                     ##")
+    print("##                                                            ##")
+    print("################################################################\n")
 
 if __name__ == "__main__":
     main()
