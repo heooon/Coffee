@@ -10,6 +10,14 @@ import threading
 import sys
 from concurrent.futures import ThreadPoolExecutor
 
+# Try to import curl_cffi for advanced anti-bot TLS fingerprint bypass on local testing
+try:
+    from curl_cffi import requests as impersonate_requests
+    HAS_CURL_CFFI = True
+except ImportError:
+    impersonate_requests = requests
+    HAS_CURL_CFFI = False
+
 # Force stdout to be line-buffered to output print logs in real-time without buffer delay
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(line_buffering=True)
@@ -116,10 +124,16 @@ def fetch_url(url, custom_headers=None):
             mock_resp.status_code = 503
             return mock_resp
         else:
-            print("[로컬 직접 수집 - 경고] 로컬 개발 환경이므로 ScraperAPI 없이 직접 수집을 시도합니다. (주의: 차단 가능성 있음)")
+            if HAS_CURL_CFFI:
+                print("[로컬 직접 수집 - 우회] 크롬 브라우저 위장(curl_cffi)을 적용하여 네이버 스마트스토어 직접 수집을 시도합니다.")
+            else:
+                print("[로컬 직접 수집 - 경고] 로컬 개발 환경이므로 ScraperAPI 없이 직접 수집을 시도합니다. (주의: curl_cffi 미설치로 차단 가능성 높음)")
         
-    # Direct fetch (Default on local machine for non-Naver sites like 502 Coffee, or Naver local testing)
-    return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
+    # Direct fetch (Default on local machine for non-Naver sites, or Naver local testing with/without Chrome impersonation)
+    if HAS_CURL_CFFI:
+        return impersonate_requests.get(url, headers=headers_to_use, impersonate="chrome", verify=False, timeout=15)
+    else:
+        return requests.get(url, headers=headers_to_use, verify=False, timeout=10)
 
 def scrape_502_coffee():
     """Scrapes products from 502 Coffee (Cafe24 site)"""
@@ -196,10 +210,12 @@ def scrape_502_coffee():
                 "price": price,
                 "imageUrl": img_url,
                 "productUrl": product_url,
-                "soldOut": soldout
+                "soldOut": soldout,
+                "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
             })
     except Exception as e:
         print(f"Error scraping 502 Coffee: {e}")
+        return None
     
     return products
 
@@ -339,7 +355,8 @@ def scrape_naver_smartstore(url, store_name):
                         "price": price,
                         "imageUrl": img_url,
                         "productUrl": product_url,
-                        "soldOut": soldout
+                        "soldOut": soldout,
+                        "categoryUrl": url
                     })
                 
                 # If we parsed products successfully, return them and break out of retries!
@@ -354,8 +371,8 @@ def scrape_naver_smartstore(url, store_name):
             print(f"   [{store_name}] 에러 발생 (시도 {attempt+1}/4): {e}")
             time.sleep(2.0)
             
-    print(f"   [최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다.")
-    return []
+    print(f"   [최종 실패] Naver [{store_name}] 수집에 최종 실패했습니다. (이전 데이터를 보존하기 위해 None을 반환합니다)")
+    return None
 
 def main():
     print("Starting automated coffee scraper...")
@@ -370,6 +387,41 @@ def main():
     else:
         print("[로컬 직접 수집] 한국 가정용 다이렉트 수집 모드로 실행합니다. (네이버 429 차단 시 대기시간이 길어질 수 있습니다)")
         
+    # Load existing products as backup fallback by category URL
+    existing_products_by_category = {}
+    if os.path.exists("products.json"):
+        try:
+            with open("products.json", "r", encoding="utf-8") as f:
+                old_data = json.load(f)
+                if old_data and isinstance(old_data.get("products"), list):
+                    for p in old_data["products"]:
+                        cat_url = p.get("categoryUrl")
+                        store = p.get("store")
+                        
+                        # Fallback for old products.json without categoryUrl
+                        if not cat_url and store:
+                            if store == "502":
+                                cat_url = "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
+                            elif store == "존스몰":
+                                cat_url = "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+                            elif store == "신양":
+                                cat_url = "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+                            elif store == "아이덴티티":
+                                cat_url = "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+                            elif store == "먼스커피":
+                                cat_url = "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+                            elif store == "딥다이브":
+                                # Fallback deepdive to the first category url
+                                cat_url = "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+                                
+                        if cat_url:
+                            if cat_url not in existing_products_by_category:
+                                existing_products_by_category[cat_url] = []
+                            existing_products_by_category[cat_url].append(p)
+                    print(f"[백업 로드 완료] 기존 products.json에서 백업 카테고리 개수: {len(existing_products_by_category)}개 감지됨")
+        except Exception as e:
+            print(f"[백업 로드 실패] 기존 products.json을 로드하지 못했습니다: {e}")
+
     # Execute sequentially to avoid free tier concurrency limits (HTTP 499)
     print("\n--------------------------------------------------")
     print("Executing sequential scrapes to prevent ScraperAPI concurrency limit...")
@@ -377,7 +429,6 @@ def main():
     
     print("\n=> [502 Coffee] 수집 시작...")
     products_502 = scrape_502_coffee()
-    print(f"   [502 Coffee] 수집 완료! (수집 개수: {len(products_502)})")
     
     # Pause between scrapes to lower rate limits
     delay = 2.5
@@ -425,6 +476,53 @@ def main():
         "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1", 
         "먼스커피"
     )
+    
+    print("\n--------------------------------------------------")
+    print("수집 완료. 데이터 정리 및 백업 검사를 수행합니다...")
+    print("--------------------------------------------------")
+        
+    # Fallback for 502 Coffee
+    url_502 = "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
+    if products_502 is None:
+        products_502 = existing_products_by_category.get(url_502, [])
+        print(f"   [백업 복원] 502 Coffee 수집 실패로 기존 데이터를 유지합니다. (복원 개수: {len(products_502)})")
+    else:
+        print(f"   [502 Coffee] 수집 완료 (수집 개수: {len(products_502)})")
+        
+    # Fallback for 존스몰
+    url_johns = "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+    if products_johns is None:
+        products_johns = existing_products_by_category.get(url_johns, [])
+        print(f"   [백업 복원] 존스몰 수집 실패로 기존 데이터를 유지합니다. (복원 개수: {len(products_johns)})")
+        
+    # Fallback for 딥다이브 (두 개의 카테고리 링크 각각 독립적으로 복원)
+    url_dd1 = "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+    url_dd2 = "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1"
+    
+    if products_deepdive1 is None:
+        products_deepdive1 = existing_products_by_category.get(url_dd1, [])
+        print(f"   [백업 복원] 딥다이브 (카테고리 1) 수집 실패로 기존 데이터를 유지합니다. (복원 개수: {len(products_deepdive1)})")
+    if products_deepdive2 is None:
+        products_deepdive2 = existing_products_by_category.get(url_dd2, [])
+        print(f"   [백업 복원] 딥다이브 (카테고리 2) 수집 실패로 기존 데이터를 유지합니다. (복원 개수: {len(products_deepdive2)})")
+            
+    # Fallback for 신양
+    url_shin = "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+    if products_shin is None:
+        products_shin = existing_products_by_category.get(url_shin, [])
+        print(f"   [백업 복원] 신양 수집 실패로 기존 데이터를 유지합니다. (복원 개수: {len(products_shin)})")
+        
+    # Fallback for 아이덴티티
+    url_identity = "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+    if products_identity is None:
+        products_identity = existing_products_by_category.get(url_identity, [])
+        print(f"   [백업 복원] 아이덴티티 수집 실패로 기존 데이터를 유지합니다. (복원 개수: {len(products_identity)})")
+        
+    # Fallback for 먼스커피
+    url_month = "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+    if products_month is None:
+        products_month = existing_products_by_category.get(url_month, [])
+        print(f"   [백업 복원] 먼스커피 수집 실패로 기존 데이터를 유지합니다. (복원 개수: {len(products_month)})")
         
     all_products = products_502 + products_johns + products_deepdive1 + products_deepdive2 + products_shin + products_identity + products_month
     
