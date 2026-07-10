@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 99,
-    "last_scraped": "2026-07-10 23:07",
+    "last_scraped": "2026-07-10 23:20",
     "products": [
         {
             "store": "502",
@@ -9,7 +9,6 @@
             "price": 39000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/f2f434417230b4e20c5793dfe69a2666.png",
             "productUrl": "https://502coffee.com/product/502-시그니처-블렌드-1kg/93/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -18,7 +17,6 @@
             "price": 17800,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260705/117994f256a1f844e3fe463045f379ac.png",
             "productUrl": "https://502coffee.com/product/7월의-커피-콜롬비아-카우카-파라이소92-게이샤-100g/182/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -27,7 +25,6 @@
             "price": 14000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/35834ec60f8ecf47b51abd5396f291eb.png",
             "productUrl": "https://502coffee.com/product/classic-클래식/9/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -36,7 +33,6 @@
             "price": 16000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/81c6c35a2db01da2ec6311f5cccf455b.png",
             "productUrl": "https://502coffee.com/product/workers-워커스/10/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -45,7 +41,6 @@
             "price": 16000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/fa894027add90add2b574d308619e187.png",
             "productUrl": "https://502coffee.com/product/gentle-젠틀/11/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -54,7 +49,6 @@
             "price": 16000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/f0328c0e19c9762d1791bbbf5e31e4ca.png",
             "productUrl": "https://502coffee.com/product/blues-블루스/121/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -63,7 +57,6 @@
             "price": 18000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/52005a702da1088fc8442525d3328477.png",
             "productUrl": "https://502coffee.com/product/welcome-웰컴/12/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -72,7 +65,6 @@
             "price": 18000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/e3903301e406b3b9b39b56c331e2a42a.png",
             "productUrl": "https://502coffee.com/product/디카페인-pillow-필로우/13/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -81,7 +73,6 @@
             "price": 19000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
             "productUrl": "https://502coffee.com/product/디카페인-에티오피아-예가체프-할로-베리티-내추럴/178/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -90,7 +81,6 @@
             "price": 19000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260530/51f785c6b75f63a763467d60fed73273.png",
             "productUrl": "https://502coffee.com/product/페루-라-팔마-레드-카투라/154/category/24/display/1/",
-            "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
