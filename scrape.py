@@ -559,9 +559,50 @@ def main():
             seen_keys.add(dedup_key)
             unique_products.append(p)
             
+    # 1. Compare new products with existing products to detect real content changes
+    has_changes = True
+    old_products = []
+    old_last_scraped = ""
+    
+    if os.path.exists("products.json"):
+        try:
+            with open("products.json", "r", encoding="utf-8") as f:
+                old_data = json.load(f)
+                if old_data and isinstance(old_data.get("products"), list):
+                    old_products = old_data["products"]
+                    old_last_scraped = old_data.get("last_scraped", "")
+        except Exception:
+            pass
+
+    # Normalize properties for pure business value comparison (ignore transient fields like categoryUrl if needed, but keeping core fields)
+    def normalize_for_comparison(product_list):
+        normalized = []
+        for p in product_list:
+            normalized.append({
+                "store": p.get("store", ""),
+                "name": p.get("name", ""),
+                "price": p.get("price", 0),
+                "imageUrl": p.get("imageUrl", ""),
+                "productUrl": p.get("productUrl", ""),
+                "soldOut": p.get("soldOut", False)
+            })
+        return sorted(normalized, key=lambda x: (x["store"], x["name"]))
+
+    new_normalized = normalize_for_comparison(unique_products)
+    old_normalized = normalize_for_comparison(old_products)
+    
+    if new_normalized == old_normalized:
+        has_changes = False
+        print("[정보] 수집 결과가 기존 원두 목록과 완벽히 일치합니다. 변경점을 차단하기 위해 타임스탬프를 보존합니다.")
+    else:
+        print(f"[정보] 원두 목록 변경 감지! (기존 원두 개수: {len(old_products)} -> 현재 원두 개수: {len(unique_products)})")
+
     # Get current time in KST (UTC+9) for live execution timestamp
-    kst_now = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
-    last_scraped_str = kst_now.strftime("%Y-%m-%d %H:%M") # "2026-06-19 17:35"
+    if has_changes or not old_last_scraped:
+        kst_now = datetime.datetime.utcnow() + datetime.timedelta(hours=9)
+        last_scraped_str = kst_now.strftime("%Y-%m-%d %H:%M") # "2026-06-19 17:35"
+    else:
+        last_scraped_str = old_last_scraped
 
     output_data = {
         "success": True,
