@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 33,
-    "last_scraped": "2026-07-10 16:38",
+    "count": 48,
+    "last_scraped": "2026-07-10 19:55",
     "products": [
         {
             "store": "502",
@@ -266,6 +266,126 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_6/1782292355545RU7Vl_PNG/116425267559792325_315220724.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
             "soldOut": true
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 100g, 1개",
+            "price": 6000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204576",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]여름이면 생각나는 시원달달한 수박화채 블렌드 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260709_115/1783570213576eCDwc_PNG/68755179260752683_111509718.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13657224585",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517753",
+            "soldOut": false
+        },
+        {
+            "store": "딥다이브",
+            "name": "[딥다이브]상큼한 산미 new 딸기퐁듀 블렌드 100g, 1개",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_14/1782708366889fqvLm_PNG/129673667808765786_1118706037.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/9600856695",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "색동 200g",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200213_98/1581576369925xUW24_GIF/18936204466118634_468550287.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/11954151881",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "브라질 , 산타 루시아 200g ( Brazil, Santa Lucia)",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200315_45/1584237002041WAdFx_GIF/21596836584877775_820853662.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/11361794794",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "에티오피아, 할로 베리티 디카페인 200g (Ethiopia, Halo Beriti  Decaffeine)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13305432337",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "콜롬비아, 엘 베르헬 _워터멜론 200g (Colombia, El Vergel _Watermelon 200g)",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/12965039433",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "에티오피아,   아르베고나 200g (Ethiopia,  Arbegonna 200g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13625668122",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "콜롬비아, 엘파라이소 리치-피치 200g (Colombia, El Paraiso Lychee- Peach )",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210526_39/1621994018843Yfx6f_GIF/23129861304974510_1836917556.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13625718119",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "케냐,  무티투AA  200g (Kenya, Mutitu AA 200g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13636506623",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "에티오피아, 게뎁, 라레사 200g (Ethiopia, Gedeb, Lalesa)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13641426846",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "과테말라, 와이칸 200g (Guatemala, Waykan)",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210822_221/1629640757979hcHYb_GIF/30776646389825362_1844377397.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13647754683",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "페루, 라 팔마 _ 게이샤 200g (Peru, La Palma_ Geisha)",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210412_22/1618155293945SEuD9_GIF/19291136449994103_2061849475.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13649557309",
+            "soldOut": false
+        },
+        {
+            "store": "신양",
+            "name": "콜롬비아, 엘 베르헬 _피나 콜라다 200g (Colombia, El Vergel _ Pina Colada 200g)",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13655897276",
+            "soldOut": false
         }
     ]
 }
