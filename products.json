@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 86,
-    "last_scraped": "2026-07-10 23:02",
+    "count": 99,
+    "last_scraped": "2026-07-10 23:07",
     "products": [
         {
             "store": "502",
@@ -616,6 +616,15 @@
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
+            "store": "아이덴티티",
+            "name": "시즌 큐레이션(500g)",
+            "price": 49500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646135265",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
             "store": "먼스커피",
             "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두커피 1kg",
             "price": 38000,
@@ -774,6 +783,114 @@
             "price": 46000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260506_159/1778047709354QPIgh_JPEG/112180572473155994_957092181.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/13494638225",
+            "soldOut": true,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 온두라스 라 만사나 파라이네마 워시드 200g",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260506_226/1778047421143vGiO1_JPEG/112180360262428117_1044741905.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13494625500",
+            "soldOut": true,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[5월의 원두] 페루 라 플로르 데 라 팔마 게이샤 워시드 100g",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260501_172/1777631558265QgmxQ_JPEG/26387829410166057_331084.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13476778736",
+            "soldOut": true,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[대용량,납품,사무실원두] 고소한 마호가니 블렌드 원두커피 5kg",
+            "price": 115500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260401_216/17750547541850hhs7_JPEG/28649666333246987_2006165308.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13338978906",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[4월의 원두] 코스타리카 돈 오스카 코요테 자바 레드허니 200g",
+            "price": 25000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260331_145/1774954506976K75sT_JPEG/4127721937252745_1738542632.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13332407077",
+            "soldOut": true,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피 x 에스락] 밀폐 진공용기",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260309_120/1773040710811gI0b5_JPEG/107173594935112403_676002703.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13223119377",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피 x TWB] 타월 코스터",
+            "price": 8800,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260309_158/1773037619860b5JsQ_JPEG/12404863051304994_1872203323.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13222672489",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 봄 시즈널 블렌드 '피움' 100g",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260301_142/1772355613696RfDrH_PNG/26931738835069948_537688054.png",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13185153258",
+            "soldOut": true,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 겨울 시즈널 블렌드 '쉼' 200g",
+            "price": 19000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260331_149/1774955924408SBbh7_JPEG/30235681892245067_236236225.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12760388717",
+            "soldOut": true,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 에티오피아 벤치마지 게샤 워시드 200g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251124_107/1763971764791gVKFI_JPEG/92487121829762912_1833705675.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728650968",
+            "soldOut": true,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 200g",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260419_113/177660972209527YvP_JPEG/3432084485121573_1765255135.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484468908",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 브라질 다테하 풀블룸 200g",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_99/1759255661969YNx4O_JPEG/935229015042760_2119691461.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/6938272737",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "하리오v60 커피필터 1-4인용 백색 100매",
+            "price": 4500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20220218_186/1645162175427bH1hU_JPEG/46297958916439436_144658864.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/6316872259",
             "soldOut": true,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         }
