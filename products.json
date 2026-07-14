@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 99,
-    "last_scraped": "2026-07-13 19:59",
+    "count": 98,
+    "last_scraped": "2026-07-14 11:14",
     "products": [
         {
             "store": "502",
@@ -522,15 +522,6 @@
             "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260703_208/1783058851060yjBep_PNG/36737129122114781_734073048.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13651036889",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "케냐 챕상고 힐스 NA 내추럴(100g)",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_29/1782285704072LA7ae_PNG/55105758212157760_1020911385.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642098752",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
