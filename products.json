@@ -662,15 +662,6 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 500g",
-            "price": 25000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_56/1759258788290c7TAU_PNG/76585719784266521_1722002598.png",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/10498056473",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
             "name": "[대용량,납품,사무실원두] 고소한 마호가니 블렌드 원두커피 5kg",
             "price": 115500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260401_216/17750547541850hhs7_JPEG/28649666333246987_2006165308.jpg",
@@ -756,6 +747,15 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260702_179/1782988691430suFSu_JPEG/117121526533649625_1515370208.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/13649314758",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 500g",
+            "price": 25000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_56/1759258788290c7TAU_PNG/76585719784266521_1722002598.png",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/10498056473",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
