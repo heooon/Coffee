@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 99,
-    "last_scraped": "2026-07-19 11:30",
+    "last_scraped": "2026-07-19 18:54",
     "products": [
         {
             "store": "502",
@@ -189,7 +189,7 @@
             "price": 45000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647257442",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -207,7 +207,7 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256897",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -216,7 +216,7 @@
             "price": 11000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256896",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
