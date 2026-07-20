@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 99,
-    "last_scraped": "2026-07-20 05:45",
+    "count": 92,
+    "last_scraped": "2026-07-20 11:46",
     "products": [
         {
             "store": "502",
@@ -203,56 +203,20 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 500g, 1개",
-            "price": 45000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647257442",
-            "soldOut": true,
+            "name": "에티오피아 무라고 바샤 베켈레 바다갈로 74112&74158 무산소 허니 200g, 1개",
+            "price": 28000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260720_68/1784512223440I4csO_PNG/118645081397728666_132283392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13673291258",
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 200g, 1개",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256897",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 하마쇼 케베나 아스파우 74158 내추럴 100g, 1개",
-            "price": 11000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260630_206/1782816052148l6W8B_PNG/7188535024933329_816593321.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13647256896",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 게샤빌리지 오마 게샤1931 내추럴 127 100g",
-            "price": 37000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_195/17822942176526LsCa_PNG/67816989387722237_1128911111.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642208416",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 구지 바데이 투레 와지 74110, 74112 허니 200g, 1개",
-            "price": 25500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_288/1782291216260tahg9_PNG/14262837800869755_1755532578.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642177286",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 구지 바데이 투레 와지 74110, 74112 허니 100g, 1개",
-            "price": 13500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_288/1782291216260tahg9_PNG/14262837800869755_1755532578.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642177285",
-            "soldOut": true,
+            "name": "에티오피아 무라고 바샤 베켈레 바다갈로 74112&74158 무산소 허니 100g, 1개",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260720_68/1784512223440I4csO_PNG/118645081397728666_132283392.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13673291257",
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -262,24 +226,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781550",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "콜롬비아 엘 디비소 핑크 버번 모스토 코퍼먼티드 워시드 100g",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_118/1782292503435iD6xV_PNG/53061745385958530_920224118.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629854699",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 뚱구리 내추럴 헤비 100g",
-            "price": 10000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_6/1782292355545RU7Vl_PNG/116425267559792325_315220724.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629832800",
-            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -360,15 +306,6 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13305432337",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
-            "name": "콜롬비아, 엘 베르헬 _워터멜론 200g (Colombia, El Vergel _Watermelon 200g)",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/12965039433",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
@@ -459,7 +396,7 @@
             "price": 19000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260513_121/1778643556925TSe21_PNG/30851350774672859_665401234.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13522263431",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -468,7 +405,7 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260629_153/1782708096226JKaH6_PNG/11218302218402525_415997445.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13646056229",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -504,7 +441,7 @@
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260622_3/1782111331297chfBF_PNG/14082952948357944_689010551.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13640177811",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
