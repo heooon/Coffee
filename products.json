@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 92,
-    "last_scraped": "2026-07-20 11:46",
+    "count": 90,
+    "last_scraped": "2026-07-20 19:54",
     "products": [
         {
             "store": "502",
@@ -424,24 +424,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4701816481",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "탄자니아 아카시아 힐스 게이샤 AA 워시드(100g)",
-            "price": 14000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260707_33/1783408204291r4YWn_PNG/23426988121974871_884929723.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13655666565",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "에티오피아 구지 바데이 내추럴(150g)",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260622_3/1782111331297chfBF_PNG/14082952948357944_689010551.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13640177811",
-            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
