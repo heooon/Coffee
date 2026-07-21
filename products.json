@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 90,
-    "last_scraped": "2026-07-21 15:28",
+    "count": 93,
+    "last_scraped": "2026-07-21 19:27",
     "products": [
         {
             "store": "502",
@@ -423,7 +423,7 @@
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260618_158/17817637880552X6Hg_PNG/27906811040907450_1101129646.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13637087739",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -540,6 +540,33 @@
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_117/1782285462553NDpli_PNG/2927867342576877_968451928.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642096098",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "파나마 하시엔다 바르바라 로스 브루호스 게이샤 내추럴 #25(100g)",
+            "price": 36000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260721_132/178461606065758C7t_PNG/118748894104166883_1706637687.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13675046931",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "에티오피아 알로 타미루 몰케 내추럴(150g)",
+            "price": 19000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260721_280/1784615914952rkBo4_PNG/118748891019554419_1592771640.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13675043435",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "(브릴리언트) 파나마 블랙문 게이샤 워시드 #4(50g)",
+            "price": 48000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260721_206/1784615710074BjQhW_PNG/57435764221038123_1715116958.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13675039405",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
