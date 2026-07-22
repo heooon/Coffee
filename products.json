@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 93,
-    "last_scraped": "2026-07-21 19:27",
+    "count": 94,
+    "last_scraped": "2026-07-22 15:29",
     "products": [
         {
             "store": "502",
@@ -369,6 +369,15 @@
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20210412_22/1618155293945SEuD9_GIF/19291136449994103_2061849475.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13649557309",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
+            "store": "신양",
+            "name": "콜롬비아, 카필라 델 로사리오 200g (Colombia, Capilla Del Rosario 200g)",
+            "price": 32000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13675552588",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
