@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 94,
-    "last_scraped": "2026-07-23 22:54",
+    "count": 93,
+    "last_scraped": "2026-07-24 11:35",
     "products": [
         {
             "store": "502",
@@ -505,15 +505,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_117/1782285462553NDpli_PNG/2927867342576877_968451928.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642096098",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "브라질 다테하 썸머 솔스티스 피베리 내추럴(150g)",
-            "price": 11000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260403_292/17751804187826ewRL_PNG/24759574642692736_427511943.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13346307683",
-            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
