@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 89,
-    "last_scraped": "2026-07-27 16:30",
+    "count": 91,
+    "last_scraped": "2026-07-28 11:19",
     "products": [
         {
             "store": "502",
@@ -171,7 +171,7 @@
             "price": 28000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260720_68/1784512223440I4csO_PNG/118645081397728666_132283392.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13673291258",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -234,6 +234,24 @@
             "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_19/17822928924109pm9G_PNG/116425757371163624_1050400687.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13509861613",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 시다마 알로 사포 74158 미니빈 클래식 워시드 200g, 1개",
+            "price": 34000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260728_280/1785197418146hTtAF_PNG/17353761160851509_251010780.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127911",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 시다마 알로 사포 74158 미니빈 클래식 워시드 100g, 1개",
+            "price": 17500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260728_280/1785197418146hTtAF_PNG/17353761160851509_251010780.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127910",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
