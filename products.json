@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 91,
-    "last_scraped": "2026-07-28 23:02",
+    "last_scraped": "2026-07-29 11:28",
     "products": [
         {
             "store": "502",
@@ -789,10 +789,10 @@
         {
             "store": "먼스커피",
             "name": "[먼스커피] 에티오피아 벤치마지 게샤 워시드 200g",
-            "price": 16000,
+            "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251124_107/1763971764791gVKFI_JPEG/92487121829762912_1833705675.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728650968",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
