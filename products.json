@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 90,
-    "last_scraped": "2026-07-31 11:36",
+    "last_scraped": "2026-07-31 15:44",
     "products": [
         {
             "store": "502",
@@ -216,7 +216,7 @@
             "price": 12000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_32/1782293281149XJ8tF_PNG/56690203475594635_1356437786.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642198312",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
