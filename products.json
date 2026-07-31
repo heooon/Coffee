@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 91,
-    "last_scraped": "2026-07-30 11:09",
+    "count": 90,
+    "last_scraped": "2026-07-31 11:36",
     "products": [
         {
             "store": "502",
@@ -473,15 +473,6 @@
         },
         {
             "store": "아이덴티티",
-            "name": "케냐 이차마마 AA 워시드(150g)",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_117/1782285462553NDpli_PNG/2927867342576877_968451928.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13642096098",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
             "name": "파나마 하시엔다 바르바라 로스 브루호스 게이샤 내추럴 #25(100g)",
             "price": 36000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260721_132/178461606065758C7t_PNG/118748894104166883_1706637687.png",
@@ -522,7 +513,7 @@
             "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260715_43/1784096615172zt1Ob_PNG/118229447282683714_1318141485.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13665151077",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -675,7 +666,7 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260611_240/1781182012019uKRY4_JPEG/451557168638052_17444134.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/13629835126",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
