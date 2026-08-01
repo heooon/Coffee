@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 91,
-    "last_scraped": "2026-08-01 15:28",
+    "count": 92,
+    "last_scraped": "2026-08-01 18:57",
     "products": [
         {
             "store": "502",
@@ -720,6 +720,15 @@
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_257/1759255632394feKOE_JPEG/93388505526358904_2025647601.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/5162957432",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[8월의 원두] 에티오피아 바샤베켈레 무라고 레드 허니 100g",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260801_55/1785570459749FVc6w_JPEG/10862692724685183_1306154525.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13690990650",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
