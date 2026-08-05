@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 94,
-    "last_scraped": "2026-08-05 11:14",
+    "count": 97,
+    "last_scraped": "2026-08-05 19:36",
     "products": [
         {
             "store": "502",
@@ -567,6 +567,33 @@
             "price": 10500,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562808520",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "파나마 코토와 던칸 마라고지페 내추럴(100g), 과테말라 엘 소코로 마라카투라 워시드(150g) 2종 세트",
+            "price": 26800,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260805_225/17859122328555F9ws_PNG/120045042978244692_1173832973.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700340121",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "과테말라 엘 소코로 마라카투라 워시드(150g)",
+            "price": 10700,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260805_119/1785910237998ciN8F_PNG/120043007091381118_1334093350.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700323994",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "파나마 코토와 던칸 마라고지페 내추럴(100g)",
+            "price": 22800,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260805_75/1785909996917L3N0p_PNG/17125609863150642_135679839.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700316596",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
