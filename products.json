@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 93,
-    "last_scraped": "2026-08-04 23:08",
+    "count": 94,
+    "last_scraped": "2026-08-05 11:14",
     "products": [
         {
             "store": "502",
@@ -418,6 +418,15 @@
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
         {
+            "store": "신양",
+            "name": "코스타리카, 몬테 야노 보니또 200g (Costa Rica, Monte Llano Bonito )",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210704_139/1625386035820ATkA1_GIF/26521815292929040_1175679115.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13677277243",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
             "store": "아이덴티티",
             "name": "미드센추리 블렌드(500g)",
             "price": 28000,
@@ -468,7 +477,7 @@
             "price": 19000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260721_280/1784615914952rkBo4_PNG/118748891019554419_1592771640.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13675043435",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
