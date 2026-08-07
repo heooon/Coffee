@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 97,
-    "last_scraped": "2026-08-06 19:40",
+    "count": 101,
+    "last_scraped": "2026-08-07 14:39",
     "products": [
         {
             "store": "502",
@@ -108,7 +108,7 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260619_163/1781858198085XWzV0_PNG/115991110200560792_1348860420.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13638094443",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
         {
@@ -117,7 +117,7 @@
             "price": 48000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260619_199/1781857428886utlzz_PNG/54677483032142835_1255420720.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13638087543",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
         {
@@ -207,6 +207,42 @@
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_236/17822920736695JoJp_PNG/21387892502132618_971360795.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13628311886",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "과테말라 우에우에테낭고 와이칸 워시드 500g, 1개",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832906",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "과테말라 우에우에테낭고 와이칸 워시드 200g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832905",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -558,7 +594,7 @@
             "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260703_208/1783058851060yjBep_PNG/36737129122114781_734073048.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13651036889",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
