@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 101,
-    "last_scraped": "2026-08-07 14:39",
+    "last_scraped": "2026-08-09 10:27",
     "products": [
         {
             "store": "502",
@@ -630,7 +630,7 @@
             "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260703_208/1783058851060yjBep_PNG/36737129122114781_734073048.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13651036889",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
