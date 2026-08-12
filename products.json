@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 100,
-    "last_scraped": "2026-08-12 10:45",
+    "count": 98,
+    "last_scraped": "2026-08-12 14:30",
     "products": [
         {
             "store": "502",
@@ -374,28 +374,10 @@
         },
         {
             "store": "신양",
-            "name": "에티오피아,   아르베고나 200g (Ethiopia,  Arbegonna 200g)",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13625668122",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
             "name": "콜롬비아, 엘파라이소 리치-피치 200g (Colombia, El Paraiso Lychee- Peach )",
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20210526_39/1621994018843Yfx6f_GIF/23129861304974510_1836917556.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13625718119",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
-            "name": "케냐,  무티투AA  200g (Kenya, Mutitu AA 200g)",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13636506623",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
