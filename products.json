@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 100,
-    "last_scraped": "2026-08-15 13:29",
+    "count": 99,
+    "last_scraped": "2026-08-15 17:25",
     "products": [
         {
             "store": "502",
@@ -495,15 +495,6 @@
             "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "파나마 코토와 던칸 마라고지페 내추럴(100g), 과테말라 엘 소코로 마라카투라 워시드(150g) 2종 세트",
-            "price": 33500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260805_225/17859122328555F9ws_PNG/120045042978244692_1173832973.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700340121",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
