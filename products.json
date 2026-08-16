@@ -185,10 +185,19 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 시다마 알로 사포 74158 미니빈 클래식 워시드 100g, 1개",
-            "price": 17500,
+            "name": "에티오피아 시다마 알로 사포 74158 미니빈 클래식 워시드 200g, 1개",
+            "price": 34000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260728_280/1785197418146hTtAF_PNG/17353761160851509_251010780.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127910",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127911",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 시다마 벤사 타미루 74158 무산소 내추럴 200g, 1개",
+            "price": 34000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781551",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -221,10 +230,10 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 시다마 알로 사포 74158 미니빈 클래식 워시드 200g, 1개",
-            "price": 34000,
+            "name": "에티오피아 시다마 알로 사포 74158 미니빈 클래식 워시드 100g, 1개",
+            "price": 17500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260728_280/1785197418146hTtAF_PNG/17353761160851509_251010780.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127911",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127910",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -262,15 +271,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_32/1782293281149XJ8tF_PNG/56690203475594635_1356437786.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642198312",
             "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 타미루 74158 무산소 내추럴 200g, 1개",
-            "price": 34000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781551",
-            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
