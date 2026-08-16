@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 102,
-    "last_scraped": "2026-08-16 17:28",
+    "last_scraped": "2026-08-17 01:23",
     "products": [
         {
             "store": "502",
@@ -189,7 +189,7 @@
             "price": 34000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260728_280/1785197418146hTtAF_PNG/17353761160851509_251010780.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127911",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -198,7 +198,7 @@
             "price": 34000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781551",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -243,7 +243,7 @@
             "price": 17500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260728_280/1785197418146hTtAF_PNG/17353761160851509_251010780.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13685127910",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -288,7 +288,7 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_274/17822927547883kMef_PNG/116425688753461029_1259072003.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13638781550",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -645,7 +645,7 @@
         {
             "store": "먼스커피",
             "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 1kg",
-            "price": 42000,
+            "price": 37800,
             "imageUrl": "https://shop-phinf.pstatic.net/20250930_214/1759239652287u1GRN_JPEG/30706105409752883_677755073.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484440650",
             "soldOut": false,
@@ -663,7 +663,7 @@
         {
             "store": "먼스커피",
             "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두커피 1kg",
-            "price": 38000,
+            "price": 34200,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_188/1759254510293gettx_JPEG/74263004293297802_1660588050.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/5352554023",
             "soldOut": false,
@@ -708,7 +708,7 @@
         {
             "store": "먼스커피",
             "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 500g",
-            "price": 25000,
+            "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_56/1759258788290c7TAU_PNG/76585719784266521_1722002598.png",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/10498056473",
             "soldOut": false,
@@ -888,7 +888,7 @@
         {
             "store": "먼스커피",
             "name": "[먼스커피] 디카페인 스페셜티 원두 500g",
-            "price": 25000,
+            "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_153/1759258688311azwTH_PNG/93391610322030118_52626605.png",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/10698060412",
             "soldOut": false,
