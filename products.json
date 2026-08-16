@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 99,
-    "last_scraped": "2026-08-15 17:25",
+    "count": 102,
+    "last_scraped": "2026-08-16 17:28",
     "products": [
         {
             "store": "502",
@@ -203,6 +203,15 @@
         },
         {
             "store": "딥다이브",
+            "name": "케냐 니에리 타게이니 SL28 슈퍼내추럴 100g",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260816_16/1786855574909XpVW8_PNG/30495701765304349_2000798427.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13722881210",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
             "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
             "price": 12000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
@@ -365,15 +374,6 @@
         },
         {
             "store": "신양",
-            "name": "에티오피아, 할로 베리티 디카페인 200g (Ethiopia, Halo Beriti  Decaffeine)",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13305432337",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
             "name": "콜롬비아, 엘파라이소 리치-피치 200g (Colombia, El Paraiso Lychee- Peach )",
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20210526_39/1621994018843Yfx6f_GIF/23129861304974510_1836917556.gif",
@@ -432,6 +432,33 @@
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20210704_139/1625386035820ATkA1_GIF/26521815292929040_1175679115.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13677277243",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
+            "store": "신양",
+            "name": "과테말라, 우에우에테낭고 디카페인 200g (Guatemala, Huehuetenango Decaffeine)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20211211_134/1639150458503ayT5E_JPEG/40286354229268286_403218742.jpeg",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13722932938",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
+            "store": "신양",
+            "name": "케냐,  기티투  200g (Kenya, Gititu 200g)",
+            "price": 25000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13722928560",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
+            "store": "신양",
+            "name": "에티오피아,   고구구 200g (Ethiopia,  Gogugu 200g)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13722918981",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
