@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 102,
-    "last_scraped": "2026-08-17 13:41",
+    "count": 100,
+    "last_scraped": "2026-08-17 17:42",
     "products": [
         {
             "store": "502",
@@ -622,24 +622,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20260805_75/1785909996917L3N0p_PNG/17125609863150642_135679839.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700316596",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "에티오피아 알로 타미루 몰케 내추럴(150g)",
-            "price": 19000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260721_280/1784615914952rkBo4_PNG/118748891019554419_1592771640.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13675043435",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "에티오피아 워르카 첼베사 & 쿠비 모디파이드 워시드(150g)",
-            "price": 19000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260513_121/1778643556925TSe21_PNG/30851350774672859_665401234.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13522263431",
-            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
