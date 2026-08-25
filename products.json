@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 92,
-    "last_scraped": "2026-08-25 05:30",
+    "last_scraped": "2026-08-25 13:36",
     "products": [
         {
             "store": "502",
@@ -450,7 +450,7 @@
             "price": 19700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_289/1786497405176j7KPH_PNG/41023737529335753_1542704577.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718237904",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -468,7 +468,7 @@
             "price": 16200,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_262/1786497288178XDrKj_PNG/1708124196250845_130281868.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718236703",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -486,7 +486,7 @@
             "price": 10700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260805_119/1785910237998ciN8F_PNG/120043007091381118_1334093350.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700323994",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
