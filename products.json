@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 92,
-    "last_scraped": "2026-08-26 10:10",
+    "count": 94,
+    "last_scraped": "2026-08-27 16:16",
     "products": [
         {
             "store": "502",
@@ -167,19 +167,28 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
+            "name": "콜롬비아 라스마가리타스 수단루메 하이브리드 워시드(Competition Selection) 100g",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260824_267/1787560794832xw9XT_PNG/101496475585858242_2147156562.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13732831739",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
             "store": "딥다이브",
-            "name": "콜롬비아 라스마가리타스 수단루메 하이브리드 워시드(Competition Selection) 100g",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260824_267/1787560794832xw9XT_PNG/101496475585858242_2147156562.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13732831739",
+            "name": "케냐 니에리 타게이니 SL28 슈퍼내추럴 100g",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260816_16/1786855574909XpVW8_PNG/30495701765304349_2000798427.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13722881210",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -194,19 +203,19 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 시다마 벤사 무라고 74158 하이브리드 워시드 100g",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260824_231/1787562069485LLRps_PNG/64023980474328204_1255463054.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13732849756",
+            "name": "콜롬비아 세로 아줄 게이샤 내추럴(CGLE Competition Selection)100g",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260804_31/1785804093982NS49I_PNG/119937076988864388_1989090125.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13697017326",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
             "store": "딥다이브",
-            "name": "케냐 니에리 타게이니 SL28 슈퍼내추럴 100g",
-            "price": 14000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260816_16/1786855574909XpVW8_PNG/30495701765304349_2000798427.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13722881210",
+            "name": "에티오피아 시다마 벤사 무라고 74158 하이브리드 워시드 100g",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260824_231/1787562069485LLRps_PNG/64023980474328204_1255463054.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13732849756",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -225,15 +234,6 @@
             "price": 24000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832906",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "콜롬비아 세로 아줄 게이샤 내추럴(CGLE Competition Selection)100g",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260804_31/1785804093982NS49I_PNG/119937076988864388_1989090125.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13697017326",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -549,6 +549,24 @@
             "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260703_208/1783058851060yjBep_PNG/36737129122114781_734073048.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13651036889",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "온두라스 엘 푸엔테 산 이시드로 게이샤 워시드(100g)",
+            "price": 28500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260827_289/1787811494756cXTvf_PNG/3140918028497089_233628336.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735844414",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "에티오피아 할로 베리티 워시드 드라이 퍼먼테이션(150g)",
+            "price": 10300,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
