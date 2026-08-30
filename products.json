@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 94,
-    "last_scraped": "2026-08-30 12:37",
+    "last_scraped": "2026-08-30 18:47",
     "products": [
         {
             "store": "502",
@@ -333,7 +333,7 @@
             "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13641426846",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
         {
@@ -441,7 +441,7 @@
             "price": 19700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_289/1786497405176j7KPH_PNG/41023737529335753_1542704577.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718237904",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
