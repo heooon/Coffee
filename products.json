@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 94,
-    "last_scraped": "2026-08-31 12:35",
+    "count": 95,
+    "last_scraped": "2026-08-31 19:32",
     "products": [
         {
             "store": "502",
@@ -14,10 +14,10 @@
         },
         {
             "store": "502",
-            "name": "콜롬비아 카우카 파라이소92 게이샤 100g",
-            "price": 21000,
-            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260705/117994f256a1f844e3fe463045f379ac.png",
-            "productUrl": "https://502coffee.com/product/콜롬비아-카우카-파라이소92-게이샤-100g/182/category/24/display/1/",
+            "name": "[9월의 커피] 에티오피아 시다마 벤사 하마쇼 내추럴",
+            "price": 18700,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260831/61cb493a665cd9877d692e7428f77d31.png",
+            "productUrl": "https://502coffee.com/product/9월의-커피-에티오피아-시다마-벤사-하마쇼-내추럴/154/category/24/display/1/",
             "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
@@ -77,15 +77,6 @@
         },
         {
             "store": "502",
-            "name": "[8월의 커피] 에티오피아 예가체프 게뎁 초르소 워시드",
-            "price": 18700,
-            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260801/e3fcbaca749214a70ec5369ab9dcbc10.png",
-            "productUrl": "https://502coffee.com/product/8월의-커피-에티오피아-예가체프-게뎁-초르소-워시드/184/category/24/display/1/",
-            "soldOut": false,
-            "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
-        },
-        {
-            "store": "502",
             "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
             "price": 19000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
@@ -95,11 +86,20 @@
         },
         {
             "store": "502",
-            "name": "페루 라 팔마 레드 카투라",
-            "price": 19000,
-            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260530/51f785c6b75f63a763467d60fed73273.png",
-            "productUrl": "https://502coffee.com/product/페루-라-팔마-레드-카투라/154/category/24/display/1/",
+            "name": "[8월의 커피] 에티오피아 예가체프 게뎁 초르소 워시드",
+            "price": 18700,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260801/e3fcbaca749214a70ec5369ab9dcbc10.png",
+            "productUrl": "https://502coffee.com/product/8월의-커피-에티오피아-예가체프-게뎁-초르소-워시드/184/category/24/display/1/",
             "soldOut": false,
+            "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
+        },
+        {
+            "store": "502",
+            "name": "콜롬비아 카우카 파라이소92 게이샤 100g",
+            "price": 21000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260705/117994f256a1f844e3fe463045f379ac.png",
+            "productUrl": "https://502coffee.com/product/콜롬비아-카우카-파라이소92-게이샤-100g/182/category/24/display/1/",
+            "soldOut": true,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
         {
@@ -693,6 +693,15 @@
             "price": 13000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260420_88/1776611512719Atg0r_JPEG/48579002798608617_1962834197.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/5107397386",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[9월의 원두] 에티오피아 시다마 부르사 피베리 내추럴 100g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260831_165/17881577845504B4pF_JPEG/17269563643856701_1489319013.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13739581103",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
