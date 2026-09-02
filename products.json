@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 94,
-    "last_scraped": "2026-09-02 11:53",
+    "last_scraped": "2026-09-02 17:26",
     "products": [
         {
             "store": "502",
@@ -432,7 +432,7 @@
             "price": 16200,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_262/1786497288178XDrKj_PNG/1708124196250845_130281868.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718236703",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -441,7 +441,7 @@
             "price": 10300,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -477,7 +477,7 @@
             "price": 10700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260805_119/1785910237998ciN8F_PNG/120043007091381118_1334093350.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700323994",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -486,7 +486,7 @@
             "price": 19700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_289/1786497405176j7KPH_PNG/41023737529335753_1542704577.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718237904",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -594,7 +594,7 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260801_55/1785570459749FVc6w_JPEG/10862692724685183_1306154525.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/13690990650",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
