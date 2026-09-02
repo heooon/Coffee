@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 94,
-    "last_scraped": "2026-09-02 17:26",
+    "count": 91,
+    "last_scraped": "2026-09-03 00:59",
     "products": [
         {
             "store": "502",
@@ -108,7 +108,7 @@
             "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260811_146/1786428939994rjdGe_PNG/26598878127532987_1891416596.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13717272229",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
         {
@@ -239,38 +239,11 @@
         },
         {
             "store": "딥다이브",
-            "name": "케냐 엠부 오네스카 AA SL28 & SL34 워시드100g",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_32/1782293281149XJ8tF_PNG/56690203475594635_1356437786.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13642198312",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 뚱구리 AA 풀리 워시드 100g",
-            "price": 10000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_178/1782292608788oWz63_PNG/116425403621772042_388178345.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13629834889",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
             "name": "[딥다이브]매일볶아 신선한 고소하고 맛있는 데일리커피 꿀떡블렌드 원두커피 100g, 1개",
             "price": 6000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204576",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "[딥다이브]상큼하고 달달한 믹스베리봉봉 블렌드 원두커피 100g, 1개",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260624_281/1782292175445qxWNt_PNG/55112229497819545_1289548401.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13621517753",
-            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1"
         },
         {
@@ -441,7 +414,7 @@
             "price": 10300,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
