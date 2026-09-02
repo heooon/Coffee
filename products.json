@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 95,
-    "last_scraped": "2026-09-02 07:23",
+    "count": 94,
+    "last_scraped": "2026-09-02 11:53",
     "products": [
         {
             "store": "502",
@@ -262,15 +262,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20260624_50/17822922511401tGAL_PNG/55112305108349839_219695395.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13093204576",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "[딥다이브]여름이면 생각나는 시원달달한 수박화채 블렌드 100g, 1개",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260709_115/1783570213576eCDwc_PNG/68755179260752683_111509718.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13657224585",
-            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/87e68b8f863e41faa2300c93ac4312e7?cp=1"
         },
         {
