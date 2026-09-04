@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 92,
-    "last_scraped": "2026-09-04 11:54",
+    "count": 96,
+    "last_scraped": "2026-09-05 00:47",
     "products": [
         {
             "store": "502",
@@ -180,6 +180,42 @@
             "price": 12000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832905",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "케냐 키암부 음차나 TOP 내추럴 200g, 1개",
+            "price": 21000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260904_289/1788521131963tXx84_PNG/35805914684952053_53383709.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746852037",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "케냐 키암부 음차나 TOP 내추럴 100g, 1개",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260904_289/1788521131963tXx84_PNG/35805914684952053_53383709.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746852036",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 구지 우라가 야비토 토메 74112 내추럴 500g, 1개",
+            "price": 34000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260904_289/1788520077933lSxiF_PNG/122652844903978398_1464520192.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746827058",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 구지 우라가 야비토 토메 74112 내추럴 200g, 1개",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260904_289/1788520077933lSxiF_PNG/122652844903978398_1464520192.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746827056",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
