@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 96,
-    "last_scraped": "2026-09-05 00:47",
+    "last_scraped": "2026-09-05 12:00",
     "products": [
         {
             "store": "502",
@@ -234,7 +234,7 @@
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260824_267/1787560794832xw9XT_PNG/101496475585858242_2147156562.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13732831739",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
@@ -450,7 +450,7 @@
             "price": 10300,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
