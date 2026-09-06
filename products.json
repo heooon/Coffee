@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 96,
-    "last_scraped": "2026-09-06 11:55",
+    "last_scraped": "2026-09-06 17:22",
     "products": [
         {
             "store": "502",
@@ -329,15 +329,6 @@
         },
         {
             "store": "신양",
-            "name": "에티오피아, 게뎁, 라레사 200g (Ethiopia, Gedeb, Lalesa)",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13641426846",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
             "name": "콜롬비아, 엘 베르헬 _피나 콜라다 200g (Colombia, El Vergel _ Pina Colada 200g)",
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
@@ -400,6 +391,15 @@
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
         {
+            "store": "신양",
+            "name": "에티오피아, 아다라 케라모 200g (Ethiopia,  Adara Keramo)",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13740961019",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
             "store": "아이덴티티",
             "name": "미드센추리 블렌드(500g)",
             "price": 28000,
@@ -441,7 +441,7 @@
             "price": 19700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_289/1786497405176j7KPH_PNG/41023737529335753_1542704577.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718237904",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
