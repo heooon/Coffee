@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 96,
-    "last_scraped": "2026-09-07 11:55",
+    "count": 95,
+    "last_scraped": "2026-09-07 17:56",
     "products": [
         {
             "store": "502",
@@ -338,15 +338,6 @@
         },
         {
             "store": "신양",
-            "name": "페루, 라 팔마 _ 게이샤 200g (Peru, La Palma_ Geisha)",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20210412_22/1618155293945SEuD9_GIF/19291136449994103_2061849475.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13649557309",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
             "name": "콜롬비아, 카필라 델 로사리오 200g (Colombia, Capilla Del Rosario 200g)",
             "price": 32000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
@@ -468,7 +459,7 @@
             "price": 10700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260805_119/1785910237998ciN8F_PNG/120043007091381118_1334093350.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700323994",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
