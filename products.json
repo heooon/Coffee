@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 95,
-    "last_scraped": "2026-09-08 02:16",
+    "count": 96,
+    "last_scraped": "2026-09-08 12:03",
     "products": [
         {
             "store": "502",
@@ -432,7 +432,7 @@
             "price": 10300,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -666,6 +666,15 @@
             "price": 13000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_99/1759255661969YNx4O_JPEG/935229015042760_2119691461.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/6938272737",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 가을 시즈널 블렌드 '빛깔' 100g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260908_138/178883396793809yeD_JPEG/28435175946167144_731835162.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13751163098",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
