@@ -581,6 +581,15 @@
         },
         {
             "store": "먼스커피",
+            "name": "[먼스커피] 에티오피아 벤치마지 게샤 워시드 200g",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251124_107/1763971764791gVKFI_JPEG/92487121829762912_1833705675.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728650968",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
             "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 500g",
             "price": 27000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_72/1759258771026JHkDL_PNG/13418710509750473_355818735.png",
@@ -617,15 +626,6 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 에티오피아 벤치마지 게샤 워시드 200g",
-            "price": 17000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251124_107/1763971764791gVKFI_JPEG/92487121829762912_1833705675.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728650968",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
             "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 1kg",
             "price": 42000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250930_214/1759239652287u1GRN_JPEG/30706105409752883_677755073.jpg",
@@ -648,6 +648,24 @@
             "price": 220000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260401_135/17750547016096Rlve_JPEG/24633857511272769_824300623.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/13338983642",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 케냐 카루만디 AA 워시드 200g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251124_246/1763971944894AQRWM_JPEG/26956798616805482_1060991365.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728657507",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 디카페인 스페셜티 원두 200g",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_5/1759255470257BsOLQ_JPEG/93388341384246615_1184025766.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/6083188147",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
@@ -797,15 +815,6 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 케냐 카루만디 AA 워시드 200g",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251124_246/1763971944894AQRWM_JPEG/26956798616805482_1060991365.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728657507",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
             "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 200g",
             "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260419_113/177660972209527YvP_JPEG/3432084485121573_1765255135.jpg",
@@ -847,15 +856,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20220218_186/1645162175427bH1hU_JPEG/46297958916439436_144658864.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/6316872259",
             "soldOut": true,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
-            "name": "[먼스커피] 디카페인 스페셜티 원두 200g",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_5/1759255470257BsOLQ_JPEG/93388341384246615_1184025766.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/6083188147",
-            "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
