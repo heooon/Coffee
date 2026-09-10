@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 96,
-    "last_scraped": "2026-09-10 00:58",
+    "last_scraped": "2026-09-10 12:04",
     "products": [
         {
             "store": "502",
@@ -405,7 +405,7 @@
             "price": 10300,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -509,6 +509,15 @@
         },
         {
             "store": "아이덴티티",
+            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(200g)",
+            "price": 9000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20240708_50/1720427021060oesOx_PNG/19136010963217531_2065778925.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759927109",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
             "name": "에티오피아 바샤 베켈레 마타란초 내추럴(100g)",
             "price": 19700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_289/1786497405176j7KPH_PNG/41023737529335753_1542704577.png",
@@ -522,15 +531,6 @@
             "price": 37000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562826807",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(200g)",
-            "price": 9000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20240708_50/1720427021060oesOx_PNG/19136010963217531_2065778925.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759927109",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
