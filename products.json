@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 95,
-    "last_scraped": "2026-09-10 17:41",
+    "last_scraped": "2026-09-11 00:51",
     "products": [
         {
             "store": "502",
@@ -302,15 +302,6 @@
         },
         {
             "store": "신양",
-            "name": "브라질 , 산타 루시아 200g ( Brazil, Santa Lucia)",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200315_45/1584237002041WAdFx_GIF/21596836584877775_820853662.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/11361794794",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
             "name": "과테말라, 와이칸 200g (Guatemala, Waykan)",
             "price": 14000,
             "imageUrl": "https://shop-phinf.pstatic.net/20210822_221/1629640757979hcHYb_GIF/30776646389825362_1844377397.gif",
@@ -387,6 +378,15 @@
             "price": 24000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13740961019",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
+            "store": "신양",
+            "name": "브라질 , 세하도 셀렉션 200g ( Brazil, Cerrado Selection)",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200315_45/1584237002041WAdFx_GIF/21596836584877775_820853662.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13754507588",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
