@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 95,
-    "last_scraped": "2026-09-11 00:51",
+    "count": 96,
+    "last_scraped": "2026-09-11 17:39",
     "products": [
         {
             "store": "502",
@@ -450,7 +450,7 @@
             "price": 16200,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_262/1786497288178XDrKj_PNG/1708124196250845_130281868.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718236703",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -549,6 +549,15 @@
             "price": 22800,
             "imageUrl": "https://shop-phinf.pstatic.net/20260805_75/1785909996917L3N0p_PNG/17125609863150642_135679839.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700316596",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "에티오피아 구지 바데이 무산소 내추럴(100g)",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260703_208/1783058851060yjBep_PNG/36737129122114781_734073048.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13651036889",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
