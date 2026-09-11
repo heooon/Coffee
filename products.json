@@ -167,10 +167,10 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 구지 우라가 야비토 토메 74112 내추럴 200g, 1개",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260904_289/1788520077933lSxiF_PNG/122652844903978398_1464520192.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746827056",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -189,15 +189,6 @@
             "price": 12000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "과테말라 우에우에테낭고 와이칸 워시드 200g, 1개",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832905",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -230,6 +221,15 @@
         },
         {
             "store": "딥다이브",
+            "name": "에티오피아 구지 우라가 야비토 토메 74112 내추럴 200g, 1개",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260904_289/1788520077933lSxiF_PNG/122652844903978398_1464520192.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746827056",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
             "name": "콜롬비아 라스마가리타스 수단루메 하이브리드 워시드(Competition Selection) 100g",
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260824_267/1787560794832xw9XT_PNG/101496475585858242_2147156562.png",
@@ -248,19 +248,19 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
-            "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
+            "name": "과테말라 우에우에테낭고 와이칸 워시드 500g, 1개",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832906",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
             "store": "딥다이브",
-            "name": "과테말라 우에우에테낭고 와이칸 워시드 500g, 1개",
-            "price": 24000,
+            "name": "과테말라 우에우에테낭고 와이칸 워시드 200g, 1개",
+            "price": 12000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832906",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832905",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -365,19 +365,19 @@
         },
         {
             "store": "신양",
-            "name": "케냐,  기티투  200g (Kenya, Gititu 200g)",
-            "price": 25000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13722928560",
+            "name": "에티오피아, 아다라 케라모 200g (Ethiopia,  Adara Keramo)",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13740961019",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
         {
             "store": "신양",
-            "name": "에티오피아, 아다라 케라모 200g (Ethiopia,  Adara Keramo)",
-            "price": 24000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13740961019",
+            "name": "케냐,  기티투  200g (Kenya, Gititu 200g)",
+            "price": 25000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200630_42/1593480158248C5xlC_GIF/30843546756765722_1547977040.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13722928560",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
@@ -419,19 +419,10 @@
         },
         {
             "store": "아이덴티티",
-            "name": "에티오피아 할로 베리티 워시드 드라이 퍼먼테이션(150g)",
-            "price": 10300,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "칠린 블렌드(200g)",
-            "price": 11000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4701816481",
+            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(500g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20240708_67/1720426987407fkOst_PNG/19135977227120175_548667200.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759930938",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
@@ -446,37 +437,19 @@
         },
         {
             "store": "아이덴티티",
-            "name": "에티오피아 알로 타미루 무라고 아토테 내추럴(100g)",
-            "price": 16200,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260812_262/1786497288178XDrKj_PNG/1708124196250845_130281868.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718236703",
+            "name": "에티오피아 할로 베리티 워시드 드라이 퍼먼테이션(150g)",
+            "price": 10300,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
             "store": "아이덴티티",
-            "name": "과테말라 엘 소코로 마라카투라 워시드(150g)",
-            "price": 10700,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260805_119/1785910237998ciN8F_PNG/120043007091381118_1334093350.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700323994",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "키치 블렌드(500g)",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "키치 블렌드(200g)",
-            "price": 10500,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562808520",
+            "name": "칠린 블렌드(200g)",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4701816481",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
@@ -500,10 +473,37 @@
         },
         {
             "store": "아이덴티티",
-            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(500g)",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20240708_67/1720426987407fkOst_PNG/19135977227120175_548667200.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759930938",
+            "name": "에티오피아 알로 타미루 무라고 아토테 내추럴(100g)",
+            "price": 16200,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260812_262/1786497288178XDrKj_PNG/1708124196250845_130281868.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718236703",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "키치 블렌드(500g)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "키치 블렌드(200g)",
+            "price": 10500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562808520",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "과테말라 엘 소코로 마라카투라 워시드(150g)",
+            "price": 10700,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260805_119/1785910237998ciN8F_PNG/120043007091381118_1334093350.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13700323994",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
