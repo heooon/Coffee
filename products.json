@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 96,
-    "last_scraped": "2026-09-13 00:01",
+    "count": 97,
+    "last_scraped": "2026-09-14 00:41",
     "products": [
         {
             "store": "502",
@@ -391,6 +391,15 @@
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
         {
+            "store": "신양",
+            "name": "콜롬비아, 엘 베르헬 _ 게이샤 모히토 브리즈200g (Colombia, El Vergel _ Mojito Breeze 200g)",
+            "price": 35000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13759168603",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
             "store": "아이덴티티",
             "name": "미드센추리 블렌드(500g)",
             "price": 28000,
@@ -477,7 +486,7 @@
             "price": 28500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_289/1787811494756cXTvf_PNG/3140918028497089_233628336.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735844414",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -486,7 +495,7 @@
             "price": 16200,
             "imageUrl": "https://shop-phinf.pstatic.net/20260812_262/1786497288178XDrKj_PNG/1708124196250845_130281868.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13718236703",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
