@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 96,
-    "last_scraped": "2026-09-14 12:22",
+    "count": 98,
+    "last_scraped": "2026-09-14 18:35",
     "products": [
         {
             "store": "502",
@@ -24,7 +24,7 @@
         {
             "store": "502",
             "name": "CLASSIC 클래식",
-            "price": 14000,
+            "price": 12600,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/35834ec60f8ecf47b51abd5396f291eb.png",
             "productUrl": "https://502coffee.com/product/classic-클래식/9/category/24/display/1/",
             "soldOut": false,
@@ -33,7 +33,7 @@
         {
             "store": "502",
             "name": "WORKERS 워커스",
-            "price": 16000,
+            "price": 14400,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/81c6c35a2db01da2ec6311f5cccf455b.png",
             "productUrl": "https://502coffee.com/product/workers-워커스/10/category/24/display/1/",
             "soldOut": false,
@@ -42,7 +42,7 @@
         {
             "store": "502",
             "name": "GENTLE 젠틀",
-            "price": 16000,
+            "price": 14400,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/fa894027add90add2b574d308619e187.png",
             "productUrl": "https://502coffee.com/product/gentle-젠틀/11/category/24/display/1/",
             "soldOut": false,
@@ -51,7 +51,7 @@
         {
             "store": "502",
             "name": "BLUES 블루스",
-            "price": 16000,
+            "price": 14400,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/f0328c0e19c9762d1791bbbf5e31e4ca.png",
             "productUrl": "https://502coffee.com/product/blues-블루스/121/category/24/display/1/",
             "soldOut": false,
@@ -60,7 +60,7 @@
         {
             "store": "502",
             "name": "WELCOME 웰컴",
-            "price": 18000,
+            "price": 16200,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/52005a702da1088fc8442525d3328477.png",
             "productUrl": "https://502coffee.com/product/welcome-웰컴/12/category/24/display/1/",
             "soldOut": false,
@@ -69,7 +69,7 @@
         {
             "store": "502",
             "name": "[디카페인] PILLOW 필로우",
-            "price": 18000,
+            "price": 16200,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20240521/e3903301e406b3b9b39b56c331e2a42a.png",
             "productUrl": "https://502coffee.com/product/디카페인-pillow-필로우/13/category/24/display/1/",
             "soldOut": false,
@@ -78,7 +78,7 @@
         {
             "store": "502",
             "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
-            "price": 19000,
+            "price": 17100,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
             "productUrl": "https://502coffee.com/product/디카페인-에티오피아-예가체프-할로-베리티-내추럴/178/category/24/display/1/",
             "soldOut": false,
@@ -87,7 +87,7 @@
         {
             "store": "502",
             "name": "에티오피아 예가체프 게뎁 초르소 워시드",
-            "price": 22000,
+            "price": 19800,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260801/e3fcbaca749214a70ec5369ab9dcbc10.png",
             "productUrl": "https://502coffee.com/product/에티오피아-예가체프-게뎁-초르소-워시드/184/category/24/display/1/",
             "soldOut": false,
@@ -549,6 +549,24 @@
             "price": 17000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260703_208/1783058851060yjBep_PNG/36737129122114781_734073048.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13651036889",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "케냐 우클릴리 셀렉션 AA 워시드(150g)",
+            "price": 15400,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260914_195/1789348551363taFE7_PNG/100242231636102646_224159795.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13760158361",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "브라질 다테하 버번 컬렉션(150g)",
+            "price": 8500,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260914_145/17893483723155SpT9_PNG/80058146380036350_287690445.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13760156284",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
