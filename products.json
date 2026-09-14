@@ -167,6 +167,15 @@
         },
         {
             "store": "딥다이브",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
             "name": "에티오피아 시다마 벤사 무라고 74158 하이브리드 워시드 100g",
             "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260824_231/1787562069485LLRps_PNG/64023980474328204_1255463054.png",
@@ -176,10 +185,10 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
-            "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
+            "name": "과테말라 우에우에테낭고 와이칸 워시드 200g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832905",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -189,6 +198,15 @@
             "price": 34000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260904_289/1788520077933lSxiF_PNG/122652844903978398_1464520192.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746827058",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -239,28 +257,10 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260807_257/1786075984632DsU9R_PNG/124117248708580786_1180113630.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
             "name": "과테말라 우에우에테낭고 와이칸 워시드 500g, 1개",
             "price": 24000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832906",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "과테말라 우에우에테낭고 와이칸 워시드 200g, 1개",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260807_2/17860749743426k4BW_PNG/13828484671663545_2048423671.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832905",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -599,15 +599,6 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 에티오피아 벤치마지 게샤 워시드 200g",
-            "price": 17000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251124_107/1763971764791gVKFI_JPEG/92487121829762912_1833705675.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728650968",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
             "name": "[먼스커피] 가을 시즈널 블렌드 '빛깔' 100g",
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260908_138/178883396793809yeD_JPEG/28435175946167144_731835162.jpg",
@@ -617,19 +608,37 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 500g",
-            "price": 27000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_72/1759258771026JHkDL_PNG/13418710509750473_355818735.png",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484933693",
+            "name": "[먼스커피] 에티오피아 예가체프 첼바 코티 G1 내추럴 200g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_257/1759255632394feKOE_JPEG/93388505526358904_2025647601.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5162957432",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 에티오피아 예가체프 첼바 코티 G1 내추럴 200g",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_257/1759255632394feKOE_JPEG/93388505526358904_2025647601.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5162957432",
+            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 200g",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260420_88/1776611512719Atg0r_JPEG/48579002798608617_1962834197.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5107397386",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 에티오피아 벤치마지 게샤 워시드 200g",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251124_107/1763971764791gVKFI_JPEG/92487121829762912_1833705675.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728650968",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 500g",
+            "price": 27000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_72/1759258771026JHkDL_PNG/13418710509750473_355818735.png",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484933693",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
@@ -874,15 +883,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20220218_186/1645162175427bH1hU_JPEG/46297958916439436_144658864.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/6316872259",
             "soldOut": true,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
-            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 200g",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260420_88/1776611512719Atg0r_JPEG/48579002798608617_1962834197.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5107397386",
-            "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         }
     ]
