@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 100,
-    "last_scraped": "2026-09-15 12:22",
+    "last_scraped": "2026-09-15 18:15",
     "products": [
         {
             "store": "502",
@@ -618,7 +618,7 @@
         {
             "store": "먼스커피",
             "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두커피 1kg",
-            "price": 38000,
+            "price": 41000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_188/1759254510293gettx_JPEG/74263004293297802_1660588050.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/5352554023",
             "soldOut": false,
@@ -699,7 +699,7 @@
         {
             "store": "먼스커피",
             "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 1kg",
-            "price": 42000,
+            "price": 45000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250930_214/1759239652287u1GRN_JPEG/30706105409752883_677755073.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484440650",
             "soldOut": false,
