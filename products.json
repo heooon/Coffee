@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 98,
-    "last_scraped": "2026-09-15 07:59",
+    "count": 100,
+    "last_scraped": "2026-09-15 12:22",
     "products": [
         {
             "store": "502",
@@ -113,11 +113,20 @@
         },
         {
             "store": "존스몰",
-            "name": "200g 케냐 카군유 내추럴 헤비",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260811_146/1786428939994rjdGe_PNG/26598878127532987_1891416596.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13717272229",
-            "soldOut": true,
+            "name": "200g 에티오피아 알로 상고타 내추럴",
+            "price": 26000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260914_41/1789396431200SrQYz_PNG/20170379351953640_830393960.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13761026727",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+        },
+        {
+            "store": "존스몰",
+            "name": "150g 에티오피아 알로 무라고 워시드",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260914_277/1789395676634OH2p6_PNG/71825967407865208_685343757.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13761017083",
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
         {
@@ -153,6 +162,15 @@
             "price": 32000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260811_259/1786427729856gXX0e_PNG/120560571089870374_1855912417.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11477277860",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+        },
+        {
+            "store": "존스몰",
+            "name": "100g 세로아줄 게이샤 하이브리드 워시드",
+            "price": 38000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260206_229/1770315711763FGdJF_JPEG/104448503847982565_1506580271.jpg",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11332560795",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
@@ -423,7 +441,7 @@
             "price": 10300,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -459,7 +477,7 @@
             "price": 28500,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_289/1787811494756cXTvf_PNG/3140918028497089_233628336.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735844414",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
