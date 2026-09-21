@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 98,
-    "last_scraped": "2026-09-21 12:18",
+    "count": 97,
+    "last_scraped": "2026-09-21 18:37",
     "products": [
         {
             "store": "502",
@@ -450,7 +450,7 @@
             "price": 10300,
             "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
@@ -567,15 +567,6 @@
             "price": 22000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "브라질 파젠다 로도문호 에티오피안 드워프 다크룸 내추럴(150g)",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260715_43/1784096615172zt1Ob_PNG/118229447282683714_1318141485.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13665151077",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
