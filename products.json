@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 101,
-    "last_scraped": "2026-09-24 18:01",
+    "last_scraped": "2026-09-26 12:32",
     "products": [
         {
             "store": "502",
@@ -104,10 +104,19 @@
         },
         {
             "store": "존스몰",
-            "name": "150g 에티오피아 알로 무라고 워시드",
-            "price": 24000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260914_277/1789395676634OH2p6_PNG/71825967407865208_685343757.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13761017083",
+            "name": "베이스먼트 블랜드",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+        },
+        {
+            "store": "존스몰",
+            "name": "시즈널 블랜드",
+            "price": 17000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11213802394",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
@@ -117,6 +126,15 @@
             "price": 26000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260914_41/1789396431200SrQYz_PNG/20170379351953640_830393960.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13761026727",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+        },
+        {
+            "store": "존스몰",
+            "name": "150g 에티오피아 알로 무라고 워시드",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260914_277/1789395676634OH2p6_PNG/71825967407865208_685343757.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/13761017083",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
@@ -135,7 +153,7 @@
             "price": 18000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251003_166/17594823540992TXdy_PNG/13657606911632894_1244814736.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12497752778",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
         {
@@ -144,15 +162,6 @@
             "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
-        },
-        {
-            "store": "존스몰",
-            "name": "베이스먼트 블랜드",
-            "price": 14000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
@@ -171,15 +180,6 @@
             "price": 38000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260206_229/1770315711763FGdJF_JPEG/104448503847982565_1506580271.jpg",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11332560795",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
-        },
-        {
-            "store": "존스몰",
-            "name": "시즈널 블랜드",
-            "price": 17000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250412_50/1744398697030dftOG_PNG/11012201403827903_1119708765.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11213802394",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
