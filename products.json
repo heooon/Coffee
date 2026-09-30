@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 101,
-    "last_scraped": "2026-09-29 19:28",
+    "count": 102,
+    "last_scraped": "2026-09-30 19:22",
     "products": [
         {
             "store": "502",
@@ -720,6 +720,15 @@
             "price": 24200,
             "imageUrl": "https://shop-phinf.pstatic.net/20260119_149/1768748933908BuBtC_JPEG/6353960733153092_537545109.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/10078798593",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[10월의 원두] 에티오피아 시다마 부라 아게나 무산소 내추럴 100g",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260930_201/1790753292956vDzGi_JPEG/104688973847650436_750562099.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13781896268",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
