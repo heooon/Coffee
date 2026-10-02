@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 102,
-    "last_scraped": "2026-09-30 19:22",
+    "last_scraped": "2026-10-02 13:05",
     "products": [
         {
             "store": "502",
@@ -14,10 +14,10 @@
         },
         {
             "store": "502",
-            "name": "[9월의 커피] 에티오피아 시다마 벤사 하마쇼 내추럴",
-            "price": 18700,
-            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260831/61cb493a665cd9877d692e7428f77d31.png",
-            "productUrl": "https://502coffee.com/product/9월의-커피-에티오피아-시다마-벤사-하마쇼-내추럴/154/category/24/display/1/",
+            "name": "[10월의 커피] 코스타리카 비스타 알 바예 게이샤 허니",
+            "price": 32300,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20261002/28b3c0d1dd4a0defed23763903712087.png",
+            "productUrl": "https://502coffee.com/product/10월의-커피-코스타리카-비스타-알-바예-게이샤-허니/154/category/24/display/1/",
             "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
