@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 102,
-    "last_scraped": "2026-10-05 13:03",
+    "last_scraped": "2026-10-06 23:48",
     "products": [
         {
             "store": "502",
@@ -747,7 +747,7 @@
             "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_242/1759255684166jgFsP_JPEG/9119335701999943_1941449697.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/6938294768",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
