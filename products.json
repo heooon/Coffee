@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 101,
-    "last_scraped": "2026-10-08 06:03",
+    "count": 100,
+    "last_scraped": "2026-10-09 00:15",
     "products": [
         {
             "store": "502",
@@ -338,24 +338,6 @@
         },
         {
             "store": "신양",
-            "name": "에티오피아,   고구구 200g (Ethiopia,  Gogugu 200g)",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13722918981",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
-            "name": "콜롬비아, 카필라 델 로사리오 200g (Colombia, Capilla Del Rosario 200g)",
-            "price": 32000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13675552588",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
             "name": "콜롬비아, 엘 베르헬 _피나 콜라다 200g (Colombia, El Vergel _ Pina Colada 200g)",
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
@@ -369,15 +351,6 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20211211_134/1639150458503ayT5E_JPEG/40286354229268286_403218742.jpeg",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13722932938",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
-        },
-        {
-            "store": "신양",
-            "name": "코스타리카, 몬테 야노 보니또 200g (Costa Rica, Monte Llano Bonito )",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20210704_139/1625386035820ATkA1_GIF/26521815292929040_1175679115.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13677277243",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
@@ -414,6 +387,24 @@
             "price": 35000,
             "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
             "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13759168603",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
+            "store": "신양",
+            "name": "에티오피아, 벤사 무라고 200g (Ethiopia,  Bensa Murago 200g)",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13790543546",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
+        },
+        {
+            "store": "신양",
+            "name": "페루, 라  알투라 _ 게이샤 200g (Peru, La Altura_ Geisha)",
+            "price": 35000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20210412_22/1618155293945SEuD9_GIF/19291136449994103_2061849475.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13790559729",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
