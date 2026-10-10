@@ -599,15 +599,6 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두커피 1kg",
-            "price": 41000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_188/1759254510293gettx_JPEG/74263004293297802_1660588050.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5352554023",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
             "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 1kg",
             "price": 45000,
             "imageUrl": "https://shop-phinf.pstatic.net/20250930_214/1759239652287u1GRN_JPEG/30706105409752883_677755073.jpg",
@@ -626,10 +617,10 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 에티오피아 예가체프 첼바 코티 G1 내추럴 200g",
-            "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_257/1759255632394feKOE_JPEG/93388505526358904_2025647601.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5162957432",
+            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두커피 1kg",
+            "price": 41000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_188/1759254510293gettx_JPEG/74263004293297802_1660588050.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5352554023",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
@@ -644,10 +635,19 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 케냐 카루만디 AA 워시드 200g",
+            "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 200g",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260419_113/177660972209527YvP_JPEG/3432084485121573_1765255135.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484468908",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 에티오피아 예가체프 첼바 코티 G1 내추럴 200g",
             "price": 16000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251124_246/1763971944894AQRWM_JPEG/26956798616805482_1060991365.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728657507",
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_257/1759255632394feKOE_JPEG/93388505526358904_2025647601.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5162957432",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
@@ -662,28 +662,19 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 500g",
-            "price": 27000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_72/1759258771026JHkDL_PNG/13418710509750473_355818735.png",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484933693",
+            "name": "[먼스커피] 케냐 카루만디 AA 워시드 200g",
+            "price": 16000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251124_246/1763971944894AQRWM_JPEG/26956798616805482_1060991365.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12728657507",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 200g",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260419_113/177660972209527YvP_JPEG/3432084485121573_1765255135.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484468908",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
-            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 500g",
+            "name": "[먼스커피] 디카페인 스페셜티 원두 500g",
             "price": 25000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_56/1759258788290c7TAU_PNG/76585719784266521_1722002598.png",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/10498056473",
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_153/1759258688311azwTH_PNG/93391610322030118_52626605.png",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/10698060412",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
@@ -860,10 +851,19 @@
         },
         {
             "store": "먼스커피",
-            "name": "[먼스커피] 디카페인 스페셜티 원두 500g",
+            "name": "[먼스커피] 블라썸 블렌드 스페셜티 원두 500g",
+            "price": 27000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_72/1759258771026JHkDL_PNG/13418710509750473_355818735.png",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/12484933693",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 500g",
             "price": 25000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20251001_153/1759258688311azwTH_PNG/93391610322030118_52626605.png",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/10698060412",
+            "imageUrl": "https://shop-phinf.pstatic.net/20251001_56/1759258788290c7TAU_PNG/76585719784266521_1722002598.png",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/10498056473",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
