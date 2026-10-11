@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 101,
-    "last_scraped": "2026-10-10 23:16",
+    "count": 102,
+    "last_scraped": "2026-10-11 19:39",
     "products": [
         {
             "store": "502",
@@ -689,6 +689,15 @@
         },
         {
             "store": "먼스커피",
+            "name": "[먼스커피] 에티오피아 시다마 부르사 차리초 내추럴 100g",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261011_108/1791704852520c0kjV_JPEG/125837705645783395_1167818288.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13804814761",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
             "name": "[9월의 원두] 에티오피아 시다마 부르사 피베리 내추럴 100g",
             "price": 16000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260831_165/17881577845504B4pF_JPEG/17269563643856701_1489319013.jpg",
@@ -882,7 +891,7 @@
             "price": 15000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_242/1759255684166jgFsP_JPEG/9119335701999943_1941449697.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/6938294768",
-            "soldOut": true,
+            "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
         {
