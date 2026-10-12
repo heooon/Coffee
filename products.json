@@ -113,10 +113,19 @@
         },
         {
             "store": "존스몰",
-            "name": "에스프레소 블랜드",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
+            "name": "베이스먼트 블랜드",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+        },
+        {
+            "store": "존스몰",
+            "name": "100g 세로아줄 게이샤 하이브리드 워시드",
+            "price": 38000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260206_229/1770315711763FGdJF_JPEG/104448503847982565_1506580271.jpg",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11332560795",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
@@ -167,10 +176,10 @@
         },
         {
             "store": "존스몰",
-            "name": "베이스먼트 블랜드",
-            "price": 14000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
+            "name": "에스프레소 블랜드",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
@@ -184,13 +193,13 @@
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
         {
-            "store": "존스몰",
-            "name": "100g 세로아줄 게이샤 하이브리드 워시드",
-            "price": 38000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260206_229/1770315711763FGdJF_JPEG/104448503847982565_1506580271.jpg",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11332560795",
+            "store": "딥다이브",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260916_178/1789564697438wMcrC_PNG/39924970430042817_593531896.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
             "store": "딥다이브",
@@ -198,6 +207,15 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20261002_268/1790909058793cpdHp_PNG/15876875373513881_2031199215.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13783440703",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
+            "price": 23000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260916_178/1789564697438wMcrC_PNG/39924970430042817_593531896.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -252,24 +270,6 @@
             "price": 14000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260916_280/1789564858849SAkug_PNG/47942955104478152_266327659.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13722881210",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
-            "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260916_178/1789564697438wMcrC_PNG/39924970430042817_593531896.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260916_178/1789564697438wMcrC_PNG/39924970430042817_593531896.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
