@@ -122,10 +122,10 @@
         },
         {
             "store": "존스몰",
-            "name": "베이스먼트 블랜드",
-            "price": 14000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
+            "name": "에스프레소 블랜드",
+            "price": 15000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
@@ -176,10 +176,10 @@
         },
         {
             "store": "존스몰",
-            "name": "에스프레소 블랜드",
-            "price": 15000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20250714_44/17524295251333j6lQ_PNG/236272364518802_1409429482.png",
-            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12099728814",
+            "name": "베이스먼트 블랜드",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20250412_277/17443990464652Abo1_PNG/1014331814764601_462428912.png",
+            "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/11708144083",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
