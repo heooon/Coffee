@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 99,
-    "last_scraped": "2026-10-20 18:10",
+    "count": 104,
+    "last_scraped": "2026-10-22 18:12",
     "products": [
         {
             "store": "502",
@@ -419,10 +419,10 @@
         },
         {
             "store": "아이덴티티",
-            "name": "칠린 블렌드(500g)",
-            "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5044314971",
+            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(500g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20240708_67/1720426987407fkOst_PNG/19135977227120175_548667200.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759930938",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
@@ -437,46 +437,10 @@
         },
         {
             "store": "아이덴티티",
-            "name": "칠린 블렌드(200g)",
-            "price": 11000,
+            "name": "칠린 블렌드(500g)",
+            "price": 23000,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4701816481",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(500g)",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20240708_67/1720426987407fkOst_PNG/19135977227120175_548667200.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759930938",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "에티오피아 할로 베리티 워시드 드라이 퍼먼테이션(150g)",
-            "price": 10300,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260827_136/17878113559356LcmW_PNG/37381568348207994_2037639933.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13735841214",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "미드센추리 블렌드(200g)",
-            "price": 14000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5147486471",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
-        },
-        {
-            "store": "아이덴티티",
-            "name": "미드센추리 블렌드(1kg) (분쇄요청불가)",
-            "price": 48000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6684189550",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5044314971",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
@@ -491,10 +455,28 @@
         },
         {
             "store": "아이덴티티",
+            "name": "미드센추리 블렌드(1kg) (분쇄요청불가)",
+            "price": 48000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6684189550",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
             "name": "에티오피아 구지 우라가 고구구 내추럴(150g)",
             "price": 10700,
             "imageUrl": "https://shop-phinf.pstatic.net/20260922_53/17900443784670Hdhq_PNG/56230205896546021_543142543.png",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13771374470",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "(브릴리언트) 코스타리카 하시엔다 코페이 이타다끼 게이샤 워시드#120(100g)",
+            "price": 36000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261016_131/1792115719492yAnkb_PNG/83863511383947983_2113339926.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13813910526",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
@@ -518,19 +500,19 @@
         },
         {
             "store": "아이덴티티",
-            "name": "과테말라 엘 소코로 게이샤 워시드(100g)",
-            "price": 27300,
-            "imageUrl": "https://shop-phinf.pstatic.net/20261008_69/1791432859454Iduv7_PNG/11426417479017382_1586088996.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13798203185",
+            "name": "미드센추리 블렌드(200g)",
+            "price": 14000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_28/1684334407086kNqe4_JPEG/10473568909288088_486539008.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/5147486471",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
         {
             "store": "아이덴티티",
-            "name": "키치 블렌드(500g)",
-            "price": 22000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
+            "name": "칠린 블렌드(200g)",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_207/1684334458287qw8xp_JPEG/11671851087082677_2102761776.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/4701816481",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
@@ -554,10 +536,19 @@
         },
         {
             "store": "아이덴티티",
-            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(200g)",
-            "price": 9000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20240708_50/1720427021060oesOx_PNG/19136010963217531_2065778925.png",
-            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759927109",
+            "name": "키치 블렌드(500g)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562820586",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "케냐 뉴 조마 AA 워시드(150g), 케냐 넬리자 에스테이트 NH 무산소 내추럴(150g) 2종 세트",
+            "price": 35000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261020_78/1792478645856QD6YI_PNG/624182819746691_71548211.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13823211443",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
@@ -567,6 +558,60 @@
             "price": 10500,
             "imageUrl": "https://shop-phinf.pstatic.net/20230517_52/1684334535598kk4mk_JPEG/10473697410152257_790442239.jpg",
             "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/8562808520",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "과테말라 엘 소코로 게이샤 워시드(100g)",
+            "price": 27300,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261008_69/1791432859454Iduv7_PNG/11426417479017382_1586088996.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13798203185",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "콜롬비아 엑셀소 디카페인 마운틴 워터(200g)",
+            "price": 9000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20240708_50/1720427021060oesOx_PNG/19136010963217531_2065778925.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/6759927109",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "케냐 넬리자 에스테이트 NH 무산소 내추럴 [ACT옥션랏](150g)",
+            "price": 22000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261020_10/1792479350133hA0kR_PNG/84227142011528973_744258520.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13823231928",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "에티오피아 구지 비샬라 셀렉션 워시드(150g)",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261020_149/1792478322468t145d_PNG/35091539371946588_1581545385.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13823199133",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "코스타리카 하시엔다 산 이시드로 라브라도르 카사 베르데 티피카 허니(100g)",
+            "price": 20000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261021_215/1792552644782KHaFz_PNG/18319418836991672_1331301553.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13824817828",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
+        },
+        {
+            "store": "아이덴티티",
+            "name": "케냐 뉴 조마 AA 워시드 [ACT옥션랏](150g)",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261020_150/1792478875033yN0Ht_PNG/86593097987135262_1851055649.png",
+            "productUrl": "https://smartstore.naver.com/identity_coffeelab/products/13823223713",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/identity_coffeelab/category/ALL?cp=1"
         },
