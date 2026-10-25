@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 104,
-    "last_scraped": "2026-10-22 18:12",
+    "count": 100,
+    "last_scraped": "2026-10-25 12:12",
     "products": [
         {
             "store": "502",
@@ -194,42 +194,6 @@
         },
         {
             "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 100g, 1개",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260916_178/1789564697438wMcrC_PNG/39924970430042817_593531896.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866619",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 키암부 NK Farm AB 풀리 워시드(2026 ACT 케냐 옥션랏) 200g",
-            "price": 20000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20261002_268/1790909058793cpdHp_PNG/15876875373513881_2031199215.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13783440703",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "에티오피아 게뎁 단체 무산소 내추럴(코라수마) 200g, 1개",
-            "price": 23000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260916_178/1789564697438wMcrC_PNG/39924970430042817_593531896.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705866620",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "케냐 키암부 음차나 TOP 내추럴 200g, 1개",
-            "price": 21000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260916_96/1789564644469aWOhe_PNG/12117925487354973_795573882.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13746852037",
-            "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
             "name": "케냐 키암부 음차나 TOP 내추럴 100g, 1개",
             "price": 11000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260916_96/1789564644469aWOhe_PNG/12117925487354973_795573882.png",
@@ -257,19 +221,28 @@
         },
         {
             "store": "딥다이브",
-            "name": "콜롬비아 라스마가리타스 수단루메 하이브리드 워시드(Competition Selection) 100g",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260916_269/178956483752260gdB_PNG/99385931300587787_52330585.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13732831739",
-            "soldOut": true,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
             "name": "케냐 니에리 타게이니 SL28 슈퍼내추럴 100g",
             "price": 14000,
             "imageUrl": "https://shop-phinf.pstatic.net/20260916_280/1789564858849SAkug_PNG/47942955104478152_266327659.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13722881210",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "과테말라 엘 소코로 게이샤 워시드 100g",
+            "price": 25000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261024_248/1792847984666AdyIr_PNG/65780115848727517_241550482.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13830456050",
+            "soldOut": false,
+            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
+        },
+        {
+            "store": "딥다이브",
+            "name": "케냐 키암부 NK Farm AB 풀리 워시드 ACT 케냐 옥션랏 100g, 1개",
+            "price": 11000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261002_268/1790909058793cpdHp_PNG/15876875373513881_2031199215.png",
+            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13830341144",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
@@ -289,15 +262,6 @@
             "imageUrl": "https://shop-phinf.pstatic.net/20260916_105/1789564730450k9jw9_PNG/123697563498499150_1715444943.png",
             "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13705832905",
             "soldOut": false,
-            "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
-        },
-        {
-            "store": "딥다이브",
-            "name": "콜롬비아 세로 아줄 게이샤 내추럴(CGLE Competition Selection)100g",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260916_289/1789564883488f4HKI_PNG/73374575290336005_958041819.png",
-            "productUrl": "https://smartstore.naver.com/deepdiveroasters/products/13697017326",
-            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/deepdiveroasters/category/811c59eb9bcc48fc9fbe6300ec14f760?cp=1"
         },
         {
