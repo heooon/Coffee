@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 102,
-    "last_scraped": "2026-10-28 08:33",
+    "count": 104,
+    "last_scraped": "2026-10-30 23:53",
     "products": [
         {
             "store": "502",
@@ -729,6 +729,24 @@
             "price": 13000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_99/1759255661969YNx4O_JPEG/935229015042760_2119691461.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/6938272737",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[11월의 원두] 케냐 카구뉴 AA 워시드 200g",
+            "price": 18000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261030_150/1793361442432ksvzk_JPEG/47927690343188908_1221673136.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13840690009",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 파나마 핀카 하트만 게이샤 내추럴 100g",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261030_118/17933405937399g8MF_JPEG/127473413867492613_2128796385.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13840186339",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
