@@ -1,7 +1,7 @@
 {
     "success": true,
-    "count": 104,
-    "last_scraped": "2026-10-30 23:53",
+    "count": 105,
+    "last_scraped": "2026-11-02 13:24",
     "products": [
         {
             "store": "502",
@@ -14,10 +14,10 @@
         },
         {
             "store": "502",
-            "name": "[10월의 커피] 코스타리카 비스타 알 바예 게이샤 허니",
-            "price": 32300,
-            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20261002/28b3c0d1dd4a0defed23763903712087.png",
-            "productUrl": "https://502coffee.com/product/10월의-커피-코스타리카-비스타-알-바예-게이샤-허니/154/category/24/display/1/",
+            "name": "[11월의 커피] 코스타리카 에르바수 산 로케",
+            "price": 25500,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20261102/2d82874915bb59b591e9d78f8840a9ce.png",
+            "productUrl": "https://502coffee.com/product/11월의-커피-코스타리카-에르바수-산-로케/154/category/24/display/1/",
             "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
@@ -77,6 +77,15 @@
         },
         {
             "store": "502",
+            "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
+            "price": 19000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
+            "productUrl": "https://502coffee.com/product/디카페인-에티오피아-예가체프-할로-베리티-내추럴/178/category/24/display/1/",
+            "soldOut": false,
+            "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
+        },
+        {
+            "store": "502",
             "name": "에티오피아 예가체프 게뎁 초르소 워시드",
             "price": 22000,
             "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260801/e3fcbaca749214a70ec5369ab9dcbc10.png",
@@ -95,10 +104,10 @@
         },
         {
             "store": "502",
-            "name": "[디카페인] 에티오피아 예가체프 할로 베리티 내추럴",
-            "price": 19000,
-            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20260329/db0a454c8139279326d33e292e4e2e9a.png",
-            "productUrl": "https://502coffee.com/product/디카페인-에티오피아-예가체프-할로-베리티-내추럴/178/category/24/display/1/",
+            "name": "코스타리카 비스타 알 바예 게이샤 허니",
+            "price": 38000,
+            "imageUrl": "https://ecimg.cafe24img.com/pg514b21282409045/coffee502com/web/product/medium/20261002/28b3c0d1dd4a0defed23763903712087.png",
+            "productUrl": "https://502coffee.com/product/코스타리카-비스타-알-바예-게이샤-허니/186/category/24/display/1/",
             "soldOut": false,
             "categoryUrl": "https://502coffee.com/category/%EC%9B%90%EB%91%90/24/"
         },
@@ -383,19 +392,19 @@
         },
         {
             "store": "신양",
-            "name": "에티오피아, 초르소 200g (Ethiopia,  Chorso )",
-            "price": 24000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13808825384",
+            "name": "콜롬비아, 카필라 델 로사리오 _ 리치 200g (Colombia, Capilla Del Rosario _ Lychee 200g)",
+            "price": 30000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13835000698",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
         {
             "store": "신양",
-            "name": "콜롬비아, 카필라 델 로사리오 _ 리치 200g (Colombia, Capilla Del Rosario _ Lychee 200g)",
-            "price": 30000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20200529_160/1590722172949dTb93_GIF/28083715575189841_180096886.gif",
-            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13835000698",
+            "name": "에티오피아, 초르소 200g (Ethiopia,  Chorso )",
+            "price": 24000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20200529_85/15907255999513HJn1_GIF/28087933522602415_502305770.gif",
+            "productUrl": "https://smartstore.naver.com/shinyangroaster/products/13808825384",
             "soldOut": false,
             "categoryUrl": "https://m.smartstore.naver.com/shinyangroaster/category/7132a8c411e0400b848b622df6fd377d?cp=1"
         },
