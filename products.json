@@ -554,6 +554,15 @@
         },
         {
             "store": "먼스커피",
+            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 200g",
+            "price": 13000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20260420_88/1776611512719Atg0r_JPEG/48579002798608617_1962834197.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5107397386",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
             "name": "[11월의 원두] 케냐 카구뉴 AA 워시드 200g",
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20261030_150/1793361442432ksvzk_JPEG/47927690343188908_1221673136.jpg",
@@ -594,6 +603,15 @@
             "price": 30000,
             "imageUrl": "https://shop-phinf.pstatic.net/20261030_118/17933405937399g8MF_JPEG/127473413867492613_2128796385.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/13840186339",
+            "soldOut": false,
+            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
+        },
+        {
+            "store": "먼스커피",
+            "name": "[먼스커피] 에티오피아 시다마 부르사 차리초 내추럴 100g",
+            "price": 12000,
+            "imageUrl": "https://shop-phinf.pstatic.net/20261011_108/1791704852520c0kjV_JPEG/125837705645783395_1167818288.jpg",
+            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13804814761",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
@@ -648,24 +666,6 @@
             "price": 13000,
             "imageUrl": "https://shop-phinf.pstatic.net/20251001_5/1759255470257BsOLQ_JPEG/93388341384246615_1184025766.jpg",
             "productUrl": "https://smartstore.naver.com/monthcoffee/products/6083188147",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
-            "name": "[먼스커피] 너티초코 블렌드 스페셜티 원두 200g",
-            "price": 13000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20260420_88/1776611512719Atg0r_JPEG/48579002798608617_1962834197.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/5107397386",
-            "soldOut": false,
-            "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
-        },
-        {
-            "store": "먼스커피",
-            "name": "[먼스커피] 에티오피아 시다마 부르사 차리초 내추럴 100g",
-            "price": 12000,
-            "imageUrl": "https://shop-phinf.pstatic.net/20261011_108/1791704852520c0kjV_JPEG/125837705645783395_1167818288.jpg",
-            "productUrl": "https://smartstore.naver.com/monthcoffee/products/13804814761",
             "soldOut": false,
             "categoryUrl": "https://brand.naver.com/monthcoffee/category/5c95a793292747eba7ec012749af448d?cp=1"
         },
