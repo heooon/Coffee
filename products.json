@@ -1,7 +1,7 @@
 {
     "success": true,
     "count": 106,
-    "last_scraped": "2026-11-21 01:45",
+    "last_scraped": "2026-11-28 15:18",
     "products": [
         {
             "store": "502",
@@ -135,7 +135,7 @@
             "price": 20000,
             "imageUrl": "https://shop-phinf.pstatic.net/20261022_230/1792605338397hn0LW_PNG/106541019350875979_1348782493.png",
             "productUrl": "https://smartstore.naver.com/johnsrcoffee/products/12697102355",
-            "soldOut": false,
+            "soldOut": true,
             "categoryUrl": "https://m.smartstore.naver.com/johnsrcoffee/category/ALL?cp=1"
         },
         {
